@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  height: 112px;
+}
+
+.Navbar {
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 56px;
+  background-color: black;
+}
+
+.Navbar>img {
+
+  padding: 14px;
+}
+
+.Nav-Logo-Wrapper {
+  display: flex;
+  
+  img {
+    border-radius: 50%;
+    background-color: red;
+    width:52.42px;
+    height: 49.84px;
+  }
+
+  p {
+    color: red;
+    margin-top: 10px;
+  }
+}
+
+.Nav-Buttons-Wrapper{
+  display: flex;
+  flex-direction: row;
+    
+  a {
+    color: white;
+    width:400px;
+  }
+}

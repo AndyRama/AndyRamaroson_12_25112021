@@ -1,6 +1,6 @@
 import React from "react";
 
-function IconWeight() {
+function ChartWeight() {
   return (
     <svg
       width="843"
@@ -238,4 +238,4 @@ function IconWeight() {
   );
 }
 
-export default IconWeight;
+export default ChartWeight;

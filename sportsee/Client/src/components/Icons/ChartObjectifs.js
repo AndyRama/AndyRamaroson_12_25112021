@@ -1,6 +1,6 @@
 import React from "react";
 
-function IconObjectifs() {
+function ChartObjectifs() {
   return (
     <svg width="266" height="271" viewBox="0 0 266 271" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_2_155)">
@@ -60,4 +60,4 @@ function IconObjectifs() {
   );
 }
 
-export default IconObjectifs;
+export default ChartObjectifs;

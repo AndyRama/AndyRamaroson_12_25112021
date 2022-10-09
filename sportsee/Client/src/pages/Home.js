@@ -1,6 +1,8 @@
 import "./Home.scss";
-import IconWeight from "../components/Icons/IconWeight";
-import IconObjectifs from "../components/Icons/IconObjectifs";
+import ChartWeight from "../components/Icons/ChartWeight";
+import ChartObjectifs from "../components/Icons/ChartObjectifs";
+import ChartRadar from "../components/Icons/ChartRadar";
+import ChartKpi from "../components/Icons/ChartKpi";
 
 
 function Home() {
@@ -10,10 +12,15 @@ function Home() {
       <h1>Bonjour monsieur</h1>
       <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
       <div className="weight">
-      <IconWeight />
-
+        <ChartWeight />
       </div>
-      <IconObjectifs /> 
+
+      <div className="Chart-wrapper">
+        <ChartObjectifs /> 
+        <ChartRadar />
+        <ChartKpi />
+      </div>
+
 
     </section>
   );

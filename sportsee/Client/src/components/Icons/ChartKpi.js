@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function ChartKpi() {
   return (
@@ -13,7 +13,7 @@ function ChartKpi() {
         <rect x="4" y="2" width="258" height="263" rx="5" fill="#FBFBFB" />
       </g>
       <path
-        d="M60.3462 177.202C83.7324 217.708 135.527 231.586 176.034 208.2C216.54 184.814 230.418 133.019 207.032 92.5128C183.646 52.0066 131.851 38.1282 91.3446 61.5144C50.8384 84.9007 36.96 136.696 60.3462 177.202Z"
+        d="M91.3446 61.5144C50.8384 84.9007 36.96 136.696 60.3462 177.202C83.7324 217.708 135.527 231.586 176.034 208.2C216.54 184.814 230.418 133.019 207.032 92.5128C183.646 52.0066 131.851 38.1282 91.3446 61.5144Z"
         fill="white"
         stroke="url(#paint0_angular_2_154)"
         stroke-width="10"
@@ -92,7 +92,7 @@ function ChartKpi() {
         </radialGradient>
       </defs>
     </svg>
-  );
+  )
 }
 
-export default ChartKpi;
+export default ChartKpi

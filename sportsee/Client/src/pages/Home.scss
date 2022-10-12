@@ -1,12 +1,45 @@
 section {
-  transform: translate(100px);
+  transform: translate(150px);
+
+  h1 {
+    position: absolute;
+    left: 0%;
+    right: 10.35%;
+    top: 0%;
+    bottom: 73.03%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 24px;
+  }
+
+  p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .weight {
   width: 815px;
+  margin: 50px;
+  
 }
 
 .Chart-wrapper {
   width: 815px;
-  background-color: red;
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60%;
+  right: 30%;
 }

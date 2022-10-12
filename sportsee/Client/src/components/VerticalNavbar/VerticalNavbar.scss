@@ -3,6 +3,20 @@
   background-color: black;
   width: 100px;
   position: absolute;
+
+  p {
+    position: absolute;
+    right: -18%;
+    top: 65%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: white;
+    rotate: -90deg;
+    width: 138px;
+  }
 }
 
 .header {
@@ -13,12 +27,11 @@
 #layout {
   
   &-icon-M {
-    // border : 5px solid white;
     position: absolute;
     width: 64px;
     height: 64px;
-    top: 20%;
-    left: 26px;
+    top: 15%;
+    left: 18px;
     border-radius: 6px;
   }
   
@@ -26,8 +39,8 @@
     position: absolute;
     width: 64px;
     height: 64px;
-    top: 30%;
-    left: 26px;
+    top: 24%;
+    left: 18px;
     border-radius: 6px;
 
   }
@@ -36,8 +49,8 @@
     position: absolute;
     width: 64px;
     height: 64px;
-    top: 40%;
-    left: 26px;
+    top: 34%;
+    left: 18px;
     border-radius: 6px;
   }
 
@@ -45,10 +58,9 @@
     position: absolute;
     width: 64px;
     height: 64px;
-    top: 50%;
-    left: 26px;
-    border-radius: 6px;
-  
+    top: 44%;
+    left: 18px;
+    border-radius: 6px;  
   }
 
 }

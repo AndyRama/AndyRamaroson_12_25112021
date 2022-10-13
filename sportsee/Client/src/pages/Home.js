@@ -1,13 +1,14 @@
 import "./Home.scss";
-import ChartWeight from "../components/Icons/ChartWeight";
-import ChartObjectifs from "../components/Icons/ChartObjectifs";
-import ChartRadar from "../components/Icons/ChartRadar";
-import ChartKpi from "../components/Icons/ChartKpi";
 
-import IconCalories from "../components/Icons/IconCalories";
-import IconProtein from "../components/Icons/IconProtein";
-import IconCarbs from "../components/Icons/IconCarbs";
-import IconLipides from "../components/Icons/IconLipides";
+import BarChart from "../components/User/BarChart/BarChart";
+import LineChart from "../components/User/LineChart/LineChart";
+import RadarChart from "../components/User/RadarChart/RadarChart";
+import RadialBarChart from "../components/User/RadialBarChart/RadialBarChart";
+
+import IconCalories from "../components/UI/Icons/IconCalories";
+import IconProtein from "../components/UI/Icons/IconProtein";
+import IconCarbs from "../components/UI/Icons/IconCarbs";
+import IconLipides from "../components/UI/Icons/IconLipides";
 
 function Home() {
   return (
@@ -16,23 +17,20 @@ function Home() {
       <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
       
       <div className="weight">
-        <ChartWeight />
+        <BarChart />
 
-      <div className="Chart-wrapper">
-        <ChartObjectifs /> 
-        <ChartRadar />
-        <ChartKpi />
-      </div>
+        <div className="Chart-wrapper">
+          <LineChart /> 
+          <RadarChart />
+          <RadialBarChart />
+        </div>
 
-      <div className="Icon-wrapper"> 
-      <IconCalories>
-
-      </IconCalories>
-      <IconProtein />
-      <IconCarbs />
-      <IconLipides />
-
-      </div>
+        <div className="Icon-wrapper"> 
+          <IconCalories />
+          <IconProtein />
+          <IconCarbs />
+          <IconLipides />
+        </div>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ChartKpi() {
+function RadialBarChart() {
   return (
     <svg
       width="266"
@@ -95,4 +95,4 @@ function ChartKpi() {
   )
 }
 
-export default ChartKpi
+export default RadialBarChart

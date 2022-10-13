@@ -1,6 +1,6 @@
 import React from "react";
 
-function ChartRadar() {
+function RadarChart() {
   return (
     <svg
       width="258"
@@ -106,4 +106,4 @@ function ChartRadar() {
   );
 }
 
-export default ChartRadar;
+export default RadarChart;

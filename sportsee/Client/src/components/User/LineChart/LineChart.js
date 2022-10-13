@@ -1,6 +1,6 @@
 import React from "react";
 
-function ChartObjectifs() {
+function LineChart() {
   return (
     <svg
       width="266"
@@ -180,4 +180,4 @@ function ChartObjectifs() {
   );
 }
 
-export default ChartObjectifs;
+export default LineChart;

@@ -1,6 +1,6 @@
 import React from "react";
 
-function ChartWeight() {
+function BarChart() {
   return (
     <svg
       width="843"
@@ -238,4 +238,4 @@ function ChartWeight() {
   );
 }
 
-export default ChartWeight;
+export default BarChart;

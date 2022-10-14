@@ -18,20 +18,21 @@ function Home() {
       
       <div className="weight">
         <BarChart />
-
-        <div className="Chart-wrapper">
-          <LineChart /> 
-          <RadarChart />
-          <RadialBarChart />
-        </div>
-
-        <div className="Icon-wrapper"> 
-          <IconCalories />
-          <IconProtein />
-          <IconCarbs />
-          <IconLipides />
-        </div>
       </div>
+
+      <div className="Chart-wrapper">
+        <LineChart /> 
+        <RadarChart />
+        <RadialBarChart />
+      </div>
+
+      <div className="Icon-wrapper"> 
+        <IconCalories />
+        <IconProtein />
+        <IconCarbs />
+        <IconLipides />
+      </div>
+
     </section>
   );
 }

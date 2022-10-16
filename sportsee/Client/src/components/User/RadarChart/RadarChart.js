@@ -1,6 +1,5 @@
-// import "./RadarChart.scss";
 import React from "react";
-import {  Radar,  RadarChart,  PolarGrid,  PolarAngleAxis,  PolarRadiusAxis } from "recharts";
+import {  Radar,  RadarChart,  PolarGrid,  PolarAngleAxis } from "recharts";
 
 const data = [
   {
@@ -41,20 +40,18 @@ const data = [
   }
 ];
 
-export default function App() {
+export default function Layout() {
   return (
     <RadarChart
-      cx={300}
-      cy={250}
-      outerRadius={150}
-      width={500}
-      height={500}
+      // cx={300}
+      // cy={250}
+      // outerRadius={150}
+      width={263}
+      height={258}
       data={data}
-      
     >
       <PolarGrid />
       <PolarAngleAxis dataKey="subject" />
-      <PolarRadiusAxis />
       <Radar
         name="Mike"
         dataKey="A"

@@ -1,43 +1,40 @@
-import "./LineChart.scss";
 import React from "react";
-import {  LineChart,  Line,  XAxis,  YAxis,  CartesianGrid,  Tooltip,  Legend } from "recharts";
+import {  LineChart,  Line,  XAxis } from "recharts";
 
-
-
-function LineMap() {
+function Moyenne() {
   const data = [
     {
-      name: "1",
+      name: "L",
       pv: 2400,
       amt: 2400
     },
     {
-      name: "1",
+      name: "M",
       pv: 1398,
       amt: 2210
     },
     {
-      name: "1",
+      name: "M",
       pv: 9800,
       amt: 2290
     },
     {
-      name: "1",
+      name: "J",
       pv: 3908,
       amt: 2000
     },
     {
-      name: "1",
+      name: "V",
       pv: 4800,
       amt: 2181
     },
     {
-      name: "1",
+      name: "S",
       pv: 3800,
       amt: 2500
     },
     {
-      name: "1",
+      name: "D",
       pv: 4300,
       amt: 2100
     }
@@ -45,8 +42,8 @@ function LineMap() {
 
   return (
     <LineChart
-      width={300}
-      height={263}
+      width={263}
+      height={258}
       data={data}
       // margin={{
       //   top: 5,
@@ -55,11 +52,8 @@ function LineMap() {
       //   bottom: 5
       // }}
     >
-      <CartesianGrid strokeDasharray="3 3" />
+
       <XAxis dataKey="name" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
       <Line
         type="monotone"
         dataKey="pv"
@@ -70,4 +64,4 @@ function LineMap() {
   );
 }
 
-export default LineMap;
+export default Moyenne;

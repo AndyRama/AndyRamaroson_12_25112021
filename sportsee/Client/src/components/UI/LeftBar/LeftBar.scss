@@ -7,7 +7,7 @@
   p {
     position: absolute;
     right: -18%;
-    top: 80%;
+    bottom: 20%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -21,46 +21,36 @@
 
 .header {
   // width: auto;
-  height: 87px;
+  // height: 87px;
 }
 
 #layout {
+  border-radius: 6px;
+  width: 64px;
+  height: 64px;
   
   &-icon-M {
     position: absolute;
-    width: 64px;
-    height: 64px;
-    top: 30%;
+    top: 25%;
     left: 18px;
-    border-radius: 6px;
   }
   
   &-icon-S {
     position: absolute;
-    width: 64px;
-    height: 64px;
-    top: 39%;
+    top: 35%;
     left: 18px;
-    border-radius: 6px;
-
+  
   }
 
   &-icon-B {
     position: absolute;
-    width: 64px;
-    height: 64px;
-    top: 49%;
+    top: 45%;
     left: 18px;
-    border-radius: 6px;
   }
 
   &-icon-T {
     position: absolute;
-    width: 64px;
-    height: 64px;
-    top: 59%;
-    left: 18px;
-    border-radius: 6px;  
+    top: 55%;
+    left: 18px; 
   }
-
 }

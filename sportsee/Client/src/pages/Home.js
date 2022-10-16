@@ -1,9 +1,8 @@
 import "./Home.scss";
 
-import BarChart from "../components/User/BarChart/BarChart";
+import BarChart from "../components/User/BarChart/Bar.Chart";
 import LineChart from "../components/User/LineChart/LineChart";
 import RadarChart from "../components/User/RadarChart/RadarChart";
-import RadialBarChart from "../components/User/RadialBarChart/RadialBarChart";
 
 import IconCalories from "../components/UI/Icons/IconCalories";
 import IconProtein from "../components/UI/Icons/IconProtein";
@@ -16,18 +15,20 @@ function Home() {
   return (
     <section> 
       <UserName />
-
-        <div className="weight">
+      <div className="weight">
         <h3 className="daily-activity--title">Activité quotidienne</h3>
-          <BarChart />
-        </div> 
+        <BarChart />
+      </div> 
 
       <div className="Chart-wrapper">
+        <h3 className="average-sessions--title">Durée moyenne des sessions</h3>
         <LineChart /> 
-        <RadarChart />
-        <RadialBarChart />
       </div>
 
+      <div className="Chart-wrapper--Radar">
+        <RadarChart />
+      </div>
+      
       <div className="Icon-wrapper"> 
         <IconCalories />
         <IconProtein />

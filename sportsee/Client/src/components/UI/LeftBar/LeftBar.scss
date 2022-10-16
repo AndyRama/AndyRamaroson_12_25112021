@@ -1,5 +1,5 @@
 .Vertical-Navbar {
-  height: 100vh;
+  height: 1024px;
   background-color: black;
   width: 100px;
   position: absolute;
@@ -7,7 +7,7 @@
   p {
     position: absolute;
     right: -18%;
-    top: 65%;
+    top: 80%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -20,8 +20,8 @@
 }
 
 .header {
-  width: 1440px;
-  height: 98px;
+  // width: auto;
+  height: 87px;
 }
 
 #layout {
@@ -30,7 +30,7 @@
     position: absolute;
     width: 64px;
     height: 64px;
-    top: 15%;
+    top: 30%;
     left: 18px;
     border-radius: 6px;
   }
@@ -39,7 +39,7 @@
     position: absolute;
     width: 64px;
     height: 64px;
-    top: 24%;
+    top: 39%;
     left: 18px;
     border-radius: 6px;
 
@@ -49,7 +49,7 @@
     position: absolute;
     width: 64px;
     height: 64px;
-    top: 34%;
+    top: 49%;
     left: 18px;
     border-radius: 6px;
   }
@@ -58,7 +58,7 @@
     position: absolute;
     width: 64px;
     height: 64px;
-    top: 44%;
+    top: 59%;
     left: 18px;
     border-radius: 6px;  
   }

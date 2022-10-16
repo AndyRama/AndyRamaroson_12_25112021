@@ -1,13 +1,13 @@
 import React from "react";
 
-import "./LeftNavbar.scss";
+import "./LeftBar.scss";
 
 import IconMeditation from "../Icons/IconMeditation"; 
 import IconBike from "../Icons/IconBike";
 import IconTraining from "../Icons/IconTraining"; 
 import IconSwim from "../Icons/IconSwim";
 
-function LeftNavbar() {
+function LeftBar() {
     return (
       <aside className="Vertical-Navbar">
         <div className="navlink">
@@ -21,4 +21,4 @@ function LeftNavbar() {
     );
 }
 
-export default LeftNavbar;
+export default LeftBar;

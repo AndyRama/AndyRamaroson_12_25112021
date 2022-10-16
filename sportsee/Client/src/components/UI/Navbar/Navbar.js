@@ -1,29 +1,38 @@
-import React from "react";
+import React from 'react'
+import { Link, useLocation} from 'react-router-dom'
 
-import "./Navbar.scss"
-import {  Link }  from "react-router-dom"
-import logo from '../../../logo.svg';
+import './Navbar.scss'
+import LogoText from '../Icons/LogoText'
+import logo from '../../../logo.svg'
 
-class Navbar extends React.Component {
-    render() {
+function Navbar() {
 
-    return( 
-      <header className="header">
-        <nav className="Navbar">
-          <div className="Nav-Logo-Wrapper">
-            <img src={logo} alt="Logo" />
-            <p>SportSee</p>
-          </div>
-          <div className="Nav-Buttons-Wrapper">
-            <Link to="/">Acceuil</Link>
-            <Link to="/">Profil</Link>
-            <Link to="/">Réglage</Link>
-            <Link to="/">Communauté</Link>
-          </div>
-        </nav>
-      </header>
-    )
-  }
+  const ongletId = ['Profil','Réglages','Communauté'];
+  const location = useLocation()
+
+  return (
+    <header className="header">
+      <nav className="Navbar">
+        <Link className="Nav-Logo-Wrapper" to="/">
+          <img src={logo} alt="Logo" />
+          <LogoText />
+        </Link>
+        <ul className="Nav-Buttons-Wrapper">
+        <Link to="/" className={ location.pathname === '/' ? 'home-page active' : 'home-page' }
+            page="home"> Accueil
+        </Link>
+        { ongletId.map((onglet, index) => (
+          <Link
+            to={`${onglet}`} 
+            key={index} 
+            // className={ location.pathname === '/${onglet}' ? '${onglet} active' : '${onglet}' }
+            >{`${onglet}`}
+          </Link>          
+          ))}
+        </ul>
+      </nav>
+    </header>
+  )
 }
 
 export default Navbar

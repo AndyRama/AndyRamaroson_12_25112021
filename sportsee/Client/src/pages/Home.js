@@ -10,15 +10,17 @@ import IconProtein from "../components/UI/Icons/IconProtein";
 import IconCarbs from "../components/UI/Icons/IconCarbs";
 import IconLipides from "../components/UI/Icons/IconLipides";
 
+import UserName from "../components/User/UserName/UserName";
+
 function Home() {
   return (
     <section> 
-      <h1>Bonjour monsieur</h1>
-      <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
-      
-      <div className="weight">
-        <BarChart />
-      </div>
+      <UserName />
+
+        <div className="weight">
+        <h3 className="daily-activity--title">Activité quotidienne</h3>
+          <BarChart />
+        </div> 
 
       <div className="Chart-wrapper">
         <LineChart /> 

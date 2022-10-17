@@ -53,12 +53,12 @@ function Moyenne() {
       // }}
     >
 
-      <XAxis dataKey="name" />
+      <XAxis dataKey="name"  stroke="#FFFFFF" />
       <Line
         type="monotone"
         dataKey="pv"
-        stroke="#8884d8"
-        activeDot={{ r: 8 }}
+        stroke="#FFFFFF"
+        activeDot={{ r: 8}}
       />
     </LineChart>
   );

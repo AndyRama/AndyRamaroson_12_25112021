@@ -1,8 +1,9 @@
 import "./Home.scss";
 
-import BarChart from "../components/User/BarChart/Bar.Chart";
-import LineChart from "../components/User/LineChart/LineChart";
-import RadarChart from "../components/User/RadarChart/RadarChart";
+import BarChart from "../components/User/Bar.Chart";
+import LineChart from "../components/User/LineChart";
+import RadarChart from "../components/User/RadarChart";
+import PieComp from "../components/User/PieComp";
 
 import IconCalories from "../components/UI/Icons/IconCalories";
 import IconProtein from "../components/UI/Icons/IconProtein";
@@ -28,13 +29,17 @@ function Home() {
       <div className="Chart-wrapper--Radar">
         <RadarChart />
       </div>
+
+      <div className="Chart-wrapper--score">
+        <PieComp />
+      </div>
       
-      <div className="Icon-wrapper"> 
+      {/* <div className="Icon-wrapper"> 
         <IconCalories />
         <IconProtein />
         <IconCarbs />
         <IconLipides />
-      </div>
+      </div> */}
 
     </section>
   );

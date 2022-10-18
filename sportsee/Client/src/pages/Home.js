@@ -1,21 +1,40 @@
 import "./Home.scss";
 
-import BarChart from "../components/User/Bar.Chart";
+import BarChart from "../components/User/BarChart";
 import LineChart from "../components/User/LineChart";
 import RadarChart from "../components/User/RadarChart";
 import PieComp from "../components/User/PieComp";
 
-import IconCalories from "../components/UI/Icons/IconCalories";
-import IconProtein from "../components/UI/Icons/IconProtein";
-import IconCarbs from "../components/UI/Icons/IconCarbs";
-import IconLipides from "../components/UI/Icons/IconLipides";
+
+// import IconCalories from "../components/UI/Icons/IconCalories";
+// import IconProtein from "../components/UI/Icons/IconProtein";
+// import IconCarbs from "../components/UI/Icons/IconCarbs";
+// import IconLipides from "../components/UI/Icons/IconLipides";
 
 import UserName from "../components/User/UserName/UserName";
+import { getUser } from "../service/User";
+import React,{ useState } from "react";
 
-function Home() {
-  return (
-    <section> 
-      <UserName />
+class Home extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      user: {}
+    };
+  }
+
+  async componentDidMount() {
+    const user = await getUser(18)
+    console.log(user)
+    this.setState({user})
+  }
+
+   render() {
+   if(!this.state.user.userInfos) { return null }
+   return (
+     <section> 
+      <UserName firstname={this.state.user.userInfos.firstName}/>
+      {/* {this.state.user.userInfos.firstName} */}
       <div className="weight">
         <h3 className="daily-activity--title">Activité quotidienne</h3>
         <BarChart />
@@ -34,15 +53,9 @@ function Home() {
         <PieComp />
       </div>
       
-      {/* <div className="Icon-wrapper"> 
-        <IconCalories />
-        <IconProtein />
-        <IconCarbs />
-        <IconLipides />
-      </div> */}
-
     </section>
   );
+}
 }
 
 export default Home;

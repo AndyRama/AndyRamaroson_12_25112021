@@ -67,7 +67,7 @@ const data = [
 export default function Layout() {
   return (
     <BarChart
-      width={835}
+      width={950}
       height={320}
       data={data}
     >
@@ -82,7 +82,12 @@ export default function Layout() {
           lineHeight: '40px',
         }}
       />
-      <XAxis dataKey="name" stroke="grey" tickLine={false} dy={10} />
+      <XAxis 
+        dataKey="name" 
+        stroke="grey" 
+        tickLine={false} 
+        dy={10} 
+      />
       <YAxis
         domain={['dataMin -2', 'dataMax + 1']}
         orientation="right"

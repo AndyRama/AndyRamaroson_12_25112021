@@ -1,5 +1,5 @@
 import React from "react";
-import {  LineChart,  Line,  XAxis } from "recharts";
+import {  LineChart,  Line,  XAxis} from "recharts";
 
 function Moyenne() {
   const data = [
@@ -53,7 +53,7 @@ function Moyenne() {
       // }}
     >
 
-      <XAxis dataKey="name"  stroke="#FFFFFF" />
+      <XAxis dataKey="name"  stroke="#FFFFFF" axisLine />
       <Line
         type="monotone"
         dataKey="pv"

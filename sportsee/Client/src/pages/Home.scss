@@ -1,5 +1,5 @@
 section {
-  transform: translate(110px);
+  transform: translate(120px);
 }
 
 .weight {
@@ -11,12 +11,12 @@ section {
 
 .Chart-wrapper {
   width: auto;
-  margin-left: 80px;
   display: flex;
   justify-content: space-around;
   position: absolute;
   background-color: red;
   border-radius: 5px;
+  left: 6%;
 
   &--Radar {
     background-color: #282D30;
@@ -25,7 +25,12 @@ section {
     position: absolute;
     border-radius: 5px;
     top: 70%;
-    left: 20%;
+    left: 28%;
+    display: block;
+
+    &--tspan {
+      color: white;
+    }
   }
 }
 
@@ -33,7 +38,6 @@ section {
   display: flex;
   flex-direction: column;
   position: fixed;
-  // top: 50%;
   right: 10%;  
 }
 
@@ -46,17 +50,17 @@ section {
   background:#E60000;
   border-radius: 5px;
   padding: 16px;  
-}
 
-.average-sessions--title {
-  position: absolute;
-  top: 32px;
-  left: 32px;
-  right: 32px;
-  line-height: 24px;
-  font-size: medium;
-  font-weight: bold;
-  color: rgba(250, 250, 250, 0.9);
+  &--title {
+    position: absolute;
+    top: 32px;
+    left: 30%;
+    right: 32px;
+    line-height: 24px;
+    font-size: medium;
+    font-weight: bold;
+    color: rgba(250, 250, 250, 0.9);
+  }
 }
 
 /* SCORE */
@@ -66,8 +70,7 @@ section {
   height: 258px;
   background: #FBFBFB;
   border-radius: 5px;
-  bottom: 1%;
-  left: 36%;
+  left: 50%;
 }
 
 .score-title {

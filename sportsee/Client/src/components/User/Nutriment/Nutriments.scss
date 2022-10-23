@@ -1,0 +1,30 @@
+.nutriment-container {
+  position: absolute;
+  top: 22%;
+  right: 20%;
+}
+
+.inside-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.quantity {
+  margin-bottom: 0;
+  margin-left: 16px;
+}
+
+.nutrition-type {
+  margin-top: 4px;
+  margin-left: 16px;
+}
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  margin: auto 0;
+  position: relative;
+}

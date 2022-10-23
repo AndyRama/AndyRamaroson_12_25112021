@@ -49,7 +49,7 @@ class Home extends React.Component {
           <PieComp />
         </div>   
 
-        <Nutriments/>  
+        <Nutriments />  
       </section>
     );
   }

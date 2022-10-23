@@ -67,11 +67,11 @@ const data = [
 export default function Layout() {
   return (
     <BarChart
-      width={950}
+      width={900}
       height={320}
       data={data}
     >
-      <CartesianGrid strokeDasharray="" />
+    <CartesianGrid strokeDasharray="" />
       <Legend
         width={'60%'}
         iconType={'circle'}

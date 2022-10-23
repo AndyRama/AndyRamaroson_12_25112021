@@ -47,7 +47,10 @@ const data01 = [
               stroke="transparent"
               animationDuration={700}
             >
-              <Cell fill="red" cornerRadius={50} />
+              <Cell 
+                fill="red"
+                cornerRadius={50} 
+              />
             </Pie>
           </PieChart>
         </ResponsiveContainer>

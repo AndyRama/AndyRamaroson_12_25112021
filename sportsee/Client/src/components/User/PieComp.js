@@ -34,26 +34,23 @@ const data01 = [
       <h2 className="score-title">Score</h2>
       <p className="score-result">12%</p>
       <p className="score-comment">de votre <br />objectif</p>
-        <ResponsiveContainer className="responsive-container">
-          <PieChart width={730} height={250}>
-            <Pie
-              data={data01}
-              dataKey="value"
-              innerRadius={70}
-              outerRadius={80}
-              startAngle={90} // centre haut
-              endAngle={450} // 360° + 90°
-              fill="transparent"
-              stroke="transparent"
-              animationDuration={700}
+      <ResponsiveContainer className="responsive-container">
+        <PieChart width={730} height={250}>
+          <Pie
+            data={data01}
+            dataKey="value"
+            innerRadius={70}
+            outerRadius={80}
+            startAngle={90} // centre haut
+            endAngle={450} // 360° + 90°
+            fill="transparent"
+            stroke="transparent"
+            animationDuration={700}
             >
-              <Cell 
-                fill="red"
-                cornerRadius={50} 
-              />
-            </Pie>
-          </PieChart>
-        </ResponsiveContainer>
+            <Cell fill="red" cornerRadius={50} />
+          </Pie>
+        </PieChart>
+      </ResponsiveContainer>
     </div>
   );
 }

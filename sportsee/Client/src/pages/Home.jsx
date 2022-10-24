@@ -1,7 +1,7 @@
 import "./Home.scss";
 
-import BarChart from "../components/User/BarChart";
-import LineChart from "../components/User/LineChart";
+import Activity from "../components/User/Activity";
+import Average from "../components/User/Average";
 import RadarChart from "../components/User/RadarChart";
 import PieComp from "../components/User/PieComp";
 
@@ -21,7 +21,7 @@ class Home extends React.Component {
 
   async componentDidMount() {
     const user = await getUser(18)
-    console.log(user)
+    // console.log(user)
     this.setState({user})
   }
 
@@ -33,12 +33,12 @@ class Home extends React.Component {
         {/* {this.state.user.userInfos.firstName} */}
         <div className="weight">
           <h3 className="daily-activity--title">Activité quotidienne</h3>
-          <BarChart />
+          <Activity />
         </div> 
 
         <div className="Chart-wrapper">
           <h3 className="average-sessions--title">Durée moyenne des sessions</h3>
-          <LineChart /> 
+          <Average /> 
         </div>
 
         <div className="Chart-wrapper--Radar">

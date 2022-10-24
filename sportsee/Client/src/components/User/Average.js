@@ -1,7 +1,7 @@
 import React from "react";
 import {  LineChart,  Line,  XAxis} from "recharts";
 
-function Moyenne() {
+function Average() {
   const data = [
     {
       name: "L",
@@ -64,4 +64,4 @@ function Moyenne() {
   );
 }
 
-export default Moyenne;
+export default Average;

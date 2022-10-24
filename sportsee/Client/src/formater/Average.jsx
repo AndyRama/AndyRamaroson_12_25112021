@@ -1,7 +1,8 @@
 export async function formaDataAverage(data) {
+
   const sessions = data.sessions
   const day = ['L','M','M','J','V','S','D']
-  const sessionFormated = []
+  const sessionFormated = []  
   sessions.map((session,index) => {
     const item = {
       day:day[session.day -1],

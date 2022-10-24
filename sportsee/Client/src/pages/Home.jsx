@@ -9,28 +9,29 @@ import Nutriments from "../components/User/Nutriment/Nutriments";
 
 import UserName from "../components/User/UserName/UserName";
 import { getUser } from "../service/User";
-import React,{ useState } from "react";
+import { getAverage } from "../service/Average";
+import React,{ useState,useEffect } from "react";
 
-class Home extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      user: {}
-    };
-  }
+function Home() {
 
-  async componentDidMount() {
-    const user = await getUser(18)
-    // console.log(user)
-    this.setState({user})
-  }
+  const [user,setUser] = useState({});
+  const [average,setAverage] = useState([]);
 
-  render() {    
-   if(!this.state.user.userInfos) { return null }
+  useEffect(() => {
+    async function load() {
+      const userData = await getUser(18)
+      setUser(userData)
+
+      const averageData = await getAverage(18)
+      setAverage(averageData)
+    }
+    load()
+  });
+
+   if(!user.userInfos) { return null }
     return (
       <section> 
-        <UserName firstname={this.state.user.userInfos.firstName}/>
-        {/* {this.state.user.userInfos.firstName} */}
+        <UserName firstname={user.userInfos.firstName}/>
         <div className="weight">
           <h3 className="daily-activity--title">Activité quotidienne</h3>
           <Activity />
@@ -38,7 +39,7 @@ class Home extends React.Component {
 
         <div className="Chart-wrapper">
           <h3 className="average-sessions--title">Durée moyenne des sessions</h3>
-          <Average /> 
+          <Average data={average} /> 
         </div>
 
         <div className="Chart-wrapper--Radar">
@@ -53,6 +54,6 @@ class Home extends React.Component {
       </section>
     );
   }
-}
+
 
 export default Home;

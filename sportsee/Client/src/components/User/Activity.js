@@ -51,20 +51,19 @@ class Activity extends React.Component {
   
   async componentDidMount() {
     const data = await getActivity(18)
-    console.log({data})
+    // console.log({data})
     this.setState({data})
 
-    const day = data.sessions.map(elt => elt.day)
-    const kg = data.sessions.map(elt => elt.kilogram)
-    const cal = data.sessions.map(elt => elt.calories)
+    // const day = data.sessions.map(elt => elt.day)
+    // const kg = data.sessions.map(elt => elt.kilogram)
+    // const cal = data.sessions.map(elt => elt.calories)
 
       
-    console.log(day);
-    console.log(kg);
-    console.log(cal);
-    
-  }
-    
+    // console.log(day);
+    // console.log(kg);
+    // console.log(cal);
+  }  
+  
   render() {  
     
     return (

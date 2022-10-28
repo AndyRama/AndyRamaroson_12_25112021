@@ -14,9 +14,9 @@ import { getActivity } from "../service/Activity";
 
 function Home() {
 
-  const [user,setUser] = useState({});
-  const [average,setAverage] = useState([]);
-  const [activity,setActivity] = useState([]);
+  const [user, setUser] = useState({});
+  const [average, setAverage] = useState([]);
+  const [activity, setActivity] = useState([]);
 
   useEffect(() => {
     async function load() {

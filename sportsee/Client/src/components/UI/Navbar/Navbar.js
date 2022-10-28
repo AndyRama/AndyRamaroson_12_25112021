@@ -25,7 +25,7 @@ function Navbar() {
           <Link
             to={`${onglet}`} 
             key={index} 
-            // className={ location.pathname === '/${onglet}' ? '${onglet} active' : '${onglet}' }
+            className={ location.pathname === `${onglet}` ? `${onglet} active` : `${onglet}`}
             >{`${onglet}`}
           </Link>          
           ))}

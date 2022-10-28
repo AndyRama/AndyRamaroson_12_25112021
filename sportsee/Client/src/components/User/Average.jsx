@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import {  LineChart,  Line,  XAxis} from "recharts";
+import { ResponsiveContainer, LineChart,  Line,  XAxis} from "recharts";
 import { formaDataAverage } from '../../formater/Average';
 
 function Average({data}) {
+
   const [averageData,setAverageData] = useState([])
+  const day = ['L','M','M','J','V','S','D']
 
   useEffect(() => {
     async function load() {
@@ -14,25 +16,25 @@ function Average({data}) {
   }, [data]);
      
     return (
-      <LineChart
-        width={263}
-        height={258}
-        data={averageData}
-      >
-
-      <XAxis 
-        dataKey="day" 
-        stroke="#FFFFFF" 
-        axisLine 
-      />
-      
-      <Line
-        type="monotone"
-        dataKey="sessionLength"
-        stroke="#FFFFFF"
-        activeDot={{ r: 8}}
-      />
-    </LineChart>
+      <ResponsiveContainer  width={258} height={263}>
+        <LineChart
+          data={averageData} >
+          <XAxis 
+            dataKey= "day"
+            stroke="#FFFFFF" 
+            axisLine={false}
+            tickLine={false}
+            dx={10}
+            dy={0}
+            />          
+          <Line
+            type="monotone"
+            dataKey="sessionLength"
+            stroke="#FFFFFF"
+            activeDot={{ r: 10}}
+            />
+        </LineChart>
+    </ResponsiveContainer>
   );
 }
 

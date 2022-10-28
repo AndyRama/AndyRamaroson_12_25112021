@@ -1,16 +1,17 @@
 section {
-  transform: translate(120px);
+  transform: translate(107px);
 }
 
 .weight {
-  width: 815px;
-  padding-top: 200px;
+  // width: 835px;
+  padding-top: 230px;
   position: relative;
   left: 80px;  
 }
 
+/* Activity sessions */
 .Chart-wrapper {
-  width: auto;
+  // width: auto;
   display: flex;
   justify-content: space-around;
   position: absolute;
@@ -18,13 +19,14 @@ section {
   border-radius: 5px;
   left: 6%;
   
+  /* Radar sessions */
   &--Radar {
     background-color: #282D30;
-    width: 263px;
-    height: 258px;
+    width: 258px;
+    height: 263px;
     position: absolute;
     border-radius: 5px;
-    top: 70%;
+    top: 656;
     left: 28%;
     display: block;
 
@@ -42,7 +44,7 @@ section {
   background-color: #FBFBFB;
 }
 
-/* AVERAGE SESSIONS */
+/* Average sessions */
 .average-sessions {
   position: relative;
   width: 30%;
@@ -54,8 +56,8 @@ section {
 
   &--title {
     position: absolute;
-    top: 32px;
-    left: 30%;
+    top: 1px;
+    left: 10%;
     right: 32px;
     line-height: 24px;
     font-size: medium;
@@ -64,11 +66,11 @@ section {
   }
 }
 
-/* SCORE */
+/* Score sessions */
 .score {
   position: relative;
-  width: 263px;
-  height: 258px;
+  width: 258px;
+  height: 263px;
   background: #E5E5E5;
   border-radius: 5px;
   left: 50%;

@@ -46,8 +46,8 @@ export default function Layout() {
       // cx={300}
       // cy={250}
       // outerRadius={150}
-      width={263}
-      height={258}
+      width={187}
+      height={183}
       data={data}
       >
       <PolarGrid />

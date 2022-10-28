@@ -1,5 +1,5 @@
 import React ,{ useEffect,useState } from 'react'
-import {  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from 'recharts'
+import {  BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer} from 'recharts'
 import { formaDataActivity } from '../../formater/Activity';
 
 function Activity({data}) {
@@ -29,10 +29,11 @@ function Activity({data}) {
           }}
           />
         <XAxis 
-          dataKey="day" 
+          data="day" 
           stroke="grey" 
-          // tickLine={true} 
-          // dy={5} 
+          tickLine={false} 
+          dx={5}
+          dy={10}
           />
         <YAxis
           domain={['dataMin 0', 'dataMax + 1']}

@@ -1,7 +1,7 @@
 .Navbar {
   // width: auto !important;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   // padding: 16px 200px;
   background-color: black;
   padding: 16px;
@@ -14,18 +14,18 @@
 }
 
 .Nav-Logo-Wrapper {
-  margin-left: 5%;
+  margin-left: 1%;
   display: flex;
   font-size: 24px!important;
   font-weight: 500!important;
-  margin-right: 107px;
+  // margin-right: 107px;
   
   img {
     border-radius: 50%;
     background-color: red;
     width:52.42px;
     height: 49.84px;
-    margin-left: 80px;
+    // margin-left: 80px;
     margin-top: 5px;
   }
   
@@ -52,5 +52,9 @@
     font-weight: 500;
     font-size: 24px;
     margin-right: 107px;
+
+    @media screen and (max-width:1370px) {
+      width: 100px;
+    }
   }
 }

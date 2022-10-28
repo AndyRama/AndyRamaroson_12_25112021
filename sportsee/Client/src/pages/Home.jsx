@@ -3,7 +3,7 @@ import "./Home.scss";
 
 import Activity from "../components/User/Activity";
 import Average from "../components/User/Average";
-import RadarChart from "../components/User/RadarChart";
+import Performance from "../components/User/Performance";
 import PieComp from "../components/User/PieComp";
 import Nutriments from "../components/User/Nutriment/Nutriments";
 import UserName from "../components/User/UserName/UserName";
@@ -47,7 +47,7 @@ function Home() {
         </div>
 
         <div className="Chart-wrapper--Radar">
-          <RadarChart />
+          <Performance />
         </div>
 
         <div className="Chart-wrapper--score">

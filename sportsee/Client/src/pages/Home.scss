@@ -3,10 +3,17 @@ section {
 }
 
 .weight {
-  // width: 835px;
+  // width: 500px;
   padding-top: 230px;
   position: relative;
   left: 80px;  
+  // background-color: #E60000;
+
+}
+.activity {
+@media screen and (max-width:1370px) {
+  width: 835px!important;
+}
 }
 
 /* Activity sessions */
@@ -26,9 +33,9 @@ section {
     height: 263px;
     position: absolute;
     border-radius: 5px;
-    top: 656;
+    top: 70%;
     left: 28%;
-    display: block;
+    // display: block;
 
     &--tspan {
       color: white;
@@ -47,7 +54,7 @@ section {
 /* Average sessions */
 .average-sessions {
   position: relative;
-  width: 30%;
+  // width: 30%;
   height: 300px;
   margin-top: 32px;
   background:#E60000;
@@ -100,5 +107,3 @@ section {
   transform: translate(-50%, -50%);
   font-size: 16px;
 }
-
-

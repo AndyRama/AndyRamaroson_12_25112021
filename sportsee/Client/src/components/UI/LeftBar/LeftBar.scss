@@ -1,5 +1,5 @@
 .Vertical-Navbar {
-  height: 1024px;
+  height: 930px;
   background-color: black;
   width: 100px;
   position: absolute;
@@ -16,7 +16,12 @@
     color: white;
     rotate: -90deg;
     width: 138px;
+
+    @media screen and (max-width:1370px) {
+      bottom: 36%;
+    }
   }
+
 }
 
 #layout {
@@ -28,23 +33,39 @@
     position: absolute;
     top: 24%;
     left: 18px;
+
+    @media screen and (max-width:1370px) {
+      top: 18%;
+    }
   }
   
   &-icon-S {
     position: absolute;
     top: 32%;
     left: 18px;  
+
+    @media screen and (max-width:1370px) {
+      top: 26%;
+    }
   }
 
   &-icon-B {
     position: absolute;
     top: 40%;
     left: 18px;
+
+    @media screen and (max-width:1370px) {
+      top: 34%;
+    }
   }
 
   &-icon-T {
     position: absolute;
     top: 48%;
     left: 18px; 
+
+    @media screen and (max-width:1370px) {
+      top: 42%;
+    }
   }
 }

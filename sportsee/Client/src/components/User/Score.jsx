@@ -28,7 +28,7 @@ const data01 = [
   }
 ];
 
- function PieComponent() {
+ function Score() {
   return (
     <div className="score">
       <h2 className="score-title">Score</h2>
@@ -55,4 +55,4 @@ const data01 = [
   );
 }
 
-export default PieComponent;
+export default Score;

@@ -1,6 +1,6 @@
 import axios  from 'axios'
 
-export async function getActivity (id)  {
+export async function getActivity(id)  {
   try {
     const {data:{data} } = await axios.get(`http://localhost:3000/user/${id}/Activity`);
     // console.log(data)   

@@ -1,19 +1,28 @@
 section {
   transform: translate(107px);
+
+  @media screen and (max-width:1370px) {
+    transform: translate(67px)
+  }
 }
 
 .weight {
-  // width: 500px;
+  width: 835px;
   padding-top: 230px;
   position: relative;
   left: 80px;  
   // background-color: #E60000;
+  
+  @media screen and (max-width:1370px) {
+    padding-top:200px;
+    width:500px!important;
+  }
+}
 
-}
 .activity {
-@media screen and (max-width:1370px) {
-  width: 835px!important;
-}
+  @media screen and (max-width:1370px) {
+    width: 835px!important;
+  }
 }
 
 /* Activity sessions */

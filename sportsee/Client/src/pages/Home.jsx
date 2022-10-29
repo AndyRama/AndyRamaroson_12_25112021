@@ -4,7 +4,7 @@ import "./Home.scss";
 import Activity from "../components/User/Activity";
 import Average from "../components/User/Average";
 import Performance from "../components/User/Performance";
-import PieComp from "../components/User/PieComp";
+import Score from "../components/User/Score";
 import Nutriments from "../components/User/Nutriment/Nutriments";
 import UserName from "../components/User/UserName/UserName";
 
@@ -51,7 +51,7 @@ function Home() {
         </div>
 
         <div className="Chart-wrapper--score">
-          <PieComp />
+          <Score />
         </div>   
 
         <Nutriments />  

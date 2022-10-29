@@ -5,7 +5,6 @@ import { formaDataAverage } from '../../formater/Average';
 function Average({data}) {
 
   const [averageData,setAverageData] = useState([])
-  // const day = ['L','M','M','J','V','S','D']
 
   useEffect(() => {
     async function load() {
@@ -17,8 +16,7 @@ function Average({data}) {
      
     return (
       <ResponsiveContainer  width={258} height={263}>
-        <LineChart
-          data={averageData} >
+        <LineChart data={averageData}>
           <XAxis 
             dataKey= "day"
             stroke="#FFFFFF" 
@@ -31,8 +29,9 @@ function Average({data}) {
             type="monotone"
             dataKey="sessionLength"
             stroke="#FFFFFF"
-            activeDot={{ r: 10}}
+            activeDot={{ r: 0}}
             cx={-5}
+            cy={-10}
             />
         </LineChart>
     </ResponsiveContainer>

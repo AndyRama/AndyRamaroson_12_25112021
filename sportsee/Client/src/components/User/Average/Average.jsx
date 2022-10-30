@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ResponsiveContainer, LineChart,  Line,  XAxis} from "recharts";
-import { formaDataAverage } from '../../formater/Average';
+import { formaDataAverage } from '../../../formater/Average';
+import "./Average.scss"
 
 function Average({data}) {
 

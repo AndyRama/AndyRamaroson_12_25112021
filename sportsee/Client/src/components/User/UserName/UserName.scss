@@ -7,7 +7,11 @@ h1 {
   bottom: 73.03%;
   font-weight: 500;
   font-size: 48px;
-  
+
+  @media screen and (max-width:1370px) {
+    top: -3%;  
+  }
+
   span {
     color: red;
   }
@@ -20,4 +24,9 @@ h2 {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+
+  
+  @media screen and (max-width:1370px) {
+    top: 10%;  
+  }
 }

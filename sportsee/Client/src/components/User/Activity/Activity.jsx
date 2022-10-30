@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import {  BarChart,  Bar,  XAxis, YAxis,  Tooltip, Legend, ResponsiveContainer, CartesianGrid } from 'recharts'
-import { formaDataActivity } from '../../formater/Activity'
+import { formaDataActivity } from '../../../formater/Activity'
+// import "./Activity.scss"
 
-function Activity({ data, index }) {
+function Activity({data}) {
   const [activityData, setActivityData] = useState([])
 
   useEffect(() => {
@@ -15,10 +16,10 @@ function Activity({ data, index }) {
   }, [data]);
 
   return (
-    // <ResponsiveContainer width={950} height={320} >
-      <BarChart data={activityData} barGap={8} width={950} height={320} >
+    <ResponsiveContainer width={835} height={320} >
+      <BarChart data={activityData} barGap={8} >
         <Legend
-          width={'40%'}
+          width={'53%'}
           iconType={'circle'}
           iconSize={'8px'}
           wrapperStyle={{
@@ -27,10 +28,14 @@ function Activity({ data, index }) {
             lineHeight: '40px',
           }}
         />
-        <XAxis datakey="day" stroke="grey" tickLine={false} dy={10} />
+        <XAxis 
+          datakey="day" 
+          stroke="grey" 
+          tickLine={false} 
+          dy={10} />
         <YAxis
           // yAxisId="poids"
-          // data="poids"
+          data="poids"
           domain={['dataMin -2', 'dataMax + 1']}
           orientation="right"
           axisLine={false}
@@ -40,7 +45,7 @@ function Activity({ data, index }) {
         />
         <YAxis
           // yAxisId="poids"
-          // data="calories"
+          data="calories"
           domain={['dataMin -2', 'dataMax + 1']}
           orientation="right"
           axisLine={false}
@@ -67,7 +72,7 @@ function Activity({ data, index }) {
           radius={[50, 50, 0, 0]}
         />
       </BarChart>
-    // </ResponsiveContainer>
+    </ResponsiveContainer>
   )
 }
 

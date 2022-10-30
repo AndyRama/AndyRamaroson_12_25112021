@@ -1,9 +1,9 @@
 import React,{ useState,useEffect } from "react";
 import "./Home.scss";
 
-import Activity from "../components/User/Activity";
-import Average from "../components/User/Average";
-import Performance from "../components/User/Performance";
+import Activity from "../components/User/Activity/Activity";
+import Average from "../components/User/Average/Average";
+import Performance from "../components/User/Performance/Performance";
 import Score from "../components/User/Score";
 import Nutriments from "../components/User/Nutriment/Nutriments";
 import UserName from "../components/User/UserName/UserName";

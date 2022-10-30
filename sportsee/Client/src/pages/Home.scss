@@ -7,15 +7,21 @@ section {
 }
 
 .weight {
-  width: 835px;
+
+  width: 835px!important;
   padding-top: 230px;
   position: relative;
   left: 80px;  
   // background-color: #E60000;
   
   @media screen and (max-width:1370px) {
-    padding-top:200px;
-    width:500px!important;
+    padding-top:130px;
+    // width:500px!important;
+
+    .recharts-responsive-container{
+      width: auto;
+      height: 320px;
+    }
   }
 }
 
@@ -27,27 +33,30 @@ section {
 
 /* Activity sessions */
 .Chart-wrapper {
-  // width: auto;
   display: flex;
   justify-content: space-around;
   position: absolute;
   background-color: red;
   border-radius: 5px;
   left: 6%;
+
+  @media screen and (max-width:1370px){
+    bottom: -4%;
+  }
   
   /* Radar sessions */
   &--Radar {
     background-color: #282D30;
-    width: 258px;
-    height: 263px;
     position: absolute;
     border-radius: 5px;
-    top: 70%;
     left: 28%;
-    // display: block;
 
     &--tspan {
       color: white;
+    }
+
+    @media screen and (max-width:1370px){
+      bottom: -4%;
     }
   }
 }
@@ -64,7 +73,7 @@ section {
 .average-sessions {
   position: relative;
   // width: 30%;
-  height: 300px;
+  // height: 300px;
   margin-top: 32px;
   background:#E60000;
   border-radius: 5px;

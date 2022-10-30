@@ -1,5 +1,6 @@
 import React from "react";
 import { ResponsiveContainer, Radar,  RadarChart,  PolarGrid,  PolarAngleAxis } from "recharts";
+import "./Performance.scss"
 
 const data = [
   {
@@ -42,7 +43,7 @@ const data = [
 
 function Performance() {
   return (    
-    <ResponsiveContainer >
+    <ResponsiveContainer width={258} height={263} >
       <RadarChart
         cx={130}
         cy={130}
@@ -50,8 +51,8 @@ function Performance() {
         data={data}
         fil="white"
         >
-        <PolarGrid />
-        <PolarAngleAxis dataKey="subject" />
+        <PolarGrid width={258} height={263} />
+        <PolarAngleAxis dataKey="kind" />
         <Radar
           
           name="Mike"

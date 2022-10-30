@@ -1,19 +1,18 @@
-// export async function formaDataPerformance(data) {
+export async function formaDataPerformance(data) {
 
-//   const kinds = data.kind
-//   const data = data.kind
-//   console.log(kinds);
-
-//   // const day = ['L','M','M','J','V','S','D']
-//   const sessionFormated = []  
-//   sessions.map((session,index) => {
-//     const item = {
-//       day:day[session.day -1],
-//       sessionLength:session.sessionLength
-//     }
-//     sessionFormated.push(item)
-//   })
-//   // console.log(sessionFormated)
+  const sessions = data.sessions
+  const day = ['1','2','3','4','5','6','7']
+  const sessionFormated = []  
   
-//   return sessionFormated
-// }
+  sessions.map((session, index) => {
+    const item = {
+      day:day[day.session -1],
+      kilogram:session.kilogram,
+      calories:session.calories
+    }
+    sessionFormated.push(item)
+  })
+  console.log(performance.kind)
+  
+  return sessionFormated
+}

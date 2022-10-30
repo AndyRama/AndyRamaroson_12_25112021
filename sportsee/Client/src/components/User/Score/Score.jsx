@@ -1,5 +1,6 @@
 import React from "react";
 import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import "./Score.scss";
 
 const data01 = [
   {
@@ -34,8 +35,8 @@ const data01 = [
       <h2 className="score-title">Score</h2>
       <p className="score-result">12%</p>
       <p className="score-comment">de votre <br />objectif</p>
-      <ResponsiveContainer className="responsive-container">
-        <PieChart width={730} height={250}>
+      <ResponsiveContainer width={258} height={263} >
+        <PieChart >
           <Pie
             data={data01}
             dataKey="value"

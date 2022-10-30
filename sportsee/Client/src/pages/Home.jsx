@@ -4,7 +4,7 @@ import "./Home.scss";
 import Activity from "../components/User/Activity/Activity";
 import Average from "../components/User/Average/Average";
 import Performance from "../components/User/Performance/Performance";
-import Score from "../components/User/Score";
+import Score from "../components/User/Score/Score";
 import Nutriments from "../components/User/Nutriment/Nutriments";
 import UserName from "../components/User/UserName/UserName";
 
@@ -35,24 +35,26 @@ function Home() {
    if(!user.userInfos) { return null }
     return (
       <section> 
-        <UserName firstname={user.userInfos.firstName}/>
-        <div className="weight">
-          <h3 className="daily-activity--title">Activité quotidienne</h3>
-          <Activity data={activity}/>
-        </div> 
+          <UserName firstname={user.userInfos.firstName}/>
+          <div className="weight">
+            <h3 className="daily-activity--title">Activité quotidienne</h3>
+            <Activity data={activity}/>
+          </div> 
+        {/* <div className="container">   */}
 
-        <div className="Chart-wrapper">
-          <h3 className="average-sessions--title">Durée moyenne des sessions</h3>
-          <Average data={average} /> 
-        </div>
+          <div className="Chart-wrapper">
+            <h3 className="average-sessions--title">Durée moyenne des sessions</h3>
+            <Average data={average} /> 
+            </div>
 
-        <div className="Chart-wrapper--Radar">
-          <Performance />
-        </div>
+          <div className="Chart-wrapper--Radar">
+            <Performance />
+          </div>
 
-        <div className="Chart-wrapper--score">
-          <Score />
-        </div>   
+          <div className="Chart-wrapper--score">
+            <Score />
+          </div>   
+        {/* </div> */}
 
         <Nutriments />  
       </section>

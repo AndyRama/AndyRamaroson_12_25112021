@@ -34,7 +34,7 @@ function Activity({data}) {
           tickLine={false} 
           dy={10} />
         <YAxis
-          data="poids"
+          data="kilogram"
           domain={['dataMin -2', 'dataMax + 1']}
           orientation="right"
           axisLine={false}

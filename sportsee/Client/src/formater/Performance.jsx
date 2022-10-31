@@ -1,18 +1,18 @@
 export async function formaDataPerformance(data) {
 
-  const sessions = data.sessions
-  const day = ['1','2','3','4','5','6','7']
-  const sessionFormated = []  
-  
-  sessions.map((session, index) => {
+// console.log(data)
+
+const perfs = data.data
+const kind = ["Cardio", "Energie", "Endurance", "Force", "Vitesse", "Intensité"];
+const perFormated = []
+
+perfs.map((perf, index) => {
     const item = {
-      day:day[day.session -1],
-      kilogram:session.kilogram,
-      calories:session.calories
+      label:kind[perf.kind -1],
+      value:perf.value
     }
-    sessionFormated.push(item)
+    // console.log(day[index])
+    perFormated.push(item)
   })
-  console.log(performance.kind)
-  
-  return sessionFormated
+  return perFormated 
 }

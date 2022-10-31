@@ -11,12 +11,14 @@ import UserName from "../../components/User/UserName/UserName";
 import { getUser } from "../../service/User";
 import { getAverage } from "../../service/Average";
 import { getActivity } from "../../service/Activity";
+import { getPerformance } from "../../service/Performance";
 
 function Home() {
 
   const [user, setUser] = useState({});
   const [average, setAverage] = useState([]);
   const [activity, setActivity] = useState([]);
+  const [performance, setPerformance] = useState([]);
 
   useEffect(() => {
     async function load() {
@@ -28,6 +30,9 @@ function Home() {
 
        const activityData = await getActivity(18)
        setActivity(activityData)
+
+       const performanceData = await getPerformance(18)
+       setPerformance(performanceData)
      }
      load()
    }, []);
@@ -47,7 +52,7 @@ function Home() {
             </div>
 
           <div className="Chart-wrapper--Radar">
-            <Performance />
+            <Performance data={performance} />
           </div>
 
           <div className="Chart-wrapper--score">

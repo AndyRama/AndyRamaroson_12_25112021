@@ -1,16 +1,16 @@
 import React,{ useState,useEffect } from "react";
 import "./Home.scss";
 
-import Activity from "../components/User/Activity/Activity";
-import Average from "../components/User/Average/Average";
-import Performance from "../components/User/Performance/Performance";
-import Score from "../components/User/Score/Score";
-import Nutriments from "../components/User/Nutriment/Nutriments";
-import UserName from "../components/User/UserName/UserName";
+import Activity from "../../components/User/Activity/Activity";
+import Average from "../../components/User/Average/Average";
+import Performance from "../../components/User/Performance/Performance";
+import Score from "../../components/User/Score/Score";
+import Nutriments from "../../components/User/Nutriment/Nutriments";
+import UserName from "../../components/User/UserName/UserName";
 
-import { getUser } from "../service/User";
-import { getAverage } from "../service/Average";
-import { getActivity } from "../service/Activity";
+import { getUser } from "../../service/User";
+import { getAverage } from "../../service/Average";
+import { getActivity } from "../../service/Activity";
 
 function Home() {
 

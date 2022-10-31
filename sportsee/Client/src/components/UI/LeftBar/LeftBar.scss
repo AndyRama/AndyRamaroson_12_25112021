@@ -4,6 +4,11 @@
   width: 100px;
   position: absolute;
 
+  @media screen and (max-width:1370px) {
+    height: 780px;
+    width: 84px;
+  }
+
   p {
     position: absolute;
     right: -18%;
@@ -18,7 +23,8 @@
     width: 138px;
 
     @media screen and (max-width:1370px) {
-      bottom: 36%;
+      bottom: 25%;
+      right: -30%;
     }
   }
 
@@ -35,37 +41,41 @@
     left: 18px;
 
     @media screen and (max-width:1370px) {
-      top: 18%;
+      top: 20%;
+      left: 12px;
     }
   }
   
   &-icon-S {
     position: absolute;
-    top: 32%;
+    top: 34%;
     left: 18px;  
 
     @media screen and (max-width:1370px) {
-      top: 26%;
+      top: 30%;
+      left: 12px;
     }
   }
 
   &-icon-B {
     position: absolute;
-    top: 40%;
+    top: 44%;
     left: 18px;
 
     @media screen and (max-width:1370px) {
-      top: 34%;
+      top: 40%;
+      left: 12px;
     }
   }
 
   &-icon-T {
     position: absolute;
-    top: 48%;
+    top: 54%;
     left: 18px; 
 
     @media screen and (max-width:1370px) {
-      top: 42%;
+      top: 50%;
+      left: 12px;
     }
   }
 }

@@ -40,7 +40,6 @@ function Home() {
             <h3 className="daily-activity--title">Activité quotidienne</h3>
             <Activity data={activity}/>
           </div> 
-        {/* <div className="container">   */}
 
           <div className="Chart-wrapper">
             <h3 className="average-sessions--title">Durée moyenne des sessions</h3>
@@ -54,7 +53,6 @@ function Home() {
           <div className="Chart-wrapper--score">
             <Score />
           </div>   
-        {/* </div> */}
 
         <Nutriments />  
       </section>

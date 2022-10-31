@@ -1,26 +1,4 @@
 /* Score sessions */
-.score {
-  position: relative;
-  width: 258px;
-  height: 263px;
-  background: #E5E5E5;
-  // background: red;
-  border-radius: 5px;
-  left: 50%;
-  top: 83px;
-  
-  @media screen and (max-width:1370px) {
-    // top: 100%;
-    width: 200px;
-    height: 200px;
-    // position: relative;
-    left: 50%;
-    top: 137px;
-    // top: 49.5% !important;
-    
-  }
-}
-
 .score-title {
   position: absolute;
   top: 1%;

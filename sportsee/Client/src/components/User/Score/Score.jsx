@@ -35,7 +35,7 @@ const data01 = [
       <h2 className="score-title">Score</h2>
       <p className="score-result">12%</p>
       <p className="score-comment">de votre <br />objectif</p>
-      <ResponsiveContainer width={258} height={263} >
+      <ResponsiveContainer>
         <PieChart >
           <Pie
             data={data01}

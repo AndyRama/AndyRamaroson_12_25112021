@@ -1,31 +1,18 @@
-// import axios  from 'axios'
-// // const urlID = window.location.pathname 
+import axios  from 'axios'
 
-// export async function getScore(id,keyData)  {
-//   try {
-//     const {data:{data} } = await axios.get(`http://localhost:3000/user/${id}`);
-//     console.log(data)   
-//     return data; 
+export async function getScore(id)  {
+  try {
+    const {data:{data} } = await axios.get(`http://localhost:3000/user/${id}`);
+    // console.log(data)   
+    return data; 
 
-//   } catch (error) {
-//     console.error(error);
-//   }  
-// } 
+  } catch (error) {
+    console.error(error);
+  }  
+} 
 
-// export async function getNutrition(id)  {
-//   try {
-//     const {data:{data} } = await axios.get(`http://localhost:3000/user/${id}`);
-//     // console.log(data)   
-//     return data; 
+//   calories: setCalories(data.data.keyData.calorieCount),
+//   protein: setProtein(data.data.keyData.proteinCount),
+//   clucide: setClucide(data.data.keyData.carbohydrateCount),
+//   lipide: setLipide(data.data.keyData.lipidCount)
 
-//   } catch (error) {
-//     console.error(error);
-//   }  
-// } 
-
-// Must return  formate {
-//   calories: setCalories(result.data.data.keyData.calorieCount),
-//   protein: setProtein(result.data.data.keyData.proteinCount),
-//   clucide: setClucide(result.data.data.keyData.carbohydrateCount),
-//   lipide: setLipide(result.data.data.keyData.lipidCount)
-// }

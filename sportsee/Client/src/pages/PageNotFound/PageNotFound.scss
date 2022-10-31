@@ -19,7 +19,6 @@
     color: #E60000;
     font-size: 36px;
     font-weight: 500;
-
   }
 }
 
@@ -32,13 +31,15 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1370px) {
   .page-not-found {
     height: auto;
 
     h1 {
       font-size: 180px;
-      margin-top: 144px;
+      // margin-top: 144px;
+      top: 20%;
+      left: 20%;
       color: #E60000;
     }
 
@@ -47,7 +48,14 @@
       align-items: center;
       text-align: center;
       position: absolute;
-      left: 5%;      
+      left: 13%;
+      top: 55%;      
+    }
+  }
+  .return-to-home {
+    a {
+      left: 44%;
+      top:70%;
     }
   }
 }

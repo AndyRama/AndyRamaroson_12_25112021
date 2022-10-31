@@ -6,10 +6,11 @@ export async function formaDataActivity(data) {
   
   sessions.map((session, index) => {
     const item = {
-      day:day[day.session -1],
+      day:day[index -1],
       kilogram:session.kilogram,
       calories:session.calories
     }
+    // console.log(day[index])
     sessionFormated.push(item)
   })
   // console.log(sessionFormated)

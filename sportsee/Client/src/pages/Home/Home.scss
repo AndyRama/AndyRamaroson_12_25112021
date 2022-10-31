@@ -7,10 +7,9 @@ section {
 }
 
 .weight {
-  padding-top: 230px;
+  padding-top: 190px;
   position: relative;
   left: 80px;  
-
   
   @media screen and (max-width:1370px) {
     padding-top:130px;
@@ -31,7 +30,7 @@ section {
   background-color: red;
   border-radius: 5px;
   left: 6%;
-  bottom: -10%;
+  bottom: -7%;
 
   @media screen and (max-width:1370px){
     bottom: -15%;
@@ -43,7 +42,7 @@ section {
     position: absolute;
     border-radius: 5px;
     left: 28%;
-    bottom: -10%;
+    bottom: -7%;
 
     &--tspan {
       color: white;
@@ -51,6 +50,22 @@ section {
 
     @media screen and (max-width:1370px){
       bottom: -15%;
+    }
+  }
+
+  &--score {
+    position: relative;
+    width: 258px;
+    height: 263px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    left: 50%;
+    top: 7%!important;
+    
+    @media screen and (max-width:1370px) {
+      width: 200px;
+      height: 200px;
+      left: 50%; 
     }
   }
 }

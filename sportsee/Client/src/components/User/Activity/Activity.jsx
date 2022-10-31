@@ -16,7 +16,7 @@ function Activity({data}) {
   }, [data]);
 
   return (
-    <ResponsiveContainer width={835} height={320} >
+    <ResponsiveContainer width={950} height={320} >
       <BarChart data={activityData} barGap={8} >
         <Legend
           width={'53%'}
@@ -34,7 +34,6 @@ function Activity({data}) {
           tickLine={false} 
           dy={10} />
         <YAxis
-          // yAxisId="poids"
           data="poids"
           domain={['dataMin -2', 'dataMax + 1']}
           orientation="right"
@@ -44,7 +43,6 @@ function Activity({data}) {
           dy={-1}
         />
         <YAxis
-          // yAxisId="poids"
           data="calories"
           domain={['dataMin -2', 'dataMax + 1']}
           orientation="right"

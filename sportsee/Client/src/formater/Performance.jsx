@@ -6,6 +6,7 @@ const perfs = data.data
 const kind = ["Cardio", "Energie", "Endurance", "Force", "Vitesse", "Intensité"];
 const perFormated = []
 
+// eslint-disable-next-line array-callback-return
 perfs.map((perf, index) => {
     const item = {
       label:kind[perf.kind -1],

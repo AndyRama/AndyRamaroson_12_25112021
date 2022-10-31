@@ -1,6 +1,6 @@
 import React from "react";
 import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
-import "./Score.scss";
+// import "./Score.scss";
 
 const data01 = [
   {

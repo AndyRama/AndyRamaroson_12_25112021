@@ -1,32 +1,22 @@
 h1 {
-  font-size: 48px;
-  position: absolute;
-  left: 80px;
-  right: 10.35%;
-  top: 0%;
-  bottom: 73.03%;
+  padding-top: 100px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
   font-size: 48px;
-
-  @media screen and (max-width:1370px) {
-    top: -3%;  
-  }
-
+  line-height: 24px;
   span {
     color: red;
   }
 }
 
 h2 {
-  position: absolute;
-  left: 80px;
-  top: 13%;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+}
 
-  
-  @media screen and (max-width:1370px) {
-    top: 13%;  
-  }
+.welcom {
+  position: relative;
+  left: 15%;
 }

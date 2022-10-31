@@ -12,6 +12,7 @@ import { getUser } from "../../service/User";
 import { getAverage } from "../../service/Average";
 import { getActivity } from "../../service/Activity";
 import { getPerformance } from "../../service/Performance";
+// import { getScore } from "../../service/Score";
 
 function Home() {
 
@@ -19,6 +20,7 @@ function Home() {
   const [average, setAverage] = useState([]);
   const [activity, setActivity] = useState([]);
   const [performance, setPerformance] = useState([]);
+  // const [score, setScore] = useState([]);
 
   useEffect(() => {
     async function load() {
@@ -33,6 +35,10 @@ function Home() {
 
        const performanceData = await getPerformance(18)
        setPerformance(performanceData)
+     
+      //  const scoreData = await getScoreData(18)
+      //  setScoreData(scoreData)
+
      }
      load()
    }, []);
@@ -45,24 +51,25 @@ function Home() {
             <h3 className="daily-activity--title">Activité quotidienne</h3>
             <Activity data={activity}/>
           </div> 
-
-          <div className="Chart-wrapper">
-            <h3 className="average-sessions--title">Durée moyenne des sessions</h3>
-            <Average data={average} /> 
+          <div  className="Chart-wrapper">
+            <div className="Chart-wrapper--average">
+              <h3 className="average-sessions--title">Durée moyenne des sessions</h3>
+              <Average data={average} /> 
             </div>
 
-          <div className="Chart-wrapper--Radar">
-            <Performance data={performance} />
-          </div>
+            <div className="Chart-wrapper--radar">
+              <Performance data={performance} />
+            </div>
 
-          <div className="Chart-wrapper--score">
-            <Score />
-          </div>   
+            <div className="Chart-wrapper--score">
+              <Score />
+            </div>   
+          </div>
+        <div  className="bloc-Nutriment">
 
         <Nutriments />  
+        </div>
       </section>
     );
   }
-
-
 export default Home;

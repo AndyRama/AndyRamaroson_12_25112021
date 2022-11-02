@@ -16,7 +16,7 @@ function Activity({data}) {
   }, [data]);
 
   return (
-    <ResponsiveContainer width={950} height={320} >
+    <ResponsiveContainer width={835} height={320} >
       <BarChart data={activityData} barGap={8} >
         <Legend
           width={'53%'}

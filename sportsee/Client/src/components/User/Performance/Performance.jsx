@@ -10,6 +10,7 @@ function Performance({data}) {
     async function load() {
       const dataFormated = await formaDataPerformance(data)
       setPerformanceData(dataFormated)
+      // console.log(dataFormated); DATA oK
     }
     load()
   }, [data]);

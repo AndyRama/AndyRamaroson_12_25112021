@@ -48,8 +48,10 @@ function Nutriments() {
         
         <li>  
           <div class="inside-content-wrapper">
+          <div className="icon-box">
             <IconLipides />
           </div>
+          </ div>
           <div className="icon-text">
             <p className="quantity">50g</p>
             <p className="nutrition-type">Lipides</p>

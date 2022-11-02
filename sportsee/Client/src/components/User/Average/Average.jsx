@@ -22,16 +22,16 @@ function Average({data}) {
             stroke="#FFFFFF" 
             axisLine={false}
             tickLine={false}
-            dx={5}
-            dy={0}
+            dx={-1}
+            dy={-20}
             />          
           <Line
             type="monotone"
             dataKey="sessionLength"
             stroke="#FFFFFF"
-            activeDot={{ r: 8}}
+            activeDot={{ r: 1}}
             cx={-5}
-            cy={-10}
+            cy={-0}
             />
         </LineChart>
     </ResponsiveContainer>

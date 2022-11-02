@@ -9,10 +9,10 @@ const perFormated = []
 // eslint-disable-next-line array-callback-return
 perfs.map((perf, index) => {
     const item = {
-      label:kind[perf.kind -1],
-      value:perf.value
+      label: kind[perf.kind -1],
+      value: perf.value
     }
-    // console.log(day[index])
+    // console.log(item)
     perFormated.push(item)
   })
   return perFormated 

@@ -46,28 +46,34 @@ function Home() {
    if(!user.userInfos) { return null }
     return (
       <section> 
-          <UserName firstname={user.userInfos.firstName}/>
-          <div className="weight">
-            <h3 className="daily-activity--title">Activité quotidienne</h3>
-            <Activity data={activity}/>
-          </div> 
-          <div  className="Chart-wrapper">
-            <div className="Chart-wrapper--average">
-              <h3 className="average-sessions--title">Durée moyenne des sessions</h3>
-              <Average data={average} /> 
-            </div>
+        <div className="dashboard">
+          <div className="charts-wrapper">
+            <UserName firstname={user.userInfos.firstName}/>
 
-            <div className="Chart-wrapper--radar">
-              <Performance data={performance} />
+            <div className="main-charts">
+              <h3 className="activity--title">Activité quotidienne</h3>
+              <Activity data={activity}/>
             </div>
+           
+            <div className="inline-charts">
+              <div className="inline-charts--average">
+                <h3 className="average-sessions--title">Durée moyenne des sessions</h3>
+                <Average data={average}/>
+              </div>
 
-            <div className="Chart-wrapper--score">
-              <Score />
-            </div>   
+              <div className="inline-charts--radar">
+                <Performance data={performance} />
+              </div>
+
+              <div className="inline-charts--score">  
+                <Score  />
+              </div>
+
+            </div>
           </div>
-        <div  className="bloc-Nutriment">
-
-        <Nutriments />  
+          <div className="nutriment-wrapper">
+            <Nutriments />
+          </div>
         </div>
       </section>
     );

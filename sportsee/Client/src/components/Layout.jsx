@@ -5,7 +5,7 @@ import PageNotFound from "./../pages/PageNotFound/PageNotFound";
 
 import Navbar from "./UI/Navbar/Navbar";
 import LeftBar from "./UI/LeftBar/LeftBar";
-// import "app.css"
+import "./UI/Variables.scss"
 
 function Layout() {
   return (

@@ -1,0 +1,32 @@
+/* SCORE */
+.score {
+  position: relative;
+  height: 258px;
+  background: var(--lightGrey-bg);
+  border-radius: var(--border-radius);
+}
+
+.score-title {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.score-result{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.score-comment {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: small;
+}

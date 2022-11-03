@@ -1,10 +1,10 @@
 import React from "react";
 import './Nutriments.scss'
 
-import IconCalories from "../../../components/UI/Icons/IconCalories";
-import IconProtein from "../../../components/UI/Icons/IconProtein";
-import IconCarbs from "../../../components/UI/Icons/IconCarbs";
-import IconLipides from "../../../components/UI/Icons/IconLipides";
+import IconCalories from "../../UI/Icons/IconCalories";
+import IconProtein from "../../UI/Icons/IconProtein";
+import IconCarbs from "../../UI/Icons/IconCarbs";
+import IconLipides from "../../UI/Icons/IconLipides";
 
 function Nutriments() {
   return(

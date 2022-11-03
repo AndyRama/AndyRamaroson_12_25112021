@@ -19,7 +19,7 @@ function Activity({data}) {
     <ResponsiveContainer width={835} height={320} >
       <BarChart data={activityData} barGap={8} >
         <Legend
-          width={'53%'}
+          width={'45%'}
           iconType={'circle'}
           iconSize={'8px'}
           wrapperStyle={{

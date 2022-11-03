@@ -29,7 +29,7 @@ function Average({data}) {
             type="monotone"
             dataKey="sessionLength"
             stroke="#FFFFFF"
-            activeDot={{ r: 1}}
+            // activeDot={{ r: 1}}
             cx={-5}
             cy={-0}
             />

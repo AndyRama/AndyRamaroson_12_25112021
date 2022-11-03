@@ -18,16 +18,16 @@ function Navbar() {
           <LogoText />
         </Link>
         <ul className="Nav-Buttons-Wrapper">
-        <Link to="/" className={ location.pathname === '/' ? 'home-page active' : 'home-page' }
-            page="home"> Accueil
-        </Link>
-        { ongletId.map((onglet, index) => (
-          <Link
-            to={`${onglet}`} 
-            key={index} 
-            className={ location.pathname === `${onglet}` ? `${onglet} active` : `${onglet}`}
-            >{`${onglet}`}
-          </Link>          
+          <Link to="/" className={ location.pathname === '/' ? 'home-page active' : 'home-page' }
+              page="home"> Accueil
+          </Link>
+          { ongletId.map((onglet, index) => (
+            <Link
+              to={`/${onglet}`} 
+              key={index} 
+              className={ location.pathname === `/${onglet}` ? `${onglet}-page active` : `${onglet}-page`}
+              page={`${onglet}`}>{`${onglet}`}
+            </Link>          
           ))}
         </ul>
       </nav>

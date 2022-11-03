@@ -3,7 +3,7 @@ export async function formaDataPerformance(data) {
 // console.log(data)
 
 const perfs = data.data
-const kind = ["Cardio", "Energie", "Endurance", "Force", "Vitesse", "Intensité"];
+const kind = ["Intensité","Vitesse", "Force","Endurance", "Energie", "Cardio"];
 const perFormated = []
 
 // eslint-disable-next-line array-callback-return

@@ -20,9 +20,9 @@ function Performance({data}) {
       <RadarChart
         cx={130}
         cy={130}
-        outerRadius={80}    
+        outerRadius={70}    
         data={performanceData}
-        fil="white"
+        fil="white"  
         >
         <PolarGrid />
         <PolarAngleAxis 

@@ -1,6 +1,6 @@
 .Vertical-Navbar {
   height: 930px;
-  background-color: black;
+  background-color:var(--dark);
   width: 100px;
   position: absolute;
 
@@ -12,13 +12,12 @@
   p {
     position: absolute;
     right: -18%;
-    bottom: 20%;
-    font-family: 'Roboto';
+    bottom: 12%;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 24px;
-    color: white;
+    color:var(--white-bg);
     rotate: -90deg;
     width: 138px;
 
@@ -27,7 +26,6 @@
       right: -30%;
     }
   }
-
 }
 
 #layout {

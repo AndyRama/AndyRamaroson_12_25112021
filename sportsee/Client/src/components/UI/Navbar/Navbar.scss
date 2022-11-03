@@ -1,8 +1,7 @@
 .Navbar {
   display: flex;
-  background-color: black;
   padding: 16px;
-  background: #020203;
+  background: var(--dark);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -14,14 +13,14 @@
   
   img {
     border-radius: 50%;
-    background-color: red;
+    background-color: var(--primary);
     width:52.42px;
     height: 49.84px;
     margin-top: 5px;
   }
   
   p {
-    color: red;
+    color:var(--primary);
     margin-top: 10px;
     margin-left: 10px;
   }
@@ -39,10 +38,10 @@
   
   a {
     color: white;
-    width:200px;
+    width:80px;
     font-weight: 500;
     font-size: 24px;
-    margin: 0 55px;
+    margin: 0 100px;
 
     @media screen and (max-width:1370px) {
       width: 80px;
@@ -50,3 +49,12 @@
     }
   }
 }
+
+.home-page, .Profil-page, .Réglages-page, .Communauté-page {
+  text-decoration: none;
+  
+  &.active {
+    text-decoration-line: underline;
+  }
+} 
+

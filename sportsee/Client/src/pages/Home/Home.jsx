@@ -12,7 +12,6 @@ import { getUser } from "../../service/User";
 import { getAverage } from "../../service/Average";
 import { getActivity } from "../../service/Activity";
 import { getPerformance } from "../../service/Performance";
-// import { getScore } from "../../service/Score";
 
 function Home() {
 
@@ -20,7 +19,6 @@ function Home() {
   const [average, setAverage] = useState([]);
   const [activity, setActivity] = useState([]);
   const [performance, setPerformance] = useState([]);
-  // const [score, setScore] = useState([]);
 
   useEffect(() => {
     async function load() {
@@ -35,9 +33,6 @@ function Home() {
 
        const performanceData = await getPerformance(18)
        setPerformance(performanceData)
-     
-      //  const scoreData = await getScoreData(18)
-      //  setScoreData(scoreData)
 
      }
      load()

@@ -42,7 +42,7 @@ const data01 = [
     load()
   }, []);
 
-  console.log(user);
+
   return (
     <div className="score">
       <h2 className="score-title">Score</h2>

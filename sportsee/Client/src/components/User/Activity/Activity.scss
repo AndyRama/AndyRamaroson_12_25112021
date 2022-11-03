@@ -1,0 +1,10 @@
+.custom-tooltip li {
+  margin: 0;
+  padding: 16px;
+  color: var(--secondary);
+  list-style: none;
+}
+
+.custom-tooltip--calories,.custom-tooltip--poids  {
+  background: var(--primary) !important;
+}

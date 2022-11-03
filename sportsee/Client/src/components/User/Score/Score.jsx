@@ -29,7 +29,7 @@ const data01 = [
   }
 ];
 
- function Score() {
+ function Score() { 
   return (
     <div className="score">
       <h2 className="score-title">Score</h2>

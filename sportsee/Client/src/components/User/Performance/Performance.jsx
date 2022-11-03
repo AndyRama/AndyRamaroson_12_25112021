@@ -18,9 +18,9 @@ function Performance({data}) {
   return (    
     <ResponsiveContainer >
       <RadarChart
-        cx={130}
+        cx={125}
         cy={130}
-        outerRadius={70}    
+        outerRadius={80}    
         data={performanceData}
         fil="white"  
         >
@@ -28,6 +28,10 @@ function Performance({data}) {
         <PolarAngleAxis 
           dataKey="label" 
           stroke="white"
+          tickLine={false}
+          domain={[0, 250]}
+          dy={3}
+          dx={0}
         />
         <Radar
           dataKey="value"

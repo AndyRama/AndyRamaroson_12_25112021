@@ -1,9 +1,19 @@
 import React, { useEffect, useState } from 'react'
-import {  BarChart,  Bar,  XAxis, YAxis,  Tooltip, Legend, ResponsiveContainer, CartesianGrid } from 'recharts'
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+  CartesianGrid,
+  CustomTooltip,
+} from 'recharts'
 import { formaDataActivity } from '../../../formater/Activity'
-// import "./Activity.scss"
+import './Activity.scss'
 
-function Activity({data}) {
+function Activity({ data }) {
   const [activityData, setActivityData] = useState([])
 
   useEffect(() => {
@@ -13,11 +23,11 @@ function Activity({data}) {
       setActivityData(dataFormated)
     }
     load()
-  }, [data]);
+  }, [data])
 
   return (
-    <ResponsiveContainer width={835} height={320} >
-      <BarChart data={activityData} barGap={8} >
+    <ResponsiveContainer width={835} height={320}>
+      <BarChart data={activityData} barGap={8}>
         <Legend
           width={'45%'}
           iconType={'circle'}
@@ -28,22 +38,15 @@ function Activity({data}) {
             lineHeight: '40px',
           }}
         />
-        <XAxis 
-          datakey="day" 
-          stroke="grey" 
-          tickLine={false} 
-          dy={10} />
-        <YAxis
-          data="kilogram"
-          domain={['dataMin -2', 'dataMax + 1']}
-          orientation="right"
-          axisLine={false}
+        <XAxis
+          datakey="day"
+          stroke="grey"
           tickLine={false}
-          dx={10}
-          dy={-1}
+          // dy={8}
         />
         <YAxis
-          data="calories"
+          yAxisId="poids"
+          datakey="kilogram"
           domain={['dataMin -2', 'dataMax + 1']}
           orientation="right"
           axisLine={false}
@@ -51,27 +54,45 @@ function Activity({data}) {
           dx={10}
           dy={-4}
         />
-        <Tooltip
-           wrapperStyle={{ width: 130 }}
-         />
-         <CartesianGrid stroke="#ccc" vertical={false} />
+        <YAxis
+          yAxisId="calories"
+          data="calories"
+          domain={['dataMin -20', 'dataMax + 20']}
+          orientation="none"
+          axisLine={false}
+          tickLine={false}
+          dx={10}
+          dy={-25}
+        />
+        <Tooltip content={<CustomTooltip />} />
+        <CartesianGrid strokeDasharray="2 2 " stroke="#ccc" vertical={false} />
         <Bar
-          dataKey="kilogram"
-          name=" Poids (kg)"
-          fill="black"
-          barSize={5}
+          yAxisId="calories"
+          name="Calories brûlées (kCal)"
+          dataKey="calories"
+          fill="red"
+          barSize={8}
           radius={[50, 50, 0, 0]}
         />
         <Bar
-          dataKey="calories"
-          name=" Calories brûlées (kCal)"
-          fill="red"
-          barSize={5}
+          yAxisId="poids"
+          name="Poids (kg)"
+          dataKey="kilogram"
+          fill="black"
+          barSize={8}
           radius={[50, 50, 0, 0]}
         />
       </BarChart>
     </ResponsiveContainer>
   )
+  function CustomTooltip({ active, payload }) {
+    return active && payload ? (
+      <ul className="custom-tooltip">
+        <li className="custom-tooltip--calories">{`${payload[1].value} kg`}</li>
+        <li className="custom-tooltip--poids">{`${payload[0].value} kCal`}</li>
+      </ul>
+    ) : null
+  }
 }
 
 export default Activity

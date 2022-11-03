@@ -1,5 +1,6 @@
-import React from "react";
+import React,{ useState,useEffect } from "react";
 import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { getUser } from "../../../service/User";
 import "./Score.scss";
 
 const data01 = [
@@ -30,10 +31,22 @@ const data01 = [
 ];
 
  function Score() { 
+
+  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    async function load() {
+       const userData = await getUser(18)
+       setUser(userData)
+      }
+    load()
+  }, []);
+
+  console.log(user);
   return (
     <div className="score">
       <h2 className="score-title">Score</h2>
-      <p className="score-result">12%</p>
+      <p className="score-result">{user.score * 100}%</p>
       <p className="score-comment">de votre <br />objectif</p>
       <ResponsiveContainer>
         <PieChart >

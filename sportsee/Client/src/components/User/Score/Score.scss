@@ -8,7 +8,7 @@
 
 .score-title {
   position: absolute;
-  top: 32px;
+  top: 10px;
   left: 32px;
   font-size: medium;
   font-weight: bold;
@@ -16,17 +16,19 @@
 
 .score-result{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 42%;
   font-size: x-large;
   font-weight: bold;
+  color: var(--dark-lg);
 }
 
 .score-comment {
   position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: small;
+  top: 48%;
+  left: 38%;
+  // font-size: small;
+  color: var(--grey-tex);
+  font-size: 16px;
+  font-weight: 700;
 }

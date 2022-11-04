@@ -7,7 +7,7 @@ import IconProtein from "../../UI/Icons/IconProtein";
 import IconCarbs from "../../UI/Icons/IconCarbs";
 import IconLipides from "../../UI/Icons/IconLipides";
 
-function Nutriments() {
+function Nutriments(data) {
 
   const [user, setUser] = useState({});
 
@@ -16,12 +16,11 @@ function Nutriments() {
        const userData = await getUser(18)
        setUser(userData)
       }
-    load()
-  }, []);
+      load()
+    }, [data]);
+    
 
-  // console.log(user.keyData.calorieCount);
-  
-  return(
+    return(
     <div class="nutriment-container">
       <ul>
         <li>  

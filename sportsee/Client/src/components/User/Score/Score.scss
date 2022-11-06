@@ -14,7 +14,7 @@
   font-weight: bold;
 }
 
-.score-result{
+.score-result {
   position: absolute;
   top: 30%;
   left: 42%;
@@ -30,4 +30,24 @@
   color: var(--grey-tex);
   font-size: 16px;
   font-weight: 700;
+}
+
+@media screen and (max-width:1370px) {
+  .score {
+    height: 200px !important;
+  }
+
+  .score-title{
+    top: 0;
+  }
+
+  .score-result{
+    top: 20%;
+    left: 35%;
+  }
+
+  .score-comment {
+    top: 40%;
+    left: 30%;
+  }
 }

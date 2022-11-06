@@ -33,7 +33,6 @@ function Home() {
 
        const performanceData = await getPerformance(18)
        setPerformance(performanceData)
-
      }
      load()
    }, []);
@@ -63,7 +62,6 @@ function Home() {
               <div className="inline-charts--score">  
                 <Score  />
               </div>
-
             </div>
           </div>
           <div className="nutriment-wrapper">

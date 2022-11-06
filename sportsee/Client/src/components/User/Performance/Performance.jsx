@@ -28,6 +28,7 @@ function Performance({data}) {
         <PolarAngleAxis 
           dataKey="label" 
           stroke="white"
+          line-stroke="none"
           tickLine={false}
           domain={[0, 250]}
           dy={3}

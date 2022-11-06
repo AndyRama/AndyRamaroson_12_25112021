@@ -1,10 +1,38 @@
 .custom-tooltip li {
   margin: 0;
-  padding: 16px;
+  padding: 8px;
   color: var(--secondary);
   list-style: none;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
 }
 
 .custom-tooltip--calories,.custom-tooltip--poids  {
   background: var(--primary) !important;
 }
+
+.recharts-tooltip-wrapper {
+  top: -20px!important;
+}
+
+.resp-container {
+  @media screen and (min-width:1370px) {
+    width: 835px!important;
+    height: 320px !important;
+  }
+}
+
+@media screen and (max-width:1370px) {
+  .recharts-responsive-container {
+    width: 630px;
+    height: 275px!important;
+  }
+
+  .recharts-legend-wrapper {
+    width: 60%!important;
+    top: -20%;
+  }
+}
+

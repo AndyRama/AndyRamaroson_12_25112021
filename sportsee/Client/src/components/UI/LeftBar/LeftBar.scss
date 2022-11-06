@@ -5,13 +5,13 @@
   position: absolute;
 
   @media screen and (max-width:1370px) {
-    height: 780px;
-    width: 84px;
+    height: 780px;;
+    width: 70px;
   }
 
   p {
     position: absolute;
-    right: -18%;
+    left: -42%;
     bottom: 12%;
     font-style: normal;
     font-weight: 500;
@@ -19,11 +19,11 @@
     line-height: 24px;
     color:var(--white-bg);
     rotate: -90deg;
-    width: 140px;
+    width: 180px;
 
     @media screen and (max-width:1370px) {
-      bottom: 25%;
-      right: -30%;
+      bottom: 22%;
+      left: -78%;
     }
   }
 }
@@ -38,10 +38,14 @@
     position: absolute;
     top: 24%;
     left: 18px;
-
+    
     @media screen and (max-width:1370px) {
-      top: 20%;
-      left: 12px;
+      top: 22%;
+      left: 10px;
+      svg {
+        height: 50px;
+        width: 50px;
+      }
     }
   }
   
@@ -51,8 +55,12 @@
     left: 18px;  
 
     @media screen and (max-width:1370px) {
-      top: 30%;
-      left: 12px;
+      top: 32%;
+      left: 10px;
+      svg {
+        height: 50px;
+        width: 50px;
+      }
     }
   }
 
@@ -60,10 +68,14 @@
     position: absolute;
     top: 44%;
     left: 18px;
-
+    
     @media screen and (max-width:1370px) {
-      top: 40%;
-      left: 12px;
+      top: 42%;
+      left: 10px;
+      svg {
+        height: 50px;
+        width: 50px;
+      }
     }
   }
 
@@ -73,8 +85,12 @@
     left: 18px; 
 
     @media screen and (max-width:1370px) {
-      top: 50%;
-      left: 12px;
+      top: 52%;
+      left: 10px;
+      svg {
+        height: 50px;
+        width: 50px;
+      }
     }
   }
 }

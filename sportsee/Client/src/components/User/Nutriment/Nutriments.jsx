@@ -30,7 +30,8 @@ function Nutriments(data) {
             </div>
           </div>
           <div className="icon-text">
-            <p className="quantity">{user.keyData.calorieCount}kCal</p>
+            {/* <p className="quantity">{user.data.keyData.calorieCount}kCal</p> */}
+            <p className="quantity">1900kCal</p>
             <p className="nutrition-type">Calories</p>
           </div>
         </li>
@@ -42,7 +43,8 @@ function Nutriments(data) {
             </div>
           </div>
           <div className="icon-text">
-            <p className="quantity">{user.keyData.proteinCount}g</p>
+            {/* <p className="quantity">{user.keyData.proteinCount}g</p> */}
+              <p className="quantity">400g</p>
             <p className="nutrition-type">Proteines</p>
           </div>
         </li>
@@ -54,7 +56,8 @@ function Nutriments(data) {
             </div>
           </div>
           <div className="icon-text">
-            <p className="quantity">{user.keyData.carbohydrateCount}g</p>
+            {/* <p className="quantity">{user.keyData.carbohydrateCount}g</p> */}
+            <p className="quantity">540g</p>
             <p className="nutrition-type">Glucides</p>
           </div>
         </li>
@@ -66,7 +69,8 @@ function Nutriments(data) {
           </div>
           </ div>
           <div className="icon-text">
-            <p className="quantity">{user.keyData.lipidCount}g</p>
+            {/* <p className="quantity">{user.keyData.lipidCount}g</p> */}
+            <p className="quantity">580g</p>
             <p className="nutrition-type">Lipides</p>
           </div>
         </li>

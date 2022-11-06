@@ -3,7 +3,11 @@
   ul {
     display:flex;
     flex-direction:column;
-    margin-top: 150px;
+    margin-top: 200px;
+    
+    @media screen and (max-width:1370px) {
+      margin-top: 160px;
+    }
   }
 
   li {
@@ -17,8 +21,14 @@
     border-radius: 5px;
     height: 124px;
     width: 258px;
+
+    @media screen and (max-width:1370px) {
+      margin-bottom: 24px;
+      height: 90px;
+      width: 150px;
     }
-  }
+  } 
+}
 
 .inside-content-wrapper {
   display: flex;
@@ -42,5 +52,14 @@
   width: 48px;
   height: 48px;
   border-radius: 5px;
-  margin-left:53px;
+  margin-left: 53px;
+
+  @media screen and (max-width:1370px) {
+    margin-left: 26px;
+
+    svg {
+      width: 50px!important;
+      height: 50px!important;
+    }
+  }
 }

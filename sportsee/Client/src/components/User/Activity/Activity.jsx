@@ -26,14 +26,14 @@ function Activity({ data }) {
   }, [data])
 
   return (
-    <ResponsiveContainer width={835} height={320}>
+    <ResponsiveContainer className="resp-container">
       <BarChart data={activityData} barGap={8}>
         <Legend
           width={'45%'}
           iconType={'circle'}
           iconSize={'8px'}
           wrapperStyle={{
-            top: '-15%',
+            top: '-16%',
             right: '-35px',
             lineHeight: '40px',
           }}
@@ -65,15 +65,7 @@ function Activity({ data }) {
           dy={-25}
         />
         <Tooltip content={<CustomTooltip />} />
-        <CartesianGrid strokeDasharray="2 2 " stroke="#ccc" vertical={false} />
-        <Bar
-          yAxisId="calories"
-          name="Calories brûlées (kCal)"
-          dataKey="calories"
-          fill="red"
-          barSize={8}
-          radius={[50, 50, 0, 0]}
-        />
+        <CartesianGrid strokeDasharray="1 4 " stroke="#ccc" vertical={false} />
         <Bar
           yAxisId="poids"
           name="Poids (kg)"
@@ -82,9 +74,18 @@ function Activity({ data }) {
           barSize={8}
           radius={[50, 50, 0, 0]}
         />
+        <Bar
+          yAxisId="calories"
+          name="Calories brûlées (kCal)"
+          dataKey="calories"
+          fill="red"
+          barSize={8}
+          radius={[50, 50, 0, 0]}
+        />
       </BarChart>
     </ResponsiveContainer>
   )
+  
   function CustomTooltip({ active, payload }) {
     return active && payload ? (
       <ul className="custom-tooltip">

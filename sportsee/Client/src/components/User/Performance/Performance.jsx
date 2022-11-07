@@ -24,15 +24,17 @@ function Performance({data}) {
         data={performanceData}
         fil="white"  
         >
-        <PolarGrid />
+        <PolarGrid 
+        line-stroke="none"
+        />
         <PolarAngleAxis 
           dataKey="label" 
           stroke="white"
           line-stroke="none"
           tickLine={false}
           domain={[0, 250]}
-          dy={3}
-          dx={0}
+          dy={0}
+          dx={3}
         />
         <Radar
           dataKey="value"

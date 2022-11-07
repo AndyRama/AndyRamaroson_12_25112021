@@ -7,17 +7,27 @@ import IconProtein from "../../UI/Icons/IconProtein";
 import IconCarbs from "../../UI/Icons/IconCarbs";
 import IconLipides from "../../UI/Icons/IconLipides";
 
-function Nutriments(data) {
+function Nutriments() {
 
   const [user, setUser] = useState({});
+  // const [calories, setCalories] = useState([])
+  // const [protein, setProtein] = useState()
+  // const [glucide, setClucide] = useState()
+  // const [lipide, setLipide] = useState()
 
+  
   useEffect(() => {
     async function load() {
-       const userData = await getUser(18)
-       setUser(userData)
-      }
+      const userData = await getUser(18)
+      setUser(userData)
+
+        // console.log(userData.keyData.calorieCount);
+        // console.log(userData.keyData.carbohydrateCount);
+        // console.log(userData.keyData.proteinCount);
+        // console.log(userData.keyData.lipidCount);
+        }
       load()
-    }, [data]);
+    }, []);
     
 
     return(
@@ -30,8 +40,9 @@ function Nutriments(data) {
             </div>
           </div>
           <div className="icon-text">
-            {/* <p className="quantity">{user.data.keyData.calorieCount}kCal</p> */}
-            <p className="quantity">1900kCal</p>
+            {/* <p className="quantity">{user.keyData.calorieCount}g</p> */}
+            {/* <p className="quantity">{calories}g</p> */}
+            <p className="quantity">1,9kCal</p>
             <p className="nutrition-type">Calories</p>
           </div>
         </li>

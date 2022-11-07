@@ -3,9 +3,9 @@
   margin-left: 224px;
 }
 
-.recharts-layer .recharts-line {
-  margin-top: 50px;
-}
+// .recharts-layer .recharts-line {
+//   margin-top: 50px;
+// }
 
 .inline-charts {
   display: flex;
@@ -17,14 +17,14 @@
     position:relative;
     background: var(--primary);
     border-radius: var(--border-radius);
-    padding: 9px;
+    // padding: 9px;
   }
  
   &--radar {
     width: 30%;
     background-color: var(--dark-bg);
     border-radius: var(--border-radius);
-    padding: 0px 16px;
+    // padding: 0px 8px;
   }
 
   &--score {
@@ -84,13 +84,18 @@
     }
 
     &--radar {  
-      padding: 0px;
+      padding: 8px;
 
       .recharts-surface {
         height: 200px;
         width: 200px;
       }
+
+      .recharts-wrapper {
+       width: 150%;
+     }
     }    
+    
 
     &--score {
       .recharts-surface {

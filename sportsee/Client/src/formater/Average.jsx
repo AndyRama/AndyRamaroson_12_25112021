@@ -1,4 +1,7 @@
 export async function formaDataAverage(data) {
+  if(!data.sessions) {
+    return false
+  }
 
   const sessions = data.sessions
   const day = ['L','M','M','J','V','S','D']

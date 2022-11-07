@@ -1,5 +1,9 @@
 export async function formaDataPerformance(data) {
 
+  if(!data.data) {
+    return false
+  }
+
 // console.log(data)
 
 const perfs = data.data

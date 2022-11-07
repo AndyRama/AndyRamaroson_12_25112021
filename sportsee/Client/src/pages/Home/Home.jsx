@@ -12,6 +12,8 @@ import { getUser } from "../../service/User";
 import { getAverage } from "../../service/Average";
 import { getActivity } from "../../service/Activity";
 import { getPerformance } from "../../service/Performance";
+import { extractNutriment } from "../../formater/Nutriment";
+import { extractScore } from "../../formater/Score";
 
 function Home() {
 
@@ -20,11 +22,18 @@ function Home() {
   const [activity, setActivity] = useState([]);
   const [performance, setPerformance] = useState([]);
 
+  const [nutriment, setNutriment] = useState({});
+  const [score, setScore] = useState(0);
+  const info = user.userInfos
+
   useEffect(() => {
     async function load() {
        const userData = await getUser(18)
        setUser(userData)
- 
+
+       setScore(await extractScore(userData))
+       setNutriment(await extractNutriment(userData))
+
        const averageData = await getAverage(18)
        setAverage(averageData)
 
@@ -37,13 +46,12 @@ function Home() {
      load()
    }, []);
 
-   if(!user.userInfos) { return null }
+   if(!user.userInfos) { return (<div>Loarding</div>) }
     return (
       <section> 
         <div className="dashboard">
           <div className="charts-wrapper">
             <UserName firstname={user.userInfos.firstName}/>
-
             <div className="main-charts">
               <h3 className="activity--title">Activité quotidienne</h3>
               <Activity data={activity}/>
@@ -60,12 +68,12 @@ function Home() {
               </div>
 
               <div className="inline-charts--score">  
-                <Score  />
+                <Score data={score} />
               </div>
             </div>
           </div>
           <div className="nutriment-wrapper">
-            <Nutriments />
+            <Nutriments data={nutriment}/>
           </div>
         </div>
       </section>

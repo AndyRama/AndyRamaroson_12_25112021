@@ -10,7 +10,6 @@ function Performance({data}) {
     async function load() {
       const dataFormated = await formaDataPerformance(data)
       setPerformanceData(dataFormated)
-      // console.log(dataFormated); DATA oK
     }
     load()
   }, [data]);
@@ -18,23 +17,23 @@ function Performance({data}) {
   return (    
     <ResponsiveContainer >
       <RadarChart
-        cx={125}
+        cx={130}
         cy={130}
         outerRadius={80}    
         data={performanceData}
         fil="white"  
         >
         <PolarGrid 
-        line-stroke="none"
+          line-stroke="none"
         />
         <PolarAngleAxis 
           dataKey="label" 
           stroke="white"
           line-stroke="none"
           tickLine={false}
-          domain={[0, 250]}
-          dy={0}
-          dx={3}
+          dy={1}
+          // domain={[0, 250]}
+          // dx={3}
         />
         <Radar
           dataKey="value"

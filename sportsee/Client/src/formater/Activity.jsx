@@ -7,16 +7,15 @@ export async function formaDataActivity(data) {
   const day = ['1','2','3','4','5','6','7']
   const sessionFormated = []  
   
+  // eslint-disable-next-line array-callback-return
   sessions.map((session, index) => {
     const item = {
       day:day[index -1],
       kilogram:session.kilogram,
       calories:session.calories
     }
-    // console.log(day[index])
     sessionFormated.push(item)
   })
-  // console.log(sessionFormated)
   
   return sessionFormated
 }

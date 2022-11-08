@@ -24,7 +24,7 @@ function Home() {
 
   const [nutriment, setNutriment] = useState({});
   const [score, setScore] = useState(0);
-  const info = user.userInfos
+
 
   useEffect(() => {
     async function load() {

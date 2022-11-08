@@ -8,7 +8,7 @@ import {
   Legend,
   ResponsiveContainer,
   CartesianGrid,
-  CustomTooltip,
+  CustomTooltip
 } from 'recharts'
 import { formaDataActivity } from '../../../formater/Activity'
 import './Activity.scss'
@@ -89,8 +89,8 @@ function Activity({ data }) {
   function CustomTooltip({ active, payload }) {
     return active && payload ? (
       <ul className="custom-tooltip">
-        <li className="custom-tooltip--calories">{`${payload[1].value} kg`}</li>
-        <li className="custom-tooltip--poids">{`${payload[0].value} kCal`}</li>
+        <li className="custom-tooltip--calories">{`${payload[1].value} kCal`}</li>
+        <li className="custom-tooltip--poids">{`${payload[0].value} kg`}</li>
       </ul>
     ) : null
   }

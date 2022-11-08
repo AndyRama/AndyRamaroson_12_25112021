@@ -7,6 +7,7 @@ export async function formaDataAverage(data) {
   const day = ['L','M','M','J','V','S','D']
   const sessionFormated = []  
   
+  // eslint-disable-next-line array-callback-return
   sessions.map((session,index) => {
     const item = {
       day:day[session.day -1],
@@ -14,7 +15,6 @@ export async function formaDataAverage(data) {
     }
     sessionFormated.push(item)
   })
-  // console.log(sessionFormated)
   
   return sessionFormated
 }

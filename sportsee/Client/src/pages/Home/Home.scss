@@ -17,14 +17,14 @@
     position:relative;
     background: var(--primary);
     border-radius: var(--border-radius);
-    // padding: 9px;
+   
   }
  
   &--radar {
     width: 30%;
     background-color: var(--dark-bg);
     border-radius: var(--border-radius);
-    // padding: 0px 8px;
+    padding: 0px 6px;
   }
 
   &--score {

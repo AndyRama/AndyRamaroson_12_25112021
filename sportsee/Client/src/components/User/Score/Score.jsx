@@ -1,4 +1,4 @@
-import React,{ useState,useEffect } from "react";
+import React from "react";
 import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import "./Score.scss";
 
@@ -34,7 +34,7 @@ const data01 = [
   return (
     <div className="score">
       <h2 className="score-title">Score</h2>
-      <p className="score-result">{data}%</p>
+      <p className="score-result">{data} %</p>
       <p className="score-comment">de votre <br />objectif</p>
       <ResponsiveContainer>
         <PieChart >

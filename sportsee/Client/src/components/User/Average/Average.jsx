@@ -21,11 +21,10 @@ function Average({ data }) {
   }, [data])
 
   return (
-    <ResponsiveContainer width={258} height={263} >
-       
+    <ResponsiveContainer width={263} height={258} >       
       <LineChart
         data={averageData}
-        margin={{ top: 0, right: 20, left: 20, bottom: 20 }}
+        margin={{ top: 0, right: 15, left: 15, bottom: 15 }}
       >
         <XAxis
           dataKey="day"

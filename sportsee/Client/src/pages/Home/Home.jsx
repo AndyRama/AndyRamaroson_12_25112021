@@ -30,18 +30,18 @@ function Home() {
     async function load() {
        const userData = await getUser(18)
        setUser(userData)
+       
+       const averageData = await getAverage(18)
+       setAverage(averageData)
+       
+       const activityData = await getActivity(18)
+       setActivity(activityData)
+       
+       const performanceData = await getPerformance(18)
+       setPerformance(performanceData)
 
        setScore(await extractScore(userData))
        setNutriment(await extractNutriment(userData))
-
-       const averageData = await getAverage(18)
-       setAverage(averageData)
-
-       const activityData = await getActivity(18)
-       setActivity(activityData)
-
-       const performanceData = await getPerformance(18)
-       setPerformance(performanceData)
      }
      load()
    }, []);

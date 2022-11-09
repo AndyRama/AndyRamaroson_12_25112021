@@ -13,6 +13,10 @@
   background: var(--primary) !important;
 }
 
+.recharts-legend-item-text {
+  color: black!important;
+}
+
 .recharts-tooltip-wrapper {
   top: -20px!important;
 }
@@ -35,4 +39,6 @@
     top: -20%;
   }
 }
+
+
 

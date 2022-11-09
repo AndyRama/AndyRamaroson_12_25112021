@@ -24,20 +24,21 @@ function Performance({data}) {
         fil="white"  
         >
         <PolarGrid 
-          line-stroke="none"
+          radialLines={false} 
         />
         <PolarAngleAxis 
           dataKey="label" 
           stroke="white"
           line-stroke="none"
           tickLine={false}
-          dy={1}
-          // domain={[0, 250]}
-          // dx={3}
+          dy={10}
+          dx={-2}
+          tick={{ fontSize: 16 }}
         />
         <Radar
           dataKey="value"
-          fill="red"
+          stroke="#FF0101"
+          fill="#FF0101"
           fillOpacity={0.6}
         />
       </RadarChart>

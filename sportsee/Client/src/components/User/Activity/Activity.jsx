@@ -7,8 +7,7 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-  CartesianGrid,
-  CustomTooltip
+  CartesianGrid
 } from 'recharts'
 import { formaDataActivity } from '../../../formater/Activity'
 import './Activity.scss'
@@ -42,7 +41,7 @@ function Activity({ data }) {
           datakey="day"
           stroke="grey"
           tickLine={false}
-          // dy={8}
+          dy={10}
         />
         <YAxis
           yAxisId="poids"
@@ -74,7 +73,7 @@ function Activity({ data }) {
           barSize={8}
           radius={[50, 50, 0, 0]}
         />
-        <Bar
+        <Bar className='legend'
           yAxisId="calories"
           name="Calories brûlées (kCal)"
           dataKey="calories"

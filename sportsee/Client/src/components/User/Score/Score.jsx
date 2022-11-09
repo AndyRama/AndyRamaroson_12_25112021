@@ -4,28 +4,12 @@ import "./Score.scss";
 
 const data01 = [
   {
-    "name": "Group A",
-    "value": 400
-  },
-  {
-    "name": "Group B",
+    "name": "score1",
     "value": 300
   },
   {
-    "name": "Group C",
-    "value": 300
-  },
-  {
-    "name": "Group D",
-    "value": 200
-  },
-  {
-    "name": "Group E",
-    "value": 278
-  },
-  {
-    "name": "Group F",
-    "value": 189
+    "name": "score2",
+    "value": 700
   }
 ];
 

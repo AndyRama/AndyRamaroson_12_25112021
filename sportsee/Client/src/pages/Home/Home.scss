@@ -72,23 +72,26 @@
   }
 
   .inline-charts {
-    height: 200px !important;
+    height: 215px !important;
 
     &--average {
       padding: 0px;
   
       .recharts-surface {
-        height: 200px;
-        width: 200px;
+        height: 215px;
+        width: 215px;
       }
     }
 
     &--radar {  
-      padding: 8px;
+      // padding: 8px;
 
+      .recharts-responsive-container{
+        width: 150%!important;
+      }
       .recharts-surface {
-        height: 200px;
-        width: 200px;
+        height: 215px;
+        width: 215px;
       }
 
       .recharts-wrapper {
@@ -99,8 +102,8 @@
 
     &--score {
       .recharts-surface {
-        height: 200px;
-        width: 200px;
+        height: 215px;
+        width: 215px;
       }
     }
   }

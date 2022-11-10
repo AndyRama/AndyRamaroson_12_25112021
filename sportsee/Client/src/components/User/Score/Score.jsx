@@ -2,19 +2,12 @@ import React from "react";
 import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import "./Score.scss";
 
-const data01 = [
-  {
-    "name": "score1",
-    "value": 300
-  },
-  {
-    "name": "score2",
-    "value": 700
-  }
-];
-
  function Score({data}) { 
 
+  const userScore = [{value: data},{value: 100 - data}]
+
+  // console.log(userScore)
+  
   return (
     <div className="score">
       <h2 className="score-title">Score</h2>
@@ -23,7 +16,7 @@ const data01 = [
       <ResponsiveContainer>
         <PieChart >
           <Pie
-            data={data01}
+            data={userScore}
             dataKey="value"
             innerRadius={70}
             outerRadius={80}

@@ -1,9 +1,14 @@
 import axios  from 'axios'
+// import UserName from "../components/User/UserName/UserName";
 
-export async function getUser(id) {
+const urlId = window.location.pathname 
+
+// import { getUser } from "../../service/User";
+
+export async function getUser(id) {  
   try {
-    const {data:{data} } = await axios.get(`http://localhost:3000/user/${id}`);
-    // console.log({id})
+    const {data:{data} } = await axios.get(`http://localhost:3000${urlId}`);
+    console.log(urlId);
     return data;    
   } catch (error) {
     console.error(error);

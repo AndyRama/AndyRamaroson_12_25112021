@@ -1,9 +1,11 @@
 import axios  from 'axios'
 
+const urlId = window.location.pathname 
+
 export async function getScore(id)  {
   try {
-    const {data:{data} } = await axios.get(`http://localhost:3000/user/${id}`);
-    // console.log(data)   
+    console.log("test")   
+    const {data:{data} } = await axios.get(`http://localhost:3000${urlId}`);
     return data; 
 
   } catch (error) {

@@ -15,7 +15,7 @@ import { getPerformance } from "../../service/Performance";
 import { extractNutriment } from "../../formater/Nutriment";
 import { extractScore } from "../../formater/Score";
 
-function Home() {
+function Home(urlId) {
 
   const [user, setUser] = useState({});
   const [average, setAverage] = useState([]);
@@ -25,26 +25,25 @@ function Home() {
   const [nutriment, setNutriment] = useState({});
   const [score, setScore] = useState(0);
 
-
   useEffect(() => {
     async function load() {
-       const userData = await getUser(18)
+       const userData = await getUser(urlId)
        setUser(userData)
        
-       const averageData = await getAverage(18)
+       const averageData = await getAverage(urlId)
        setAverage(averageData)
        
-       const activityData = await getActivity(18)
+       const activityData = await getActivity(urlId)
        setActivity(activityData)
        
-       const performanceData = await getPerformance(18)
+       const performanceData = await getPerformance(urlId)
        setPerformance(performanceData)
 
        setScore(await extractScore(userData))
        setNutriment(await extractNutriment(userData))
      }
      load()
-   }, []);
+   }, [urlId]);
 
    if(!user.userInfos) { return (<div>Loarding</div>) }
     return (

@@ -31,8 +31,8 @@ function Performance({data}) {
           stroke="white"
           line-stroke="none"
           tickLine={false}
-          dy={10}
-          dx={-2}
+          dy={-1}
+          dx={-3}
           tick={{ fontSize: 16 }}
         />
         <Radar

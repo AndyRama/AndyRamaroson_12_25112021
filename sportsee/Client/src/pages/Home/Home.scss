@@ -24,7 +24,7 @@
     width: 30%;
     background-color: var(--dark-bg);
     border-radius: var(--border-radius);
-    padding: 0px 6px;
+    padding: 0px 5px;
   }
 
   &--score {
@@ -72,14 +72,14 @@
   }
 
   .inline-charts {
-    height: 215px !important;
+    height: 200px !important;
 
     &--average {
       padding: 0px;
   
       .recharts-surface {
-        height: 215px;
-        width: 215px;
+        height: 200px;
+        width: 200px;
       }
     }
 
@@ -87,11 +87,11 @@
       // padding: 8px;
 
       .recharts-responsive-container{
-        width: 150%!important;
+        width: 135%!important;
       }
       .recharts-surface {
-        height: 215px;
-        width: 215px;
+        height: 200px;
+        width: 200px;
       }
 
       .recharts-wrapper {
@@ -102,8 +102,8 @@
 
     &--score {
       .recharts-surface {
-        height: 215px;
-        width: 215px;
+        height: 200px;
+        width: 200px;
       }
     }
   }

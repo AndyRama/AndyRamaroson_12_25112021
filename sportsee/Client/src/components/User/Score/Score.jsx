@@ -26,6 +26,7 @@ import "./Score.scss";
             stroke="transparent"
             animationDuration={700}
             >
+              
             <Cell fill="red" cornerRadius={50} />
           </Pie>
         </PieChart>

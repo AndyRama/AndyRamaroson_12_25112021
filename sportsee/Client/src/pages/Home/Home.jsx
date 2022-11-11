@@ -8,12 +8,15 @@ import Score from "../../components/User/Score/Score";
 import Nutriments from "../../components/User/Nutriment/Nutriments";
 import UserName from "../../components/User/UserName/UserName";
 
-import { getUser } from "../../service/User";
-import { getAverage } from "../../service/Average";
-import { getActivity } from "../../service/Activity";
-import { getPerformance } from "../../service/Performance";
+import { getActivity, getAverage, getPerformance , getUser  } from "../../service/Api";
+// import { getUser } from "../../service/User";
+// import { } from "../../service/Average";
+// import { getPerformance } from "../../service/Performance";
+
 import { extractNutriment } from "../../formater/Nutriment";
 import { extractScore } from "../../formater/Score";
+
+// import mockedSportSee from "../../mocks/store";
 
 function Home(urlId) {
 
@@ -24,6 +27,8 @@ function Home(urlId) {
 
   const [nutriment, setNutriment] = useState({});
   const [score, setScore] = useState(0);
+
+  // console.log(mockedSportSee)
 
   useEffect(() => {
     async function load() {

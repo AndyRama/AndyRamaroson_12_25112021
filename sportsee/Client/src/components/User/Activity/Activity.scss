@@ -6,7 +6,14 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 24px;
-  text-decoration: none;
+  // text-decoration: none;
+  &:active {
+    border: 0 !important;
+  }
+
+  // &:hover{
+
+    // }
 }
 
 .custom-tooltip--calories,.custom-tooltip--poids  {
@@ -15,6 +22,8 @@
 
 .recharts-legend-item-text {
   color: black!important;
+  
+
 }
 
 .recharts-tooltip-wrapper {

@@ -9,17 +9,16 @@ import Nutriments from "../../components/User/Nutriment/Nutriments";
 import UserName from "../../components/User/UserName/UserName";
 
 import { getActivity, getAverage, getPerformance , getUser  } from "../../service/Api";
-// import { getUser } from "../../service/User";
-// import { } from "../../service/Average";
-// import { getPerformance } from "../../service/Performance";
 
 import { extractNutriment } from "../../formater/Nutriment";
 import { extractScore } from "../../formater/Score";
 
-// import mockedSportSee from "../../mocks/store";
+
+// eslint-disable-next-line no-unused-vars
+const urlId = window.location.pathname 
 
 function Home(urlId) {
-
+  
   const [user, setUser] = useState({});
   const [average, setAverage] = useState([]);
   const [activity, setActivity] = useState([]);
@@ -83,4 +82,5 @@ function Home(urlId) {
       </section>
     );
   }
+  
 export default Home;

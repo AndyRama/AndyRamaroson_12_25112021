@@ -5,8 +5,6 @@ import "./Score.scss";
  function Score({data}) { 
 
   const userScore = [{value: data},{value: 100 - data}]
-
-  // console.log(userScore)
   
   return (
     <div className="score">

@@ -4,7 +4,7 @@
 
 **Selected appartment**
 
-<!-- <kbd>![selected appartment](./HomeKasa.png)</kbd> -->
+<kbd>![selected appartment](./sportSee.png)</kbd>
 
 > PROBLEMATIQUE
 Créer un tableau de bord analytique de performances sportives et indicateurs physiologiques.
@@ -21,13 +21,13 @@ Afficher les données utlisateur sous forme de graphique dynamique.
 ## Compétences développées
 
 - [x] Initialiser une application web avec un framework
-- [x]Développer une logique de code partitionné dans des composants réutilisables
-- [x]Développer des Routes imbriquées
+- [x] Développer une logique de code partitionné dans des composants réutilisables
+- [x] Développer des Routes imbriquées
 
-- [x]Récupérer les données depuis l'API
-- [x]Manipuler / Corriger les données selon le besoin
-- [x]Repésenter graphiquement les données
-- [x]Gérer les différents cas liés à la réponse de la requête API
+- [x] Récupérer les données depuis l'API
+- [x] Manipuler / Corriger les données selon le besoin
+- [x] Repésenter graphiquement les données
+- [x] Gérer les différents cas liés à la réponse de la requête API
 
 
 ## Ressources fournies

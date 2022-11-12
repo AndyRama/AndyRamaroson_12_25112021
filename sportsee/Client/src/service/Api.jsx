@@ -1,12 +1,19 @@
+// eslint-disable-next-line
 import axios  from 'axios'
 
 const urlId = window.location.pathname 
 
+/**
+ * 
+ * @param {string} urlId  => (/user/id)
+ * @param {string} method 
+ * @returns {object} data
+ */
 
 export async function getUser(id) {  
   try {
     const {data:{data} } = await axios.get(`http://localhost:3000${urlId}`);
-    console.log(urlId);
+    // console.log(urlId);
     return data;    
   } catch (error) {
     console.error(error);
@@ -45,7 +52,7 @@ export async function getPerformance(id)  {
 
 export async function getScore(id)  {
   try {
-    console.log("test")   
+    // console.log("test")   
     const {data:{data} } = await axios.get(`http://localhost:3000${urlId}`);
     return data; 
 

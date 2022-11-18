@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from "react";
 import "./UserName.scss"
 
@@ -10,4 +11,9 @@ function UserName({firstname}) {
   )
 }
 
+UserName.propTypes = {
+  firstname: PropTypes.string
+};
+
 export default UserName
+

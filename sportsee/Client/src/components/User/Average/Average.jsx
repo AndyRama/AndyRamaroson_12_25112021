@@ -9,6 +9,13 @@ import {
 } from 'recharts'
 import { formaDataAverage } from '../../../formater/Average'
 
+/**
+ * return full name of the user
+ * @param   {string} firstName  First Name of the User
+ * @param   {string} lastName   Last Name of the User
+ * @return  {string}            Fullname of the user
+ */
+
 function Average({ data }) {
   const [averageData, setAverageData] = useState([])
 

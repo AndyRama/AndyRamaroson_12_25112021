@@ -13,7 +13,6 @@ import { getActivity, getAverage, getPerformance , getUser  } from "../../servic
 import { extractNutriment } from "../../formater/Nutriment";
 import { extractScore } from "../../formater/Score";
 
-
 // eslint-disable-next-line no-unused-vars
 const urlId = window.location.pathname 
 

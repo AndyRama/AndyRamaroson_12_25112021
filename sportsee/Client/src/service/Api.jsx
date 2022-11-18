@@ -1,5 +1,6 @@
 // eslint-disable-next-line
 import axios  from 'axios'
+import mockedSportSee from '../mocks/mockedData';
 
 const urlId = window.location.pathname 
 
@@ -13,7 +14,7 @@ const urlId = window.location.pathname
 export async function getUser(id) {  
   try {
     const {data:{data} } = await axios.get(`http://localhost:3000${urlId}`);
-    // console.log(urlId);
+    // console.log({mockedSportSee});
     return data;    
   } catch (error) {
     console.error(error);

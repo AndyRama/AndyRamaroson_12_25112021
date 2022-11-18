@@ -82,12 +82,11 @@
       }
     }
 
-    &--radar {  
-      // padding: 8px;
-
+    &--radar { 
       .recharts-responsive-container{
         width: 135%!important;
       }
+
       .recharts-surface {
         height: 200px;
         width: 200px;

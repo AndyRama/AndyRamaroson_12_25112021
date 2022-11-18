@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { formaDataActivity } from '../../../formater/Activity'
+import './Activity.scss'
+
 import {
   BarChart,
   Bar,
@@ -9,8 +12,6 @@ import {
   ResponsiveContainer,
   CartesianGrid
 } from 'recharts'
-import { formaDataActivity } from '../../../formater/Activity'
-import './Activity.scss'
 
 function Activity({ data }) {
   const [activityData, setActivityData] = useState([])
@@ -18,7 +19,7 @@ function Activity({ data }) {
   useEffect(() => {
     async function load() {
       const dataFormated = await formaDataActivity(data)
-      // console.log(dataFormated);
+      console.log(dataFormated);
       setActivityData(dataFormated)
     }
     load()
@@ -38,14 +39,14 @@ function Activity({ data }) {
           }}
         />
         <XAxis
-          datakey="day"
+          dataKey="day"
           stroke="grey"
           tickLine={false}
           dy={10}
         />
         <YAxis
           yAxisId="poids"
-          datakey="kilogram"
+          dataKey="kilogram"
           domain={['dataMin -2', 'dataMax + 1']}
           orientation="right"
           axisLine={false}
@@ -56,7 +57,7 @@ function Activity({ data }) {
         <YAxis
           yAxisId="calories"
           data="calories"
-          domain={['dataMin -20', 'dataMax + 20']}
+          domain={['dataMin - 20', 'dataMax + 20']}
           orientation="none"
           axisLine={false}
           tickLine={false}
@@ -64,12 +65,12 @@ function Activity({ data }) {
           dy={-25}
         />
         <Tooltip content={<CustomTooltip />} />
-        <CartesianGrid strokeDasharray="1 4 " stroke="#ccc" vertical={false} />
+        <CartesianGrid strokeDasharray="3 3 " stroke="#ccc" vertical={false} />
         <Bar
           yAxisId="poids"
           name="Poids (kg)"
           dataKey="kilogram"
-          fill="black"
+          fill="#282D30"
           barSize={8}
           radius={[50, 50, 0, 0]}
         />
@@ -77,7 +78,7 @@ function Activity({ data }) {
           yAxisId="calories"
           name="Calories brûlées (kCal)"
           dataKey="calories"
-          fill="red"
+          fill="#E60000"
           barSize={8}
           radius={[50, 50, 0, 0]}
         />

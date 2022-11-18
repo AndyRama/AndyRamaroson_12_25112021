@@ -1,15 +1,15 @@
 // eslint-disable-next-line
 import axios  from 'axios'
-import mockedSportSee from '../mocks/mockedData';
-
-const urlId = window.location.pathname 
+// import mockedSportSee from '../mocks/mockedData';
 
 /**
- * 
- * @param {string} urlId  => (/user/id)
- * @param {string} method 
- * @returns {object} data
- */
+* 
+* @param {string} urlId  => (/user/id)
+* @param {string} method 
+* @returns {object} data
+*/
+   
+const urlId = window.location.pathname 
 
 export async function getUser(id) {  
   try {

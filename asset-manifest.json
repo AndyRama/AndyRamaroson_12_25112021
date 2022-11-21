@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/AndyRamaroson_12_25112021/static/css/main.9e9e8970.css",
+    "main.js": "/AndyRamaroson_12_25112021/static/js/main.5ca6ac98.js",
+    "static/js/787.a8762e9d.chunk.js": "/AndyRamaroson_12_25112021/static/js/787.a8762e9d.chunk.js",
+    "static/media/logo.svg": "/AndyRamaroson_12_25112021/static/media/logo.6292394d2a71af846a391375670860db.svg",
+    "index.html": "/AndyRamaroson_12_25112021/index.html",
+    "main.9e9e8970.css.map": "/AndyRamaroson_12_25112021/static/css/main.9e9e8970.css.map",
+    "main.5ca6ac98.js.map": "/AndyRamaroson_12_25112021/static/js/main.5ca6ac98.js.map",
+    "787.a8762e9d.chunk.js.map": "/AndyRamaroson_12_25112021/static/js/787.a8762e9d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e9e8970.css",
+    "static/js/main.5ca6ac98.js"
+  ]
+}

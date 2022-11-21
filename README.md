@@ -56,7 +56,7 @@ Afficher les données utlisateur sous forme de graphique dynamique.
 
 - Cloner le repo du projet : `gh repo clone AndyRama/AndyRamaroson_12_25112021`
 - Aller dans ce dossier : `cd sportsee/Server`
-- Installer ses dépendances : `yarn`
+- Installer ses dépendances : `yarn install`
 - Le lancer sur le port 3000 (par défaut) : `yarn run dev`
 
 ### Etape 2 : Lancement du front-end (client)
@@ -66,7 +66,7 @@ Afficher les données utlisateur sous forme de graphique dynamique.
 - Le lancer sur le port 3001 : `npm run start`
 
 ```bash
-URL de visualisation du rendu web : http://localhost:3001
+URL de visualisation du rendu web : http://localhost:3001/user/id
 l'API de SportSee fournit des données pour les utilisateurs d'id 12 et 18
 ```
 
@@ -130,7 +130,7 @@ Display user data as a dynamic graph.
 
 - Clone the project repo: `gh repo clone AndyRama/AndyRamaroson_12_25112021`
 - Go to this folder: `cd sportsee/Server`
-- Install its dependencies: `yarn`
+- Install its dependencies: `yarn install`
 - Run it on port 3000 (default): `yarn run dev`
 
 ### Step 2: Launching the front-end (client)
@@ -140,7 +140,7 @@ Display user data as a dynamic graph.
 - Run it on port 3001: `npm run start`
 
 ```bash
-Web Render View URL: http://localhost:3001
+Web Render View URL: http://localhost:3001/user/id
 SportSee API provides data for id 12 and 18 users
 ```
 

@@ -1,4 +1,4 @@
-# SportSee
+# SportSee fr
 
     Projet 12 de la formation Développeur d'application web JavaScript React | OpenClassrooms 
 
@@ -71,6 +71,41 @@ l'API de SportSee fournit des données pour les utilisateurs d'id 12 et 18
 ```
 
 ---------------------------
+
+# SportSee gb
+
+    Project 12 of the React JavaScript Web Application Developer course | OpenClassrooms
+
+**Personal Dashboard**
+
+<kbd>![selected apartment](./sportSee.png)</kbd>
+
+> ISSUE
+Create an analytical dashboard of sports performance and physiological indicators.
+
+> NEED
+Display user data as a dynamic graph.
+
+## Resources Provided
+
+- [UI design](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1)
+- [Kanban](https://www.notion.so/Tableau-de-bord-SportSee-6686aa4b5f44417881a4884c9af5669e)
+
+## Libraries
+
+    REACT
+    RECHART
+
+## Skills developed
+
+- [x] Initialize a web application with a framework
+- [x] Develop partitioned code logic into reusable components
+- [x] Expand Nested Routes
+
+- [x] Fetch data from API
+- [x] Manipulate / Correct data as needed
+- [x] Represent data graphically
+- [x] Handle different cases related to API request response
 
 ## Install(english version)
 

@@ -1,18 +1,20 @@
-import React from "react";
-import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
-import "./Score.scss";
+import React from 'react'
+import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
+import './Score.scss'
 
- function Score({data}) { 
+function Score({ data }) {
+  const userScore = [{ value: data }, { value: 100 - data }]
 
-  const userScore = [{value: data},{value: 100 - data}]
-  
   return (
     <div className="score">
       <h2 className="score-title">Score</h2>
       <p className="score-result">{data} %</p>
-      <p className="score-comment">de votre <br />objectif</p>
+      <p className="score-comment">
+        de votre <br />
+        objectif
+      </p>
       <ResponsiveContainer>
-        <PieChart >
+        <PieChart>
           <Pie
             data={userScore}
             dataKey="value"
@@ -23,14 +25,13 @@ import "./Score.scss";
             fill="transparent"
             stroke="transparent"
             animationDuration={700}
-            >
-              
+          >
             <Cell fill="red" cornerRadius={50} />
           </Pie>
         </PieChart>
       </ResponsiveContainer>
     </div>
-  );
+  )
 }
 
-export default Score;
+export default Score

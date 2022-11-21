@@ -1,13 +1,24 @@
 import React from 'react'
-import { Link, useLocation} from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import propTypes from 'prop-types'
 
-import './Navbar.scss'
 import LogoText from '../Icons/LogoText'
 import logo from '../../../logo.svg'
 
-function Navbar() {
+import './Navbar.scss'
 
-  const ongletId = ['Profil','Réglages','Communauté'];
+/**
+ * Render the Navbar component
+ * @function Navbar
+ * @param {object} props
+ * @param {string} props.logo > logo src
+ * @param {string} props.url > url path
+ * @param {array} ongletId > nav links topic names
+ * @returns {Reactnode} jsx injected in DOM
+ */
+
+function Navbar() {
+  const ongletId = ['Profil', 'Réglages', 'Communauté']
   const location = useLocation()
 
   return (
@@ -18,21 +29,43 @@ function Navbar() {
           <LogoText />
         </Link>
         <ul className="Nav-Buttons-Wrapper">
-          <Link to="/" className={ location.pathname === '/' ? 'home-page active' : 'home-page' }
-              page="home"> Accueil
+          <Link
+            to="/"
+            className={
+              location.pathname === '/' ? 'home-page active' : 'home-page'
+            }
+            page="home"
+          >
+            {' '}
+            Accueil
           </Link>
-          { ongletId.map((onglet, index) => (
+          {ongletId.map((onglet, index) => (
             <Link
-              to={`/${onglet}`} 
-              key={index} 
-              className={ location.pathname === `/${onglet}` ? `${onglet}-page active` : `${onglet}-page`}
-              page={`${onglet}`}>{`${onglet}`}
-            </Link>          
+              to={`/${onglet}`}
+              key={index}
+              className={
+                location.pathname === `/${onglet}`
+                  ? `${onglet}-page active`
+                  : `${onglet}-page`
+              }
+              page={`${onglet}`}
+            >
+              {`${onglet}`}
+            </Link>
           ))}
         </ul>
       </nav>
     </header>
   )
+}
+
+/**
+ * PropTypes Navbar component
+ */
+Navbar.propTypes = {
+  url: propTypes.string,
+  ongletId: propTypes.arrayOf(propTypes.string),
+  logo: propTypes.string,
 }
 
 export default Navbar

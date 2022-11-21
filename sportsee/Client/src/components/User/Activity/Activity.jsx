@@ -2,6 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { formaDataActivity } from '../../../formater/Activity'
 import './Activity.scss'
 
+/**
+ * return full name of the user
+ * @param   {string} firstName  First Name of the User
+ * @param   {string} lastName   Last Name of the User
+ * @return  {string}            Fullname of the user
+ */
+
 import {
   BarChart,
   Bar,
@@ -10,7 +17,7 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-  CartesianGrid
+  CartesianGrid,
 } from 'recharts'
 
 function Activity({ data }) {
@@ -19,7 +26,7 @@ function Activity({ data }) {
   useEffect(() => {
     async function load() {
       const dataFormated = await formaDataActivity(data)
-      console.log(dataFormated);
+      console.log(dataFormated)
       setActivityData(dataFormated)
     }
     load()
@@ -38,12 +45,7 @@ function Activity({ data }) {
             lineHeight: '40px',
           }}
         />
-        <XAxis
-          dataKey="day"
-          stroke="grey"
-          tickLine={false}
-          dy={10}
-        />
+        <XAxis dataKey="day" stroke="grey" tickLine={false} dy={10} />
         <YAxis
           yAxisId="poids"
           dataKey="kilogram"
@@ -74,7 +76,8 @@ function Activity({ data }) {
           barSize={8}
           radius={[50, 50, 0, 0]}
         />
-        <Bar className='legend'
+        <Bar
+          className="legend"
           yAxisId="calories"
           name="Calories brûlées (kCal)"
           dataKey="calories"
@@ -85,7 +88,7 @@ function Activity({ data }) {
       </BarChart>
     </ResponsiveContainer>
   )
-  
+
   function CustomTooltip({ active, payload }) {
     return active && payload ? (
       <ul className="custom-tooltip">

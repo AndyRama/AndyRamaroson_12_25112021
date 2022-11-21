@@ -6,6 +6,13 @@ import IconProtein from '../../UI/Icons/IconProtein'
 import IconCarbs from '../../UI/Icons/IconCarbs'
 import IconLipides from '../../UI/Icons/IconLipides'
 
+/**
+ * return full name of the user
+ * @param   {string} firstName  First Name of the User
+ * @param   {string} lastName   Last Name of the User
+ * @return  {string}            Fullname of the user
+ */
+
 function Nutriments({
   data: { calorieCount, proteinCount, carbohydrateCount, lipidCount },
 }) {

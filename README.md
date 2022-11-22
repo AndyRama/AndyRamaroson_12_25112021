@@ -5,7 +5,7 @@
 
 **personnel Dashboard**
 
-    <kbd>![selected appartment](./sportSee.png)</kbd>
+<kbd>![selected appartment](./sportSee.png)</kbd>
 
 > ISSUE
 Create an analytical dashboard of sports performance and physiological indicators.
@@ -23,7 +23,7 @@ Display user data as a dynamic graph.
     REACT
     RECHART
 
-## Install(english version)
+## Install
 
 ### Recommended editor
 
@@ -114,7 +114,7 @@ Afficher les données utlisateur sous forme de graphique dynamique.
 
 ### Etape 1 : Lancement du back-end (services)
 
-- Cloner le repo du projet : `gh repo clone AndyRama/AndyRamaroson_12_25112021`
+- Cloner le repo du projet : [`gh repo clone AndyRama/AndyRamaroson_12_25112021`
 - Aller dans ce dossier : `cd sportsee/Server`
 - Installer ses dépendances : `yarn install`
 - Le lancer sur le port 3000 (par défaut) : `yarn run dev`

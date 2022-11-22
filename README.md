@@ -30,10 +30,10 @@ Afficher les données utlisateur sous forme de graphique dynamique.
 
 ### Prérequis
 
-* [Git](https://git-scm.com/) pour cloner les repos
-* [nodeJS](https://nodejs.org/fr/) (version 14.20.1) pour exécuter les commandes
-* [npm](https://www.npmjs.com/) (version 6.14.17) pour lancer l'application (front-end)
-* [Yarn](https://yarnpkg.com/)(version 1.22.18) pour lancer l'API (back-end)
+* [Git](https://git-scm.com/) pour cloner les repos.
+* [nodeJS](https://nodejs.org/fr/) (version 14.20.1) pour exécuter les commandes.
+* [npm](https://www.npmjs.com/) (version 6.14.17) pour lancer l'application (front-end).
+* [Yarn](https://yarnpkg.com/)(version 1.22.18) pour lancer l'API (back-end).
 
 ### Dépendances
 
@@ -70,16 +70,11 @@ l'API de SportSee fournit des données pour les utilisateurs d'id 12 et 18
 - [x] Repésenter graphiquement les données
 - [x] Gérer les différents cas liés à la réponse de la requête API
 
-
 ---------------------------
 
-# SportSee ENG
+# SportSee GB
 
     Project 12 of the React JavaScript Web Application Developer course | OpenClassrooms
-
-**Personal Dashboard**
-
-<kbd>![selected apartment](./sportSee.png)</kbd>
 
 > ISSUE
 Create an analytical dashboard of sports performance and physiological indicators.

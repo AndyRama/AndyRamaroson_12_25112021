@@ -78,8 +78,6 @@ l'API de SportSee fournit des données pour les utilisateurs d'id 12 et 18
 
 **Personal Dashboard**
 
-<kbd>![selected apartment](./sportSee.png)</kbd>
-
 > ISSUE
 Create an analytical dashboard of sports performance and physiological indicators.
 

@@ -62,6 +62,7 @@ function Navbar() {
 /**
  * PropTypes Navbar component
  */
+
 Navbar.propTypes = {
   url: propTypes.string,
   ongletId: propTypes.arrayOf(propTypes.string),

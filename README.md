@@ -1,4 +1,4 @@
-# SportSee fr
+# SportSee 🇫🇷
 
     Projet 12 de la formation Développeur d'application web JavaScript React | OpenClassrooms 
 
@@ -21,17 +21,6 @@ Afficher les données utlisateur sous forme de graphique dynamique.
 
     REACT
     RECHART
-
-## Compétences développées
-
-- [x] Initialiser une application web avec un framework
-- [x] Développer une logique de code partitionné dans des composants réutilisables
-- [x] Développer des Routes imbriquées
-
-- [x] Récupérer les données depuis l'API
-- [x] Manipuler / Corriger les données selon le besoin
-- [x] Repésenter graphiquement les données
-- [x] Gérer les différents cas liés à la réponse de la requête API
 
 ## Installation
 
@@ -70,9 +59,21 @@ URL de visualisation du rendu web : http://localhost:3001/user/id
 l'API de SportSee fournit des données pour les utilisateurs d'id 12 et 18
 ```
 
+## Compétences développées
+
+- [x] Initialiser une application web avec un framework
+- [x] Développer une logique de code partitionné dans des composants réutilisables
+- [x] Développer des Routes imbriquées
+
+- [x] Récupérer les données depuis l'API
+- [x] Manipuler / Corriger les données selon le besoin
+- [x] Repésenter graphiquement les données
+- [x] Gérer les différents cas liés à la réponse de la requête API
+
+
 ---------------------------
 
-# SportSee gb
+# SportSee ENG
 
     Project 12 of the React JavaScript Web Application Developer course | OpenClassrooms
 
@@ -95,17 +96,6 @@ Display user data as a dynamic graph.
 
     REACT
     RECHART
-
-## Skills developed
-
-- [x] Initialize a web application with a framework
-- [x] Develop partitioned code logic into reusable components
-- [x] Expand Nested Routes
-
-- [x] Fetch data from API
-- [x] Manipulate / Correct data as needed
-- [x] Represent data graphically
-- [x] Handle different cases related to API request response
 
 ## Install(english version)
 
@@ -143,5 +133,16 @@ Display user data as a dynamic graph.
 Web Render View URL: http://localhost:3001/user/id
 SportSee API provides data for id 12 and 18 users
 ```
+
+## Skills developed
+
+- [x] Initialize a web application with a framework
+- [x] Develop partitioned code logic into reusable components
+- [x] Expand Nested Routes
+
+- [x] Fetch data from API
+- [x] Manipulate / Correct data as needed
+- [x] Represent data graphically
+- [x] Handle different cases related to API request response
 
 ---------------------------

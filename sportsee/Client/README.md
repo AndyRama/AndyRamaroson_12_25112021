@@ -57,29 +57,7 @@ Web Render View URL: http://localhost:3001/user/id
 SportSee API provides data for id 12 and 18 users
 ```
 
-## Skills developed
-
-- [x] Initialize a web application with a framework
-- [x] Develop partitioned code logic into reusable components
-- [x] Expand Nested Routes
-
-- [x] Fetch data from API
-- [x] Manipulate / Correct data as needed
-- [x] Represent data graphically
-- [x] Handle different cases related to API request response
-
 # SportSee 🇫🇷
-
-> PROBLEMATIQUE
-Créer un tableau de bord analytique de performances sportives et indicateurs physiologiques.
-
-> BESOIN
-Afficher les données utlisateur sous forme de graphique dynamique.
-
-## Ressources fournies
-
-- [maquette UI](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1)
-- [Kanban](https://www.notion.so/Tableau-de-bord-SportSee-6686aa4b5f44417881a4884c9af5669e)
 
 ## Bibliothèques
 
@@ -107,7 +85,7 @@ Afficher les données utlisateur sous forme de graphique dynamique.
 
 ### Etape 1 : Lancement du back-end (services)
 
-- Cloner le repo du projet : [`gh repo clone AndyRama/AndyRamaroson_12_25112021`
+- Cloner le repo du projet : `gh repo clone AndyRama/AndyRamaroson_12_25112021`
 - Aller dans ce dossier : `cd sportsee/Server`
 - Installer ses dépendances : `yarn install`
 - Le lancer sur le port 3000 (par défaut) : `yarn run dev`
@@ -122,16 +100,3 @@ Afficher les données utlisateur sous forme de graphique dynamique.
 URL de visualisation du rendu web : http://localhost:3001/user/id
 l'API de SportSee fournit des données pour les utilisateurs d'id 12 et 18
 ```
-
-## Compétences développées
-
-- [x] Initialiser une application web avec un framework
-- [x] Développer une logique de code partitionné dans des composants réutilisables
-- [x] Développer des Routes imbriquées
-
-- [x] Récupérer les données depuis l'API
-- [x] Manipuler / Corriger les données selon le besoin
-- [x] Repésenter graphiquement les données
-- [x] Gérer les différents cas liés à la réponse de la requête API
-
----------------------------

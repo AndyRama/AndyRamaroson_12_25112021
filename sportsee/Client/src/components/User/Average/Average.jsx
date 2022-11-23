@@ -10,10 +10,11 @@ import {
 } from 'recharts'
 
 /**
- * return full name of the user
- * @param   {object} data from call service
- * @param   {object} formaDataAverage > data formated
- * @param   {object} AverageData > data exploit in chart
+ * Render Average component
+ * @function Average
+ * @param   {object} props.data > data come from service
+ * @param   {object} formaDataAverage > data.sessions formated
+ * @param   {object} AverageData > formated data injected in chart2
  * @returns {Reactnode} jsx injected in DOM
  */
 

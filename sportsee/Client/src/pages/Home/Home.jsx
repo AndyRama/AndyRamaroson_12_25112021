@@ -18,6 +18,19 @@ import {
 import { extractNutriment } from '../../formater/Nutriment'
 import { extractScore } from '../../formater/Score'
 
+/**
+ * Render Page Home component
+ * @function Home
+ * @param {string} urlId User path
+ * @param {object} User
+ * @param {object} ActivityData
+ * @param {object} AverageData
+ * @param {object} PerformanceData
+ * @param {object} extractNutriment
+ * @param {object} extractScore
+ * @returns {Reactnode} jsx injected in DOM
+ */
+
 // eslint-disable-next-line no-unused-vars
 const urlId = window.location.pathname
 
@@ -34,6 +47,7 @@ function Home(urlId) {
     async function load() {
       const userData = await getUser(urlId)
       setUser(userData)
+      console.log(userData)
 
       const averageData = await getAverage(urlId)
       setAverage(averageData)
@@ -87,5 +101,8 @@ function Home(urlId) {
     </section>
   )
 }
+/**
+ * PropTypes Average component
+ */
 
 export default Home

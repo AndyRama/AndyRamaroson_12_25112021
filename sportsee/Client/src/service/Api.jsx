@@ -16,8 +16,9 @@ import axios from 'axios'
 /**
  *
  * @param {string} urlId  => (/user/id)
- * @param {string} method
- * @returns {object} data
+ * @param {string} props.id
+ * @param {object} data
+ * @returns {object} data > send to formated
  */
 
 // the user id grabed from the url and used to update the endpoints dynamically

@@ -13,9 +13,8 @@ import {
 } from 'recharts'
 
 /**
- * Render Activity component
  * @function Activity
- * @param {number} userId > user id number
+ * @param { Array.<Objet> } data
  * @param {object} props.data > user data
  * @param {object} formaDataActivity > data formated
  * @returns {Reactnode} jsx injected in DOM
@@ -28,6 +27,7 @@ function Activity({ data }) {
     async function load() {
       const dataFormated = await formaDataActivity(data)
       console.log(dataFormated)
+      console.log(data)
       setActivityData(dataFormated)
     }
     load()

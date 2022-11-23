@@ -104,16 +104,12 @@
     
 
     
-    <h4 class="name" id="Activity"><span class="type-signature"></span>Activity<span class="signature">(userId, formaDataActivity)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    <h4 class="name" id="Activity"><span class="type-signature"></span>Activity<span class="signature">(data, formaDataActivity)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
     
 
     
 
 
-
-<div class="description">
-    <p>Render Activity component</p>
-</div>
 
 
 
@@ -148,13 +144,13 @@
 
         <tr>
             
-                <td class="name"><code>userId</code></td>
+                <td class="name"><code>data</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">Array.&lt;Objet></span>
 
 
             
@@ -164,9 +160,7 @@
 
             
 
-            <td class="description last"><blockquote>
-<p>user id number</p>
-</blockquote></td>
+            <td class="description last"></td>
         </tr>
 
     
@@ -257,7 +251,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="User_Activity_Activity.jsx.html">User/Activity/Activity.jsx</a>, <a href="User_Activity_Activity.jsx.html#line15">line 15</a>
+        <a href="components_User_Activity_Activity.jsx.html">components/User/Activity/Activity.jsx</a>, <a href="components_User_Activity_Activity.jsx.html#line15">line 15</a>
     </li></ul></dd>
     
 
@@ -315,7 +309,7 @@
     
 
     
-    <h4 class="name" id="Average"><span class="type-signature"></span>Average<span class="signature">(firstName, lastName)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    <h4 class="name" id="Average"><span class="type-signature"></span>Average<span class="signature">(formaDataAverage, AverageData)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
     
 
     
@@ -323,7 +317,7 @@
 
 
 <div class="description">
-    <p>return full name of the user</p>
+    <p>Render Average component</p>
 </div>
 
 
@@ -359,13 +353,13 @@
 
         <tr>
             
-                <td class="name"><code>firstName</code></td>
+                <td class="name"><code>props.data</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">object</span>
 
 
             
@@ -375,20 +369,22 @@
 
             
 
-            <td class="description last"><p>First Name of the User</p></td>
+            <td class="description last"><blockquote>
+<p>data come from service</p>
+</blockquote></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>lastName</code></td>
+                <td class="name"><code>formaDataAverage</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">object</span>
 
 
             
@@ -398,7 +394,34 @@
 
             
 
-            <td class="description last"><p>Last Name of the User</p></td>
+            <td class="description last"><blockquote>
+<p>data.sessions formated</p>
+</blockquote></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>AverageData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><blockquote>
+<p>formated data injected in chart2</p>
+</blockquote></td>
         </tr>
 
     
@@ -439,7 +462,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="User_Average_Average.jsx.html">User/Average/Average.jsx</a>, <a href="User_Average_Average.jsx.html#line19">line 19</a>
+        <a href="components_User_Average_Average.jsx.html">components/User/Average/Average.jsx</a>, <a href="components_User_Average_Average.jsx.html#line12">line 12</a>
     </li></ul></dd>
     
 
@@ -468,7 +491,7 @@
 
         
 <div class="param-desc">
-    <p>Fullname of the user</p>
+    <p>jsx injected in DOM</p>
 </div>
 
 
@@ -479,7 +502,7 @@
     </dt>
     <dd>
         
-<span class="param-type">string</span>
+<span class="param-type">Reactnode</span>
 
 
     </dd>
@@ -600,7 +623,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="User_Activity_Activity.jsx.html">User/Activity/Activity.jsx</a>, <a href="User_Activity_Activity.jsx.html#line93">line 93</a>
+        <a href="components_User_Activity_Activity.jsx.html">components/User/Activity/Activity.jsx</a>, <a href="components_User_Activity_Activity.jsx.html#line93">line 93</a>
     </li></ul></dd>
     
 
@@ -637,6 +660,464 @@
     <dd>
         
 <span class="param-type">JSX</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="CustomTooltip"><span class="type-signature"></span>CustomTooltip<span class="signature">(payload)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Render CustomTooltip component</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><blockquote>
+<p>data to display</p>
+</blockquote></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_User_Average_Average.jsx.html">components/User/Average/Average.jsx</a>, <a href="components_User_Average_Average.jsx.html#line73">line 73</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>jsx injected in DOM</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Reactnode</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Home"><span class="type-signature"></span>Home<span class="signature">(urlId, User, ActivityData, AverageData, PerformanceData, extractNutriment, extractScore)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Render Page Home component</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>urlId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>User path</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>User</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ActivityData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>AverageData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>PerformanceData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>extractNutriment</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>extractScore</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="pages_Home_Home.jsx.html">pages/Home/Home.jsx</a>, <a href="pages_Home_Home.jsx.html#line21">line 21</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>jsx injected in DOM</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Reactnode</span>
 
 
     </dd>
@@ -807,7 +1288,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="UI_Navbar_Navbar.jsx.html">UI/Navbar/Navbar.jsx</a>, <a href="UI_Navbar_Navbar.jsx.html#line10">line 10</a>
+        <a href="components_UI_Navbar_Navbar.jsx.html">components/UI/Navbar/Navbar.jsx</a>, <a href="components_UI_Navbar_Navbar.jsx.html#line10">line 10</a>
     </li></ul></dd>
     
 
@@ -989,7 +1470,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="User_Nutriment_Nutriments.jsx.html">User/Nutriment/Nutriments.jsx</a>, <a href="User_Nutriment_Nutriments.jsx.html#line16">line 16</a>
+        <a href="components_User_Nutriment_Nutriments.jsx.html">components/User/Nutriment/Nutriments.jsx</a>, <a href="components_User_Nutriment_Nutriments.jsx.html#line16">line 16</a>
     </li></ul></dd>
     
 
@@ -1042,6 +1523,143 @@
 
 
         
+            
+
+    
+
+    
+    <h4 class="name" id="UserName"><span class="type-signature"></span>UserName<span class="signature">(firstName)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>return firstname of the user</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>firstName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>FirstName of the User</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_User_UserName_UserName.jsx.html">components/User/UserName/UserName.jsx</a>, <a href="components_User_UserName_UserName.jsx.html#line10">line 10</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     
 
     
@@ -1057,13 +1675,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Activity">Activity</a></li><li><a href="global.html#Average">Average</a></li><li><a href="global.html#CustomTooltip">CustomTooltip</a></li><li><a href="global.html#Navbar">Navbar</a></li><li><a href="global.html#Nutriments">Nutriments</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Activity">Activity</a></li><li><a href="global.html#Average">Average</a></li><li><a href="global.html#CustomTooltip">CustomTooltip</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#Navbar">Navbar</a></li><li><a href="global.html#Nutriments">Nutriments</a></li><li><a href="global.html#UserName">UserName</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Wed Nov 23 2022 14:36:59 GMT+0100 (Central European Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Wed Nov 23 2022 17:45:28 GMT+0100 (Central European Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

@@ -4,7 +4,7 @@ import './UserName.scss'
 
 /**
  * return firstname of the user
- * @param   {string} firstName  First Name of the User
+ * @param {string} firstName  FirstName of the User
  */
 
 function UserName({ firstname }) {

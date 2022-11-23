@@ -1,8 +1,6 @@
 
 # SportSee 🇬🇧
 
-    Project 12 of the React JavaScript Web Application Developer course | OpenClassrooms
-
 **personnel Dashboard**
 
 <kbd>![selected appartment](./sportSee.png)</kbd>
@@ -71,11 +69,7 @@ SportSee API provides data for id 12 and 18 users
 - [x] Represent data graphically
 - [x] Handle different cases related to API request response
 
----------------------------
-
 # SportSee 🇫🇷
-
-    Projet 12 de la formation Développeur d'application web JavaScript React | OpenClassrooms 
 
 > PROBLEMATIQUE
 Créer un tableau de bord analytique de performances sportives et indicateurs physiologiques.

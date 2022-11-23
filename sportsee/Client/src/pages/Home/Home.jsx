@@ -30,8 +30,6 @@ function Home(urlId) {
   const [nutriment, setNutriment] = useState({})
   const [score, setScore] = useState(0)
 
-  // console.log(mockedSportSee)
-
   useEffect(() => {
     async function load() {
       const userData = await getUser(urlId)

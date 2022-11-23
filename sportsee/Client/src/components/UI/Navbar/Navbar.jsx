@@ -12,7 +12,7 @@ import './Navbar.scss'
  * @function Navbar
  * @param {object} props
  * @param {string} props.logo > logo src
- * @param {string} props.url > url path
+ * @param {string} onglet > url path
  * @param {array} ongletId > nav links topic names
  * @returns {Reactnode} jsx injected in DOM
  */
@@ -64,7 +64,7 @@ function Navbar() {
  */
 
 Navbar.propTypes = {
-  url: propTypes.string,
+  onglet: propTypes.string,
   ongletId: propTypes.arrayOf(propTypes.string),
   logo: propTypes.string,
 }

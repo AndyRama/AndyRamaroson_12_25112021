@@ -79,6 +79,7 @@ SportSee API provides data for id 12 and 18 users
 * [Recharts](https://recharts.org/en-US/) (version 2.1.15)
 * [react-router-dom](https://reactrouter.com/web/guides/quick-start) (version 6.4.2)
 * [Prop-types](https://www.npmjs.com/package/prop-types) (version 15.8.1)
+* [Axios](https://axios-http.com/docs/intro)
 
 ### Etape 1 : Lancement du back-end (services)
 

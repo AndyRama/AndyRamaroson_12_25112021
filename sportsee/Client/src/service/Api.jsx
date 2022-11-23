@@ -1,6 +1,18 @@
 // eslint-disable-next-line
 import axios from 'axios'
 
+/*  IMPORTANT!!!
+    We are changing the state of a component A from the file B, only by passing the setState of component A as argument and param
+    to the file B function and than calling the function of a file B inside the useEffect of a component A
+*/
+
+/*
+    HOW ARE API REQUEST WORKING
+    1 - I am using async/await to handle the response time
+    2 - I am changin the state of the A component using function arguments and parameters
+    3 - In Componant A I'am using the method .load("change state inside") to change the state
+*/
+
 /**
  *
  * @param {string} urlId  => (/user/id)
@@ -8,6 +20,7 @@ import axios from 'axios'
  * @returns {object} data
  */
 
+// the user id grabed from the url and used to update the endpoints dynamically
 const urlId = window.location.pathname
 
 export async function getUser(id) {
@@ -15,7 +28,7 @@ export async function getUser(id) {
     const {
       data: { data },
     } = await axios.get(`http://localhost:3000${urlId}`)
-    // console.log({mockedSportSee});
+    // console.log(data);
     return data
   } catch (error) {
     console.error(error)

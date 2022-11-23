@@ -10,11 +10,6 @@ Create an analytical dashboard of sports performance and physiological indicator
 > NEED
 Display user data as a dynamic graph.
 
-## Resources Provided
-
-- [UI design](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=0%3A1)
-- [Kanban](https://www.notion.so/Tableau-de-bord-SportSee-6686aa4b5f44417881a4884c9af5669e)
-
 ## Libraries
 
     REACT
@@ -56,6 +51,8 @@ Display user data as a dynamic graph.
 Web Render View URL: http://localhost:3001/user/id
 SportSee API provides data for id 12 and 18 users
 ```
+
+--------------------------------------------------
 
 # SportSee 🇫🇷
 

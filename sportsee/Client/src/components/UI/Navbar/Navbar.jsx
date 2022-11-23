@@ -10,7 +10,6 @@ import './Navbar.scss'
 /**
  * Render the Navbar component
  * @function Navbar
- * @param {object} props
  * @param {string} props.logo > logo src
  * @param {string} onglet > url path
  * @param {array} ongletId > nav links topic names
@@ -64,9 +63,9 @@ function Navbar() {
  */
 
 Navbar.propTypes = {
+  logo: propTypes.string,
   onglet: propTypes.string,
   ongletId: propTypes.arrayOf(propTypes.string),
-  logo: propTypes.string,
 }
 
 export default Navbar

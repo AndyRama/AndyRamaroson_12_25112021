@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { formaDataAverage } from '../../../formater/Average'
 import {
   ResponsiveContainer,
   LineChart,
@@ -7,13 +8,13 @@ import {
   YAxis,
   Tooltip,
 } from 'recharts'
-import { formaDataAverage } from '../../../formater/Average'
 
 /**
  * return full name of the user
- * @param   {string} firstName  First Name of the User
- * @param   {string} lastName   Last Name of the User
- * @return  {string}            Fullname of the user
+ * @param   {object} data from call service
+ * @param   {object} formaDataAverage > data formated
+ * @param   {object} AverageData > data exploit in chart
+ * @returns {Reactnode} jsx injected in DOM
  */
 
 function Average({ data }) {
@@ -28,7 +29,7 @@ function Average({ data }) {
   }, [data])
 
   return (
-    <ResponsiveContainer width={263} height={258} >       
+    <ResponsiveContainer width={263} height={258}>
       <LineChart
         data={averageData}
         margin={{ top: 0, right: 15, left: 15, bottom: 15 }}
@@ -68,6 +69,13 @@ function Average({ data }) {
   )
 }
 
+/**
+ * Render CustomTooltip component
+ * @function CustomTooltip
+ * @param {array} payload > data to display
+ * @returns {Reactnode} jsx injected in DOM
+ */
+
 function CustomTooltip({ active, payload }) {
   if (active && payload) {
     return (
@@ -76,5 +84,9 @@ function CustomTooltip({ active, payload }) {
   }
   return null
 }
+
+/**
+ * PropTypes Average component
+ */
 
 export default Average

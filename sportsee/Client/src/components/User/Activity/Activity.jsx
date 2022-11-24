@@ -26,8 +26,8 @@ function Activity({ data }) {
   useEffect(() => {
     async function load() {
       const dataFormated = await formaDataActivity(data)
-      console.log(dataFormated)
-      console.log(data)
+      // console.log(dataFormated)
+      // console.log(data)
       setActivityData(dataFormated)
     }
     load()

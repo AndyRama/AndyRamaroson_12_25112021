@@ -19,10 +19,8 @@ import { extractNutriment } from '../../formater/Nutriment'
 import { extractScore } from '../../formater/Score'
 
 /**
- * Render Page Home component
  * @function Home
- * @param {string} urlId User path
- * @param {object} User
+ * @param {string} urlId user/id
  * @param {object} ActivityData
  * @param {object} AverageData
  * @param {object} PerformanceData
@@ -47,7 +45,7 @@ function Home(urlId) {
     async function load() {
       const userData = await getUser(urlId)
       setUser(userData)
-      console.log(userData)
+      // console.log(userData)
 
       const averageData = await getAverage(urlId)
       setAverage(averageData)

@@ -1,9 +1,6 @@
 export async function formaDataActivity(data) {
-  const dataM = require('./../service/mockedApi')
-
-  if (data.sessions) {
-    console.log(dataM)
-    return (data = dataM)
+  if (!data.sessions) {
+    return false
   }
 
   const sessions = data.sessions

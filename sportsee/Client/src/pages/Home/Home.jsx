@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+
 import './Home.scss'
 
 import Activity from '../../components/User/Activity/Activity'
@@ -15,8 +16,17 @@ import {
   getUser,
 } from '../../service/Api'
 
+// import {
+//   getActivity,
+//   getAverage,
+//   getPerformance,
+//   getUser,
+// } from '../../__mock__/mock.js'
+
 import { extractNutriment } from '../../formater/Nutriment'
 import { extractScore } from '../../formater/Score'
+import mockedData from '../../__mocks__/dataMocked'
+import { useParams } from 'react-router-dom'
 
 /**
  * @function Home
@@ -29,10 +39,7 @@ import { extractScore } from '../../formater/Score'
  * @returns {Reactnode} jsx injected in DOM
  */
 
-// eslint-disable-next-line no-unused-vars
-const urlId = window.location.pathname
-
-function Home(urlId) {
+function Home() {
   const [user, setUser] = useState({})
   const [average, setAverage] = useState([])
   const [activity, setActivity] = useState([])
@@ -41,29 +48,31 @@ function Home(urlId) {
   const [nutriment, setNutriment] = useState({})
   const [score, setScore] = useState(0)
 
+  const { id } = useParams()
+  console.log(user)
   useEffect(() => {
     async function load() {
-      const userData = await getUser(urlId)
+      const userData = await getUser(id)
       setUser(userData)
       // console.log(userData)
 
-      const averageData = await getAverage(urlId)
+      const averageData = await getAverage(id)
       setAverage(averageData)
 
-      const activityData = await getActivity(urlId)
+      const activityData = await getActivity(id)
       setActivity(activityData)
 
-      const performanceData = await getPerformance(urlId)
+      const performanceData = await getPerformance(id)
       setPerformance(performanceData)
 
       setScore(await extractScore(userData))
       setNutriment(await extractNutriment(userData))
     }
     load()
-  }, [urlId])
+  }, [id])
 
-  if (!user.userInfos) {
-    return <div>Loarding</div>
+  if (!user || !user.userInfos) {
+    return <div>Nous sommes désolé le site est indisponible</div>
   }
   return (
     <section>

@@ -21,14 +21,11 @@ import axios from 'axios'
  * @returns {object} data > send to formated
  */
 
-// the user id grabed from the url and used to update the endpoints dynamically
-const urlId = window.location.pathname
-
 export async function getUser(id) {
   try {
     const {
       data: { data },
-    } = await axios.get(`http://localhost:3000${urlId}`)
+    } = await axios.get(`http://localhost:3333/user/${id}`)
     // console.log(data);
     return data
   } catch (error) {
@@ -40,7 +37,7 @@ export async function getActivity(id) {
   try {
     const {
       data: { data },
-    } = await axios.get(`http://localhost:3000${urlId}/Activity`)
+    } = await axios.get(`http://localhost:3333/user/${id}/Activity`)
     // console.log(data)
     return data
   } catch (error) {
@@ -52,7 +49,7 @@ export async function getAverage(id) {
   try {
     const {
       data: { data },
-    } = await axios.get(`http://localhost:3000${urlId}/Average-sessions`)
+    } = await axios.get(`http://localhost:3333/user/${id}/Average-sessions`)
     // console.log(data)
     return data
   } catch (error) {
@@ -64,7 +61,7 @@ export async function getPerformance(id) {
   try {
     const {
       data: { data },
-    } = await axios.get(`http://localhost:3000${urlId}/performance`)
+    } = await axios.get(`http://localhost:3333/user/${id}/performance`)
     // console.log(data)
     return data
   } catch (error) {
@@ -77,7 +74,7 @@ export async function getScore(id) {
     // console.log("test")
     const {
       data: { data },
-    } = await axios.get(`http://localhost:3000${urlId}`)
+    } = await axios.get(`http://localhost:3333/user/${id}`)
     return data
   } catch (error) {
     console.error(error)

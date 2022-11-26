@@ -3,20 +3,45 @@
   margin-left: 224px;
 }
 
+.message {
+  position: absolute;
+  top: 34%;
+  left: calc(45% - 200px);
+  font-size: 36px;
+  color: var(--primary);
+
+  &__logo {
+    position: relative;
+    top: 15px;
+    left: 45%;
+    border-radius: 50%;
+    background-color: var(--primary);
+  }
+
+  @media screen and (max-width: 1370px) {
+    .message {
+      top: 30% !important;
+      left: 20% !important;
+      &__logo {
+        top: 100px;
+        left: -80px !important;
+      }
+    }
+  }
+}
 
 .inline-charts {
   display: flex;
   height: 258px;
   justify-content: space-between;
-  
+
   &--average {
-    width: 30%;    
-    position:relative;
+    width: 30%;
+    position: relative;
     background: var(--primary);
     border-radius: var(--border-radius);
-   
   }
- 
+
   &--radar {
     width: 30%;
     background-color: var(--dark-bg);
@@ -38,7 +63,7 @@
   line-height: 24px;
   font-size: medium;
   font-weight: bold;
-  color:var(--white-bg);
+  color: var(--white-bg);
   opacity: 0.7;
 }
 
@@ -58,8 +83,8 @@
   .dashboard {
     margin-left: 130px;
     margin-top: 0;
-    display: flex;      
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
   }
 
   .main-charts {
@@ -75,16 +100,16 @@
 
     &--average {
       padding: 0px;
-  
+
       .recharts-surface {
         height: 200px;
         width: 200px;
       }
     }
 
-    &--radar { 
-      .recharts-responsive-container{
-        width: 135%!important;
+    &--radar {
+      .recharts-responsive-container {
+        width: 135% !important;
       }
 
       .recharts-surface {
@@ -93,9 +118,9 @@
       }
 
       .recharts-wrapper {
-       width: 150%;
-     }
-    }       
+        width: 150%;
+      }
+    }
 
     &--score {
       .recharts-surface {

@@ -1,12 +1,12 @@
 .nutriment-container {
-
   ul {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     margin-top: 200px;
-    
-    @media screen and (max-width:1370px) {
+
+    @media screen and (max-width: 1370px) {
       margin-top: 160px;
+      margin-right: 30px;
     }
   }
 
@@ -14,7 +14,7 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    align-items: center;   
+    align-items: center;
     margin-bottom: 39px;
     background: var(--white-bg);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
@@ -22,12 +22,12 @@
     height: 124px;
     width: 258px;
 
-    @media screen and (max-width:1370px) {
+    @media screen and (max-width: 1370px) {
       margin-bottom: 24px;
       height: 90px;
       width: 150px;
     }
-  } 
+  }
 }
 
 .inside-content-wrapper {
@@ -54,12 +54,12 @@
   border-radius: 5px;
   margin-left: 53px;
 
-  @media screen and (max-width:1370px) {
+  @media screen and (max-width: 1370px) {
     margin-left: 26px;
 
     svg {
-      width: 50px!important;
-      height: 50px!important;
+      width: 50px !important;
+      height: 50px !important;
     }
   }
 }

@@ -3,13 +3,14 @@ export async function extractNutriment(data) {
     return false
   }
 
-  const {keyData:{calorieCount, proteinCount, carbohydrateCount,lipidCount}} = data
-  
+  const {
+    keyData: { calorieCount, proteinCount, carbohydrateCount, lipidCount },
+  } = data
+
   return {
     calorieCount,
     proteinCount,
     carbohydrateCount,
-    lipidCount
+    lipidCount,
   }
 }
-

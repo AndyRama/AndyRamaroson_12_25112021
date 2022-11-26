@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-
+import logo from './../../logo.svg'
 import './Home.scss'
 
 import Activity from '../../components/User/Activity/Activity'
@@ -9,23 +9,26 @@ import Score from '../../components/User/Score/Score'
 import Nutriments from '../../components/User/Nutriment/Nutriments'
 import UserName from '../../components/User/UserName/UserName'
 
+// Data mocked
+// eslint-disable-next-line no-unused-vars
+import mock from '../../__mocks__/mock.js'
 import {
   getActivity,
   getAverage,
   getPerformance,
   getUser,
-} from '../../service/Api'
+} from '../../__mocks__/mock.js'
 
+// Data Api
 // import {
 //   getActivity,
 //   getAverage,
 //   getPerformance,
 //   getUser,
-// } from '../../__mock__/mock.js'
+// } from '../../service/Api'
 
 import { extractNutriment } from '../../formater/Nutriment'
 import { extractScore } from '../../formater/Score'
-import mockedData from '../../__mocks__/dataMocked'
 import { useParams } from 'react-router-dom'
 
 /**
@@ -40,6 +43,7 @@ import { useParams } from 'react-router-dom'
  */
 
 function Home() {
+  const { id } = useParams()
   const [user, setUser] = useState({})
   const [average, setAverage] = useState([])
   const [activity, setActivity] = useState([])
@@ -48,8 +52,6 @@ function Home() {
   const [nutriment, setNutriment] = useState({})
   const [score, setScore] = useState(0)
 
-  const { id } = useParams()
-  console.log(user)
   useEffect(() => {
     async function load() {
       const userData = await getUser(id)
@@ -58,12 +60,15 @@ function Home() {
 
       const averageData = await getAverage(id)
       setAverage(averageData)
+      // console.log(averageData)
 
       const activityData = await getActivity(id)
       setActivity(activityData)
+      // console.log(activityData)
 
       const performanceData = await getPerformance(id)
       setPerformance(performanceData)
+      // console.log(performanceData)
 
       setScore(await extractScore(userData))
       setNutriment(await extractNutriment(userData))
@@ -72,7 +77,12 @@ function Home() {
   }, [id])
 
   if (!user || !user.userInfos) {
-    return <div>Nous sommes désolé le site est indisponible</div>
+    return (
+      <div className="message">
+        <img src={logo} alt="Logo" className="message__logo" />
+        <p>Notre site est temporairement indisponible</p>
+      </div>
+    )
   }
   return (
     <section>

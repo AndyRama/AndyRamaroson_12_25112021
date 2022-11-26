@@ -25,7 +25,7 @@ export async function getUser(id) {
   try {
     const {
       data: { data },
-    } = await axios.get(`http://localhost:3333/user/${id}`)
+    } = await axios.get(`http://localhost:3000/user/${id}`)
     // console.log(data);
     return data
   } catch (error) {
@@ -37,7 +37,7 @@ export async function getActivity(id) {
   try {
     const {
       data: { data },
-    } = await axios.get(`http://localhost:3333/user/${id}/Activity`)
+    } = await axios.get(`http://localhost:3000/user/${id}/Activity`)
     // console.log(data)
     return data
   } catch (error) {
@@ -49,7 +49,7 @@ export async function getAverage(id) {
   try {
     const {
       data: { data },
-    } = await axios.get(`http://localhost:3333/user/${id}/Average-sessions`)
+    } = await axios.get(`http://localhost:3000/user/${id}/Average-sessions`)
     // console.log(data)
     return data
   } catch (error) {
@@ -61,7 +61,7 @@ export async function getPerformance(id) {
   try {
     const {
       data: { data },
-    } = await axios.get(`http://localhost:3333/user/${id}/performance`)
+    } = await axios.get(`http://localhost:3000/user/${id}/performance`)
     // console.log(data)
     return data
   } catch (error) {
@@ -74,7 +74,7 @@ export async function getScore(id) {
     // console.log("test")
     const {
       data: { data },
-    } = await axios.get(`http://localhost:3333/user/${id}`)
+    } = await axios.get(`http://localhost:3000/user/${id}`)
     return data
   } catch (error) {
     console.error(error)

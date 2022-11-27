@@ -5,7 +5,7 @@ export async function formaDataAverage(data) {
 
   if (!data.sessions) {
     // console.log(data.activity.sessions)
-    return (data.sessions = data.average.sessions)
+    return false
   } else {
     // eslint-disable-next-line array-callback-return
     sessions.map((session, index) => {

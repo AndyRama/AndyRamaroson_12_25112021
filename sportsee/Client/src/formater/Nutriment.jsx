@@ -1,6 +1,6 @@
 export async function extractNutriment(data) {
   if (!data) {
-    return false
+    return console.log('testets')
   }
 
   const {

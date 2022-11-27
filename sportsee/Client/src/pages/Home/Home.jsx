@@ -11,21 +11,21 @@ import UserName from '../../components/User/UserName/UserName'
 
 // Data mocked
 // eslint-disable-next-line no-unused-vars
-import mock from '../../__mocks__/mock.js'
-import {
-  getActivity,
-  getAverage,
-  getPerformance,
-  getUser,
-} from '../../__mocks__/mock.js'
-
-// Data Api
+// import mock from '../../__mocks__/mock.js'
 // import {
 //   getActivity,
 //   getAverage,
 //   getPerformance,
 //   getUser,
-// } from '../../service/Api'
+// } from '../../__mocks__/mock.js'
+
+// Data Api
+import {
+  getActivity,
+  getAverage,
+  getPerformance,
+  getUser,
+} from '../../service/Api'
 
 import { extractNutriment } from '../../formater/Nutriment'
 import { extractScore } from '../../formater/Score'
@@ -80,7 +80,10 @@ function Home() {
     return (
       <div className="message">
         <img src={logo} alt="Logo" className="message__logo" />
-        <p>Notre site est temporairement indisponible</p>
+        <p>
+          Chargement en cours ... <br />
+          Notre site est temporairement indisponible
+        </p>
       </div>
     )
   }

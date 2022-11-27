@@ -11,8 +11,7 @@ export async function formaDataPerformance(data) {
   ]
 
   if (!data.data) {
-    // console.log(data.performance.data)
-    return (data.data = data.performance.data)
+    return false
   } else {
     // eslint-disable-next-line array-callback-return
     perfs.map((perf, index) => {

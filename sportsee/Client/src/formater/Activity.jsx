@@ -4,8 +4,7 @@ export async function formaDataActivity(data) {
   const day = ['1', '2', '3', '4', '5', '6', '7']
 
   if (!data.sessions) {
-    // console.log(data.activity.sessions)
-    return (data.sessions = data.activity.sessions)
+    return false
   } else {
     // eslint-disable-next-line array-callback-return
     sessions.map((session, index) => {

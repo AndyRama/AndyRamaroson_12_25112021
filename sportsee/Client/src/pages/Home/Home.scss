@@ -6,26 +6,26 @@
 .message {
   position: absolute;
   top: 34%;
-  left: calc(45% - 200px);
+  left: calc(45% - 250px);
   font-size: 36px;
   color: var(--primary);
 
   &__logo {
     position: relative;
-    top: 15px;
-    left: 45%;
+    top: 40px;
+    left: 43%;
     border-radius: 50%;
     background-color: var(--primary);
+  }
+
+  p {
+    text-align: center;
   }
 
   @media screen and (max-width: 1370px) {
     .message {
       top: 30% !important;
-      left: 20% !important;
-      &__logo {
-        top: 100px;
-        left: -80px !important;
-      }
+      left: 10% !important;
     }
   }
 }

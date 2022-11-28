@@ -73,7 +73,7 @@ function Activity({ data }) {
           yAxisId="poids"
           name="Poids (kg)"
           dataKey="kilogram"
-          fill="#282D30"
+          fill="#E60000"
           barSize={8}
           radius={[50, 50, 0, 0]}
         />
@@ -82,7 +82,7 @@ function Activity({ data }) {
           yAxisId="calories"
           name="Calories brûlées (kCal)"
           dataKey="calories"
-          fill="#E60000"
+          fill="#282D30"
           barSize={8}
           radius={[50, 50, 0, 0]}
         />

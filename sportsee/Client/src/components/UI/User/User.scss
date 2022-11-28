@@ -1,16 +1,19 @@
 .msg {
   text-align: center;
-  margin-top: 150px;
-  margin-left: 50px;
+  margin-top: 200px;
+  margin-left: 150px;
 }
 
 .users {
   justify-content: center;
-  align-items: center;
   display: flex;
-  position: relative;
-  top: 50%;
-  left: 0%;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+
+  @media screen and (max-width: 1370px) {
+    left: 35%;
+  }
 }
 
 .user {

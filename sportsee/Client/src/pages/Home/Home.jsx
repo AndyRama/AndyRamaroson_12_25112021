@@ -9,23 +9,23 @@ import Score from '../../components/User/Score/Score'
 import Nutriments from '../../components/User/Nutriment/Nutriments'
 import UserName from '../../components/User/UserName/UserName'
 
-// Data mocked
 // eslint-disable-next-line no-unused-vars
-// import mock from '../../__mocks__/mock.js'
-// import {
-//   getActivity,
-//   getAverage,
-//   getPerformance,
-//   getUser,
-// } from '../../__mocks__/mock.js'
+import mock from '../../__mocks__/mock.js'
 
-// Data Api
 import {
   getActivity,
   getAverage,
   getPerformance,
   getUser,
-} from '../../service/Api'
+} from '../../__mocks__/mock.js'
+
+// Data Api
+// import {
+//   getActivity,
+//   getAverage,
+//   getPerformance,
+//   getUser,
+// } from '../../service/Api'
 
 import { extractNutriment } from '../../formater/Nutriment'
 import { extractScore } from '../../formater/Score'
@@ -33,7 +33,7 @@ import { useParams } from 'react-router-dom'
 
 /**
  * @function Home
- * @param {string} urlId user/id
+ * @param {string} id
  * @param {object} ActivityData
  * @param {object} AverageData
  * @param {object} PerformanceData
@@ -82,7 +82,7 @@ function Home() {
         <img src={logo} alt="Logo" className="message__logo" />
         <p>
           Chargement en cours ... <br />
-          Notre site est temporairement indisponible
+          Site est temporairement indisponible
         </p>
       </div>
     )

@@ -12,15 +12,14 @@ export async function formaDataPerformance(data) {
 
   if (!data.data) {
     return false
-  } else {
-    // eslint-disable-next-line array-callback-return
-    perfs.map((perf, index) => {
-      const item = {
-        label: kind[perf.kind - 1],
-        value: perf.value,
-      }
-      perFormated.push(item)
-    })
-    return perFormated
   }
+  // eslint-disable-next-line array-callback-return
+  perfs.map((perf, index) => {
+    const item = {
+      label: kind[perf.kind - 1],
+      value: perf.value,
+    }
+    perFormated.push(item)
+  })
+  return perFormated
 }

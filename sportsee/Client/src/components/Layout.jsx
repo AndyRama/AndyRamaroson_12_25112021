@@ -15,8 +15,8 @@ function Layout() {
       <LeftBar />
       <Routes>
         <Route path="/Accueil" element={<Accueil />}></Route>
-        <Route path="Accueil/user/:id" element={<Home />}></Route>
-        {/* <Route path="/user/:id" element={< />}></Route> */}
+        <Route path="accueil/home/user/:id" element={<Home />}></Route>
+        {/* <Route path="/user/:id" element={<Home />}></Route> */}
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>

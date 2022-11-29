@@ -17,27 +17,28 @@ import './Navbar.scss'
  */
 
 function Navbar() {
-  const ongletId = ['Profil', 'Réglages', 'Communauté']
+  const ongletId = ['Accueil', 'Profil', 'Réglages', 'Communauté']
   const location = useLocation()
 
   return (
     <header className="header">
       <nav className="Navbar">
-        <Link className="Nav-Logo-Wrapper" to="/">
+        <Link className="Nav-Logo-Wrapper" to="/Accueil">
           <img src={logo} alt="Logo" />
           <LogoText />
         </Link>
         <ul className="Nav-Buttons-Wrapper">
-          <Link
+          {/* <Link
             to="/Accueil"
             className={
-              location.pathname === '/' ? 'home-page active' : 'home-page'
+              location.pathname === '/Accueil'
+                ? 'Accueil-page active'
+                : 'Accueil-page'
             }
-            page="home"
+            page="accueil"
           >
-            {/* {' '} */}
             Accueil
-          </Link>
+          </Link> */}
           {ongletId.map((onglet, index) => (
             <Link
               to={`/${onglet}`}

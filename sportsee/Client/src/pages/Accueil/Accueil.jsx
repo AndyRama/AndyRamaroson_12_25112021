@@ -8,10 +8,10 @@ function Accueil(id) {
     <main>
       <Banner message="Bonjour Veuillez vous identifiez ?" />
       <section className="users">
-        <Link to="user/12">
+        <Link to="home/user/12">
           <User key={id} name={'karl'} />
         </Link>
-        <Link to="user/18">
+        <Link to="home/user/18">
           <User key={id} name="Cecilia" />
         </Link>
       </section>

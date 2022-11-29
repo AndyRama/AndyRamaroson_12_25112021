@@ -29,13 +29,13 @@ function Navbar() {
         </Link>
         <ul className="Nav-Buttons-Wrapper">
           <Link
-            to="/"
+            to="/Accueil"
             className={
               location.pathname === '/' ? 'home-page active' : 'home-page'
             }
             page="home"
           >
-            {' '}
+            {/* {' '} */}
             Accueil
           </Link>
           {ongletId.map((onglet, index) => (

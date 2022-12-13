@@ -15,8 +15,8 @@ import {
 /**
  * @function Activity
  * @param { Array.<Objet> } data
- * @param {object} props.data > user data
- * @param {object} formaDataActivity > data formated
+ * @param {object} props.data  user data
+ * @param {object} formaDataActivity  data formated
  * @returns {Reactnode} jsx injected in DOM
  */
 

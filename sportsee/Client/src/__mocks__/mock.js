@@ -1,6 +1,6 @@
 export async function getUser(id) {
   const data = {
-    id: 12,
+    id: 19,
     userInfos: {
       firstName: 'Andy',
       lastName: 'Ramaroson',
@@ -8,10 +8,10 @@ export async function getUser(id) {
     },
     todayScore: 0.8,
     keyData: {
-      calorieCount: 1930,
-      proteinCount: 155,
-      carbohydrateCount: 790,
-      lipidCount: 150,
+      calorieCount: 3000,
+      proteinCount: 255,
+      carbohydrateCount: 900,
+      lipidCount: 280,
     },
   }
 
@@ -21,7 +21,7 @@ export async function getUser(id) {
 
 export async function getActivity(id) {
   const data = {
-    userId: 12,
+    userId: 19,
     sessions: [
       {
         day: '2020-07-01',
@@ -51,7 +51,7 @@ export async function getActivity(id) {
       {
         day: '2020-07-06',
         kilogram: 78,
-        calories: 162,
+        calories: 262,
       },
       {
         day: '2020-07-07',
@@ -65,7 +65,7 @@ export async function getActivity(id) {
 
 export async function getAverage(id) {
   const data = {
-    userId: 12,
+    userId: 19,
     sessions: [
       {
         day: 1,
@@ -85,11 +85,11 @@ export async function getAverage(id) {
       },
       {
         day: 5,
-        sessionLength: 0,
+        sessionLength: 40,
       },
       {
         day: 6,
-        sessionLength: 0,
+        sessionLength: 45,
       },
       {
         day: 7,
@@ -102,7 +102,7 @@ export async function getAverage(id) {
 
 export async function getPerformance(id) {
   const data = {
-    userId: 12,
+    userId: 19,
     kind: {
       1: 'cardio',
       2: 'energy',
@@ -125,7 +125,7 @@ export async function getPerformance(id) {
         kind: 3,
       },
       {
-        value: 50,
+        value: 180,
         kind: 4,
       },
       {
@@ -133,7 +133,7 @@ export async function getPerformance(id) {
         kind: 5,
       },
       {
-        value: 90,
+        value: 190,
         kind: 6,
       },
     ],

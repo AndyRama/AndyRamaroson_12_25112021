@@ -32,22 +32,22 @@
   font-weight: 700;
 }
 
-@media screen and (max-width:1370px) {
+@media screen and (max-width: 1370px) {
   .score {
     height: 159px !important;
   }
 
-  .score-title{
+  .score-title {
     top: 0;
   }
 
-  .score-result{
-    top: 30%;
-    left: 40%;
+  .score-result {
+    top: 28%;
+    left: 42%;
   }
 
   .score-comment {
-    top: 55%;
-    left: 35%;
+    top: 51%;
+    left: 38%;
   }
 }

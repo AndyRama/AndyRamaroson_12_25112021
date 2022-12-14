@@ -17,56 +17,51 @@ import IconLipides from '../../UI/Icons/IconLipides'
 function Nutriments({
   data: { calorieCount, proteinCount, carbohydrateCount, lipidCount },
 }) {
+  const nutrientTypes = [
+    {
+      type: 'Calories',
+      unit: 'kCal',
+      quantity: calorieCount / 1000,
+      icon: IconCalories,
+    },
+    {
+      type: 'Proteines',
+      unit: 'g',
+      quantity: proteinCount,
+      icon: IconProtein,
+    },
+    {
+      type: 'Glucides',
+      unit: 'g',
+      quantity: carbohydrateCount,
+      icon: IconCarbs,
+    },
+    {
+      type: 'Lipid',
+      unit: 'g',
+      quantity: lipidCount,
+      icon: IconLipides,
+    },
+  ]
   return (
     <div className="nutriment-container">
       <ul>
-        <li>
-          <div className="inside-content-wrapper">
-            <div className="icon-box">
-              <IconCalories />
+        {nutrientTypes.map(({ type, unit, quantity, icon: Icon }) => (
+          <li>
+            <div className="inside-content-wrapper">
+              <div className="icon-box">
+                <Icon />
+              </div>
             </div>
-          </div>
-          <div className="icon-text">
-            <p className="quantity">{calorieCount / 1000}kCal</p>
-            <p className="nutrition-type">Calories</p>
-          </div>
-        </li>
-
-        <li>
-          <div className="inside-content-wrapper">
-            <div className="icon-box">
-              <IconProtein />
+            <div className="icon-text">
+              <p className="quantity">
+                {quantity}
+                {unit}
+              </p>
+              <p className="nutrition-type">{type}</p>
             </div>
-          </div>
-          <div className="icon-text">
-            <p className="quantity">{proteinCount}g</p>
-            <p className="nutrition-type">Proteines</p>
-          </div>
-        </li>
-
-        <li>
-          <div className="inside-content-wrapper">
-            <div className="icon-box">
-              <IconCarbs />
-            </div>
-          </div>
-          <div className="icon-text">
-            <p className="quantity">{carbohydrateCount}g</p>
-            <p className="nutrition-type">Glucides</p>
-          </div>
-        </li>
-
-        <li>
-          <div className="inside-content-wrapper">
-            <div className="icon-box">
-              <IconLipides />
-            </div>
-          </div>
-          <div className="icon-text">
-            <p className="quantity">{lipidCount}g</p>
-            <p className="nutrition-type">Lipides</p>
-          </div>
-        </li>
+          </li>
+        ))}
       </ul>
     </div>
   )

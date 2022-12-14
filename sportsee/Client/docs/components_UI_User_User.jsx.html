@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: components/User/UserName/UserName.jsx</title>
+    <title>JSDoc: Source: components/UI/User/User.jsx</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: components/User/UserName/UserName.jsx</h1>
+    <h1 class="page-title">Source: components/UI/User/User.jsx</h1>
 
     
 
@@ -26,35 +26,38 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import PropTypes from 'prop-types'
-import React from 'react'
-import './UserName.scss'
+            <pre class="prettyprint source linenums"><code>import propTypes from 'prop-types'
+import './User.scss'
+import avatar from './../../../user.svg'
 
 /**
- * return firstname of the user
- * @param {string} firstName  FirstName of the User
+ * Render User component
+ * @function User
+ * @param {object} props
+ * @param {string} props.id
+ * @param {string} props.name
+ * @returns {Reactnode} jsx injected in DOM
  */
 
-function UserName({ firstname }) {
+function User({ id, name }) {
   return (
-    &lt;div className="profil">
-      &lt;h1>
-        Bonjour &lt;span>{firstname}&lt;/span>
-      &lt;/h1>
-      &lt;h2> Félicitations ! Vous avez explosé vos objectifs hier 👏 &lt;/h2>
-    &lt;/div>
+    &lt;header className="user">
+      &lt;img src={avatar} className="avatar" alt="icon-user" />
+      &lt;h3 className="user-name">{name}&lt;/h3>
+    &lt;/header>
   )
 }
 
 /**
- * PropTypes UserName component
+ * PropTypes User component
  */
-
-UserName.propTypes = {
-  firstname: PropTypes.string,
+User.propTypes = {
+  id: propTypes.number,
+  Avatar: propTypes.string,
+  name: propTypes.string.isRequired,
 }
 
-export default UserName
+export default User
 </code></pre>
         </article>
     </section>

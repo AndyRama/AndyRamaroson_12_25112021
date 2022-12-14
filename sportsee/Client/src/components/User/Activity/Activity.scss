@@ -11,10 +11,6 @@
 .custom-tooltip--calories,
 .custom-tooltip--poids {
   background: var(--primary) !important;
-
-  &:hover {
-    list-style: none !important;
-  }
 }
 
 .recharts-legend-item-text {

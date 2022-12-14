@@ -13,10 +13,11 @@ import {
 } from 'recharts'
 
 /**
+ * Render Activity component
  * @function Activity
- * @param { Array.<Objet> } data
- * @param {object} props.data  user data
- * @param {object} formaDataActivity  data formated
+ * @param   {object} props.data > data come from service
+ * @param   {object} formaDataActivity > data.sessions formated
+ * @param   {object} ActivityData > formated data injected in chart 1
  * @returns {Reactnode} jsx injected in DOM
  */
 
@@ -26,8 +27,6 @@ function Activity({ data }) {
   useEffect(() => {
     async function load() {
       const dataFormated = await formaDataActivity(data)
-      // console.log(dataFormated)
-      // console.log(data)
       setActivityData(dataFormated)
     }
     load()
@@ -70,6 +69,7 @@ function Activity({ data }) {
         <Tooltip content={<CustomTooltip />} />
         <CartesianGrid strokeDasharray="3 3 " stroke="#ccc" vertical={false} />
         <Bar
+          className="legend"
           yAxisId="poids"
           name="Poids (kg)"
           dataKey="kilogram"

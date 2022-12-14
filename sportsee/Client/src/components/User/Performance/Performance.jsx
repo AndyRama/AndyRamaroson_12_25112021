@@ -1,33 +1,45 @@
 import React, { useEffect, useState } from 'react'
-import { ResponsiveContainer, Radar,  RadarChart,  PolarGrid,  PolarAngleAxis} from "recharts";
-import { formaDataPerformance } from '../../../formater/Performance';
+import {
+  ResponsiveContainer,
+  Radar,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+} from 'recharts'
+import { formaDataPerformance } from '../../../formater/Performance'
 
-function Performance({data}) {
-  
-  const [performanceData,setPerformanceData] = useState([])
-  
+/**
+ * Render Performance component
+ * @function Performance
+ * @param   {object} props.data > data come from service
+ * @param   {object} formaDataPerformance > data.sessions formated
+ * @param   {object} PerformanceData > formated data injected in chart2
+ * @returns {Reactnode} jsx injected in DOM
+ */
+
+function Performance({ data }) {
+  const [performanceData, setPerformanceData] = useState([])
+
   useEffect(() => {
     async function load() {
       const dataFormated = await formaDataPerformance(data)
       setPerformanceData(dataFormated)
     }
     load()
-  }, [data]);
+  }, [data])
 
-  return (    
-    <ResponsiveContainer >
+  return (
+    <ResponsiveContainer>
       <RadarChart
         cx={130}
         cy={130}
-        outerRadius={80}    
+        outerRadius={80}
         data={performanceData}
-        fil="white"  
-        >
-        <PolarGrid 
-          radialLines={false} 
-        />
-        <PolarAngleAxis 
-          dataKey="label" 
+        fil="white"
+      >
+        <PolarGrid radialLines={false} />
+        <PolarAngleAxis
+          dataKey="label"
           stroke="white"
           line-stroke="none"
           tickLine={false}
@@ -43,7 +55,7 @@ function Performance({data}) {
         />
       </RadarChart>
     </ResponsiveContainer>
-  );
+  )
 }
 
-export default Performance;
+export default Performance

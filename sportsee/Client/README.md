@@ -2,7 +2,7 @@
 
 **personnel Dashboard**
 
-<kbd>![selected appartment](./sportSee.png)</kbd>
+<kbd>![personal dashboard](./sportSee.png)</kbd>
 
 > ISSUE
 Create an analytical dashboard of sports performance and physiological indicators.

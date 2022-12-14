@@ -7,10 +7,11 @@ import IconCarbs from '../../UI/Icons/IconCarbs'
 import IconLipides from '../../UI/Icons/IconLipides'
 
 /**
- * return full name of the user
- * @param   {string} firstName  First Name of the User
- * @param   {string} lastName   Last Name of the User
- * @return  {string}            Fullname of the user
+ * Render Nutriments component
+ * @function Nutriments
+ * @param   {object} props.data > data come from service
+ * @param   {object} keyData > data injected in
+ * @returns {Reactnode} jsx injected in DOM
  */
 
 function Nutriments({

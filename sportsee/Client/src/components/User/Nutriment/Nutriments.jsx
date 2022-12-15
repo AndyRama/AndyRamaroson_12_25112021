@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import './Nutriments.scss'
 
@@ -9,8 +10,11 @@ import IconLipides from '../../UI/Icons/IconLipides'
 /**
  * Render Nutriments component
  * @function Nutriments
- * @param   {object} props.data > data come from service
- * @param   {object} keyData > data injected in
+ * @param   {object} data Come from  getUser(id) with "key: KeyData" in service Api or Mocks
+ * @param   {number} data.calorieCount - number Calories
+ * @param   {number} data.proteinCount - number Proteines
+ * @param   {number} data.carbohydrateCount - number Glucides
+ * @param   {number} data.lipidCount - number Lipid
  * @returns {Reactnode} jsx injected in DOM
  */
 
@@ -43,6 +47,7 @@ function Nutriments({
       icon: IconLipides,
     },
   ]
+
   return (
     <div className="nutriment-container">
       <ul>
@@ -65,6 +70,19 @@ function Nutriments({
       </ul>
     </div>
   )
+}
+
+/**
+ * PropTypes Nutriments component
+ */
+
+Nutriments.propTypes = {
+  data: PropTypes.shape({
+    calorieCount: PropTypes.number.isRequired,
+    proteinCount: PropTypes.number.isRequired,
+    carbohydrateCount: PropTypes.number.isRequired,
+    lipidCount: PropTypes.number.isRequired,
+  }).isRequired,
 }
 
 export default Nutriments

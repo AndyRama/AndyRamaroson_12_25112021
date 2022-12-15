@@ -3,8 +3,12 @@ import React from 'react'
 import './UserName.scss'
 
 /**
- * return firstname of the user
- * @param {string} firstName  FirstName of the User
+ * Render UserName component
+ * @function UserName
+ * @param {object} Data Come from function async "getUser()" [key: "userInfos"] service Api
+ * @param {number} Data.id - id user
+ * @param {string} Data.firstName - firstName user
+ * @returns {Reactnode} jsx injected in DOM
  */
 
 function UserName({ firstname }) {

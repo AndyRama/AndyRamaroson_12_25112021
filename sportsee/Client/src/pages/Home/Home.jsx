@@ -33,12 +33,16 @@ import { useParams } from 'react-router-dom'
 
 /**
  * @function Home
- * @param {string} id
- * @param {object} ActivityData
- * @param {object} AverageData
- * @param {object} PerformanceData
- * @param {object} extractNutriment
- * @param {object} extractScore
+ * @param {number} user id
+ * @param {object} Data User: keys
+ * @param {object} Data.Userinfos - Firstname, LastName, age ...
+ * @param {number} Data.todayScore - Current Score user.
+ * @param {object} Data.KeyData - Value for all nutriments.
+ * @param {object} ActivityData - Data processed to be displayed in our component chart 1
+ * @param {object} AverageData  - Data processed to be displayed in our component chart 2
+ * @param {object} PerformanceData - Data processed to be displayed in our component chart 3
+ * @param {object} extractScore - Data processed to be displayed in our component chart 4
+ * @param {object} extractNutriment - Data processed to be displayed in block aside
  * @returns {Reactnode} jsx injected in DOM
  */
 
@@ -56,19 +60,15 @@ function Home() {
     async function load() {
       const userData = await getUser(id)
       setUser(userData)
-      // console.log(userData)
 
       const averageData = await getAverage(id)
       setAverage(averageData)
-      // console.log(averageData)
 
       const activityData = await getActivity(id)
       setActivity(activityData)
-      // console.log(activityData)
 
       const performanceData = await getPerformance(id)
       setPerformance(performanceData)
-      // console.log(performanceData)
 
       setScore(await extractScore(userData))
       setNutriment(await extractNutriment(userData))

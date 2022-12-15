@@ -2,6 +2,15 @@ import React from 'react'
 import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
 import './Score.scss'
 
+/**
+ * Render Score component
+ * @function Score
+ * @param {object} data - The data object containing the score.
+ * @param {string} user - The user for who to extract the score.
+ * @param {number} userScore - The extracted score, multiplied by 100.
+ * @return {Reactnode} jsx injected in DOM
+ */
+
 function Score({ data }) {
   const userScore = [{ value: data }, { value: 100 - data }]
 

@@ -10,9 +10,9 @@ import './Navbar.scss'
 /**
  * Render the Navbar component
  * @function Navbar
- * @param {string} props.logo > logo src
- * @param {string} onglet > url path
- * @param {array} ongletId > nav links topic names
+ * @param {string} Props.logo - display images logo
+ * @param {string} Onglet - url for path
+ * @param {array} OngletId - nav links topic names
  * @returns {Reactnode} jsx injected in DOM
  */
 
@@ -28,17 +28,6 @@ function Navbar() {
           <LogoText />
         </Link>
         <ul className="Nav-Buttons-Wrapper">
-          {/* <Link
-            to="/Accueil"
-            className={
-              location.pathname === '/Accueil'
-                ? 'Accueil-page active'
-                : 'Accueil-page'
-            }
-            page="accueil"
-          >
-            Accueil
-          </Link> */}
           {ongletId.map((onglet, index) => (
             <Link
               to={`/${onglet}`}
@@ -64,9 +53,9 @@ function Navbar() {
  */
 
 Navbar.propTypes = {
-  logo: propTypes.string,
-  onglet: propTypes.string,
-  ongletId: propTypes.arrayOf(propTypes.string),
+  logo: propTypes.string.isRequired,
+  onglet: propTypes.string.isRequired,
+  ongletId: propTypes.arrayOf(propTypes.string).isRequired,
 }
 
 export default Navbar

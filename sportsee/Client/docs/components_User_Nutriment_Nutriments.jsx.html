@@ -26,7 +26,8 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import React from 'react'
+            <pre class="prettyprint source linenums"><code>import PropTypes from 'prop-types'
+import React from 'react'
 import './Nutriments.scss'
 
 import IconCalories from '../../UI/Icons/IconCalories'
@@ -37,67 +38,79 @@ import IconLipides from '../../UI/Icons/IconLipides'
 /**
  * Render Nutriments component
  * @function Nutriments
- * @param   {object} props.data > data come from service
- * @param   {object} keyData > data injected in
+ * @param   {object} Data Come from  getUser(id) with "key: KeyData" in service Api or Mocks
+ * @param   {number} Data.calorieCount - number Calories
+ * @param   {number} Data.proteinCount - number Proteines
+ * @param   {number} Data.carbohydrateCount - number Glucides
+ * @param   {number} Data.lipidCount - number Lipid
  * @returns {Reactnode} jsx injected in DOM
  */
 
 function Nutriments({
   data: { calorieCount, proteinCount, carbohydrateCount, lipidCount },
 }) {
+  const nutrientTypes = [
+    {
+      type: 'Calories',
+      unit: 'kCal',
+      quantity: calorieCount / 1000,
+      icon: IconCalories,
+    },
+    {
+      type: 'Proteines',
+      unit: 'g',
+      quantity: proteinCount,
+      icon: IconProtein,
+    },
+    {
+      type: 'Glucides',
+      unit: 'g',
+      quantity: carbohydrateCount,
+      icon: IconCarbs,
+    },
+    {
+      type: 'Lipid',
+      unit: 'g',
+      quantity: lipidCount,
+      icon: IconLipides,
+    },
+  ]
+
   return (
     &lt;div className="nutriment-container">
       &lt;ul>
-        &lt;li>
-          &lt;div className="inside-content-wrapper">
-            &lt;div className="icon-box">
-              &lt;IconCalories />
+        {nutrientTypes.map(({ type, unit, quantity, icon: Icon }) => (
+          &lt;li>
+            &lt;div className="inside-content-wrapper">
+              &lt;div className="icon-box">
+                &lt;Icon />
+              &lt;/div>
             &lt;/div>
-          &lt;/div>
-          &lt;div className="icon-text">
-            &lt;p className="quantity">{calorieCount / 1000}kCal&lt;/p>
-            &lt;p className="nutrition-type">Calories&lt;/p>
-          &lt;/div>
-        &lt;/li>
-
-        &lt;li>
-          &lt;div className="inside-content-wrapper">
-            &lt;div className="icon-box">
-              &lt;IconProtein />
+            &lt;div className="icon-text">
+              &lt;p className="quantity">
+                {quantity}
+                {unit}
+              &lt;/p>
+              &lt;p className="nutrition-type">{type}&lt;/p>
             &lt;/div>
-          &lt;/div>
-          &lt;div className="icon-text">
-            &lt;p className="quantity">{proteinCount}g&lt;/p>
-            &lt;p className="nutrition-type">Proteines&lt;/p>
-          &lt;/div>
-        &lt;/li>
-
-        &lt;li>
-          &lt;div className="inside-content-wrapper">
-            &lt;div className="icon-box">
-              &lt;IconCarbs />
-            &lt;/div>
-          &lt;/div>
-          &lt;div className="icon-text">
-            &lt;p className="quantity">{carbohydrateCount}g&lt;/p>
-            &lt;p className="nutrition-type">Glucides&lt;/p>
-          &lt;/div>
-        &lt;/li>
-
-        &lt;li>
-          &lt;div className="inside-content-wrapper">
-            &lt;div className="icon-box">
-              &lt;IconLipides />
-            &lt;/div>
-          &lt;/div>
-          &lt;div className="icon-text">
-            &lt;p className="quantity">{lipidCount}g&lt;/p>
-            &lt;p className="nutrition-type">Lipides&lt;/p>
-          &lt;/div>
-        &lt;/li>
+          &lt;/li>
+        ))}
       &lt;/ul>
     &lt;/div>
   )
+}
+
+/**
+ * PropTypes Nutriments component
+ */
+
+Nutriments.propTypes = {
+  data: PropTypes.shape({
+    calorieCount: PropTypes.number.isRequired,
+    proteinCount: PropTypes.number.isRequired,
+    carbohydrateCount: PropTypes.number.isRequired,
+    lipidCount: PropTypes.number.isRequired,
+  }).isRequired,
 }
 
 export default Nutriments
@@ -111,13 +124,13 @@ export default Nutriments
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Activity">Activity</a></li><li><a href="global.html#Average">Average</a></li><li><a href="global.html#CustomTooltip">CustomTooltip</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#Navbar">Navbar</a></li><li><a href="global.html#Nutriments">Nutriments</a></li><li><a href="global.html#Performance">Performance</a></li><li><a href="global.html#User">User</a></li><li><a href="global.html#UserName">UserName</a></li><li><a href="global.html#getUser">getUser</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Activity">Activity</a></li><li><a href="global.html#Average">Average</a></li><li><a href="global.html#Banner">Banner</a></li><li><a href="global.html#CustomTooltip">CustomTooltip</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#Navbar">Navbar</a></li><li><a href="global.html#Nutriments">Nutriments</a></li><li><a href="global.html#Performance">Performance</a></li><li><a href="global.html#User">User</a></li><li><a href="global.html#UserName">UserName</a></li><li><a href="global.html#getUser">getUser</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Wed Dec 14 2022 12:00:09 GMT+0100 (Central European Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Thu Dec 15 2022 16:40:25 GMT+0100 (Central European Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

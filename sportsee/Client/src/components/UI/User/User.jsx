@@ -3,11 +3,11 @@ import './User.scss'
 import avatar from './../../../user.svg'
 
 /**
- * Render User component
- * @function User
- * @param {object} props
- * @param {string} props.id
- * @param {string} props.name
+ * Render User component page accueil
+ * @param {object} Data Come from function async "getUser()" [key: "userInfos"] service Api
+ * @param {number} Data.id - Id user
+ * @param {string} Data.firstName - FirstName user
+ * @param {string} Avatar - Image to display in acceuil page
  * @returns {Reactnode} jsx injected in DOM
  */
 

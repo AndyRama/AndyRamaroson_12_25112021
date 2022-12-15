@@ -12,9 +12,11 @@ import {
 /**
  * Render Average component
  * @function Average
- * @param   {object} props.data > data come from service
- * @param   {object} formaDataAverage > data.sessions formated
- * @param   {object} AverageData > formated data injected in chart2
+ * @param   {object} data Data Come from getAverage(id) in service Api or Mocks
+ * @param   {number} data.day - The day the average was recorded.
+ * @param   {number} data.sessionLength - the session duration was recorded.
+ * @param   {object} FormaDataAverage - Data.sessions after formated
+ * @param   {object} AverageData - Formated data injected in chart 2
  * @returns {Reactnode} jsx injected in DOM
  */
 
@@ -73,7 +75,7 @@ function Average({ data }) {
 /**
  * Render CustomTooltip component
  * @function CustomTooltip
- * @param {array} payload > data to display
+ * @param {array} Payload - data to display in legend
  * @returns {Reactnode} jsx injected in DOM
  */
 

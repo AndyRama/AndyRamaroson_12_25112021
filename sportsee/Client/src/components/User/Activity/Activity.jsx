@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+// import propTypes from 'prop-types'
 import { formaDataActivity } from '../../../formater/Activity'
 import './Activity.scss'
 import {
@@ -15,9 +16,12 @@ import {
 /**
  * Render Activity component
  * @function Activity
- * @param   {object} props.data > data come from service
- * @param   {object} formaDataActivity > data.sessions formated
- * @param   {object} ActivityData > formated data injected in chart 1
+ * @param   {object} data Data Come from getActivity(id) in service Api or Mocks
+ * @param   {string} data.day - The day the activity was recorded.
+ * @param   {number} data.kilogram - The weight recorded during the activity.
+ * @param   {number} data.calories - The number of calories burned during the activity.
+ * @param   {object} FormaDataPerformance - Data.sessions after formated
+ * @param   {object} ActivityData - Data formated injected in chart 1
  * @returns {Reactnode} jsx injected in DOM
  */
 
@@ -93,7 +97,7 @@ function Activity({ data }) {
   /**
    * Render CustomTooltip component
    * @function CustomTooltip
-   * @param {array} payload > data to display
+   * @param {array} payload - data to display in legend
    * @returns {JSX}
    */
 
@@ -108,7 +112,7 @@ function Activity({ data }) {
 }
 
 /**
- * PropTypes Activity component
+ * PropTypes Average component
  */
 
 export default Activity

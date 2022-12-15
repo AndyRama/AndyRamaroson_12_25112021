@@ -11,9 +11,12 @@ import { formaDataPerformance } from '../../../formater/Performance'
 /**
  * Render Performance component
  * @function Performance
- * @param   {object} props.data > data come from service
- * @param   {object} formaDataPerformance > data.sessions formated
- * @param   {object} PerformanceData > formated data injected in chart2
+ * @param   {object} data - Data come from getPerformance(id) in service Api
+ * @param   {string} data.day - The day the performance was recorded.
+ * @param   {number} data.calories - The number of calories burned during the performance.
+ * @param   {number} data.kilogram - The weight recorded during the performance.
+ * @param   {object} FormaDataPerformance - data.sessions after formated
+ * @param   {object} PerformanceData - data formated injected in chart 1
  * @returns {Reactnode} jsx injected in DOM
  */
 

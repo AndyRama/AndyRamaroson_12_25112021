@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: components/User/UserName/UserName.jsx</title>
+    <title>JSDoc: Source: components/UI/Banner/Banner.jsx</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: components/User/UserName/UserName.jsx</h1>
+    <h1 class="page-title">Source: components/UI/Banner/Banner.jsx</h1>
 
     
 
@@ -26,39 +26,25 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import PropTypes from 'prop-types'
-import React from 'react'
-import './UserName.scss'
+            <pre class="prettyprint source linenums"><code>import { Link } from 'react-router-dom'
 
 /**
- * Render UserName component
- * @function UserName
- * @param {object} Data Come from function async "getUser()" [key: "userInfos"] service Api
- * @param {number} Data.id - id user
- * @param {string} Data.firstName - firstName user
+ * Render the Banner component
+ * @function Banner
+ * @param   {string} Message - message display component Acceuil
  * @returns {Reactnode} jsx injected in DOM
  */
 
-function UserName({ firstname }) {
+function Banner({ message }) {
   return (
-    &lt;div className="profil">
-      &lt;h1>
-        Bonjour &lt;span>{firstname}&lt;/span>
-      &lt;/h1>
-      &lt;h2> Félicitations ! Vous avez explosé vos objectifs hier 👏 &lt;/h2>
-    &lt;/div>
+    &lt;header className="banner">
+      &lt;Link className="banner-accueil" to="/">&lt;/Link>
+      &lt;h1 className="msg">{message}&lt;/h1>
+    &lt;/header>
   )
 }
 
-/**
- * PropTypes UserName component
- */
-
-UserName.propTypes = {
-  firstname: PropTypes.string,
-}
-
-export default UserName
+export default Banner
 </code></pre>
         </article>
     </section>

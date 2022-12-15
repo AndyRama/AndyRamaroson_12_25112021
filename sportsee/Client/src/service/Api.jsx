@@ -9,16 +9,15 @@ import axios from 'axios'
 /*
     HOW ARE API REQUEST WORKING
     1 - I am using async/await to handle the response time
-    2 - I am changin the state of the A component using function arguments and parameters
+    2 - I am using a formatter to display  data in all components
+    2 - I am changing the state of the A component using function arguments and parameters
     3 - In Componant A I'am using the method .load("change state inside") to change the state
 */
 
 /**
- *
- * @param {string} urlId  => (/user/id)
- * @param {string} props.id
- * @param {object} data
- * @returns {object} data > send to formated
+ * @param {number} props.id - user id
+ * @param {object} data - data of user(id)
+ * @returns {object} data - send to formated before going in composent
  */
 
 export async function getUser(id) {
@@ -26,7 +25,6 @@ export async function getUser(id) {
     const {
       data: { data },
     } = await axios.get(`http://localhost:3000/user/${id}`)
-    // console.log(data);
     return data
   } catch (error) {
     console.error(error)
@@ -38,7 +36,6 @@ export async function getActivity(id) {
     const {
       data: { data },
     } = await axios.get(`http://localhost:3000/user/${id}/Activity`)
-    // console.log(data)
     return data
   } catch (error) {
     console.error(error)
@@ -50,7 +47,6 @@ export async function getAverage(id) {
     const {
       data: { data },
     } = await axios.get(`http://localhost:3000/user/${id}/Average-sessions`)
-    // console.log(data)
     return data
   } catch (error) {
     console.error(error)
@@ -62,7 +58,6 @@ export async function getPerformance(id) {
     const {
       data: { data },
     } = await axios.get(`http://localhost:3000/user/${id}/performance`)
-    // console.log(data)
     return data
   } catch (error) {
     console.error(error)
@@ -71,7 +66,6 @@ export async function getPerformance(id) {
 
 export async function getScore(id) {
   try {
-    // console.log("test")
     const {
       data: { data },
     } = await axios.get(`http://localhost:3000/user/${id}`)

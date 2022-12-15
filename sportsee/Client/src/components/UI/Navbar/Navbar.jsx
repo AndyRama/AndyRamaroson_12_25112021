@@ -10,9 +10,9 @@ import './Navbar.scss'
 /**
  * Render the Navbar component
  * @function Navbar
- * @param {string} Props.logo - display images logo
- * @param {string} Onglet - url for path
- * @param {array} OngletId - nav links topic names
+ * @param {string} props.logo - the URL of the logo image.
+ * @param {string} Onglet -  the name of the selected tab.
+ * @param {array} OngletId - the list of tabs in the Navbar.
  * @returns {Reactnode} jsx injected in DOM
  */
 

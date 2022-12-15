@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import logo from './../../logo.svg'
 import './Home.scss'
+import PropTypes from 'prop-types'
 
 import Activity from '../../components/User/Activity/Activity'
 import Average from '../../components/User/Average/Average'
@@ -120,6 +121,19 @@ function Home() {
       </div>
     </section>
   )
+}
+
+/**
+ * PropTypes Home component
+ */
+
+Home.propTypes = {
+  user: PropTypes.object.isRequired,
+  average: PropTypes.array.isRequired,
+  activity: PropTypes.array.isRequired,
+  performance: PropTypes.array.isRequired,
+  nutriment: PropTypes.object.isRequired,
+  score: PropTypes.number.isRequired,
 }
 
 export default Home

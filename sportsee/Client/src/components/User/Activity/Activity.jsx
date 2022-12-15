@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-// import propTypes from 'prop-types'
+import propTypes from 'prop-types'
 import { formaDataActivity } from '../../../formater/Activity'
 import './Activity.scss'
 import {
@@ -16,7 +16,7 @@ import {
 /**
  * Render Activity component
  * @function Activity
- * @param   {object} data data come from getActivity(id) in service Api or Mocks
+ * @param   {object<sessions>} data data come from getActivity(id) in service Api or Mocks
  * @param   {string} data.day - the day the activity was recorded.
  * @param   {number} data.kilogram - the weight recorded during the activity.
  * @param   {number} data.calories - the number of calories burned during the activity.
@@ -114,5 +114,12 @@ function Activity({ data }) {
 /**
  * PropTypes Average component
  */
+Activity.propTypes = {
+  data: propTypes.shape({
+    day: propTypes.string.isRequired,
+    calories: propTypes.number.isRequired,
+    kilogram: propTypes.number.isRequired,
+  }).isRequired,
+}
 
 export default Activity

@@ -3,11 +3,10 @@ import React from 'react'
 import './UserName.scss'
 
 /**
- * Render UserName component
- * @function UserName
- * @param {object} Data Come from function async "getUser()" [key: "userInfos"] service Api
- * @param {number} Data.id - id user
- * @param {string} Data.firstName - firstName user
+ * Render UserName component page Home
+ * @param {object<userInfos>} data come from getUser(id) in service Api or Mocks
+ * @param {number} data.id - id user
+ * @param {string} data.firstName - firstName user
  * @returns {Reactnode} jsx injected in DOM
  */
 

@@ -10,11 +10,11 @@ import IconLipides from '../../UI/Icons/IconLipides'
 /**
  * Render Nutriments component
  * @function Nutriments
- * @param   {object} data Come from  getUser(id) with "key: KeyData" in service Api or Mocks
- * @param   {number} data.calorieCount - number Calories
- * @param   {number} data.proteinCount - number Proteines
- * @param   {number} data.carbohydrateCount - number Glucides
- * @param   {number} data.lipidCount - number Lipid
+ * @param   {object<keyData>} data Come from  getUser(id) in service Api or Mocks
+ * @param   {number} data.calorieCount - numbers of Calories
+ * @param   {number} data.proteinCount - numbers of Proteines
+ * @param   {number} data.carbohydrateCount - numbers of Glucides
+ * @param   {number} data.lipidCount - numbers of Lipid
  * @returns {Reactnode} jsx injected in DOM
  */
 

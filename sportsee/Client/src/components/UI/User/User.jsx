@@ -4,10 +4,10 @@ import avatar from './../../../user.svg'
 
 /**
  * Render User component page accueil
- * @param {object} Data Come from function async "getUser()" [key: "userInfos"] service Api
- * @param {number} Data.id - Id user
- * @param {string} Data.firstName - FirstName user
- * @param {string} Avatar - Image to display in acceuil page
+ * @param {object<userInfos>} data come from getUser(id) in service Api or Mocks
+ * @param {number} data.id - id user
+ * @param {string} data.firstName - firstName user
+ * @param {string} avatar - image to display in acceuil page
  * @returns {Reactnode} jsx injected in DOM
  */
 

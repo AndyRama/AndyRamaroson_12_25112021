@@ -12,11 +12,11 @@ import {
 /**
  * Render Average component
  * @function Average
- * @param   {object} data Data Come from getAverage(id) in service Api or Mocks
- * @param   {number} data.day - The day the average was recorded.
+ * @param   {object<average-sessions>} data data come from getAverage(id) in service Api or Mocks
+ * @param   {number} data.day - the day the average was recorded.
  * @param   {number} data.sessionLength - the session duration was recorded.
- * @param   {object} FormaDataAverage - Data.sessions after formated
- * @param   {object} AverageData - Formated data injected in chart 2
+ * @param   {object} FormaDataAverage - data.sessions after formated
+ * @param   {object} AverageData - formated data injected in chart 2
  * @returns {Reactnode} jsx injected in DOM
  */
 

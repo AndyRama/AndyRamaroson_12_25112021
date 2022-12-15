@@ -104,7 +104,7 @@
     
 
     
-    <h4 class="name" id="Activity"><span class="type-signature"></span>Activity<span class="signature">(Data, FormaDataActivity, Data, ActivityData)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    <h4 class="name" id="Activity"><span class="type-signature"></span>Activity<span class="signature">(data, FormaDataPerformance, ActivityData)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
     
 
     
@@ -148,7 +148,7 @@
 
         <tr>
             
-                <td class="name"><code>Data</code></td>
+                <td class="name"><code>data</code></td>
             
 
             <td class="type">
@@ -164,53 +164,7 @@
 
             
 
-            <td class="description last"><p>Come from getActivity() in service Api or Mocks</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>FormaDataActivity</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Data.sessions after formated</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>Data</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>FormaDataActivity:</p>
+            <td class="description last"><p>data come from getActivity(id) in service Api or Mocks</p>
                 <h6>Properties</h6>
                 
 
@@ -252,7 +206,7 @@
 
             
 
-            <td class="description last"><p>The day the activity was recorded.</p></td>
+            <td class="description last"><p>the day the activity was recorded.</p></td>
         </tr>
 
     
@@ -275,7 +229,7 @@
 
             
 
-            <td class="description last"><p>The weight recorded during the activity.</p></td>
+            <td class="description last"><p>the weight recorded during the activity.</p></td>
         </tr>
 
     
@@ -298,7 +252,7 @@
 
             
 
-            <td class="description last"><p>The number of calories burned during the activity.</p></td>
+            <td class="description last"><p>the number of calories burned during the activity.</p></td>
         </tr>
 
     
@@ -306,6 +260,29 @@
 </table>
 
             </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>FormaDataPerformance</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>data.sessions after formated</p></td>
         </tr>
 
     
@@ -328,7 +305,7 @@
 
             
 
-            <td class="description last"><p>Data formated injected in chart 1 to display in the page</p></td>
+            <td class="description last"><p>data formated injected in chart 1</p></td>
         </tr>
 
     
@@ -427,7 +404,7 @@
     
 
     
-    <h4 class="name" id="Average"><span class="type-signature"></span>Average<span class="signature">(Data, FormaDataAverage, Data, AverageData)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    <h4 class="name" id="Average"><span class="type-signature"></span>Average<span class="signature">(data, FormaDataAverage, AverageData)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
     
 
     
@@ -471,13 +448,13 @@
 
         <tr>
             
-                <td class="name"><code>Data</code></td>
+                <td class="name"><code>data</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type">object.&lt;average-sessions></span>
 
 
             
@@ -487,53 +464,7 @@
 
             
 
-            <td class="description last"><p>Come from getAverage(id) in service Api or Mocks</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>FormaDataAverage</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Data.sessions after formated</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>Data</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>FormaDataAverage:</p>
+            <td class="description last"><p>data come from getAverage(id) in service Api or Mocks</p>
                 <h6>Properties</h6>
                 
 
@@ -575,7 +506,7 @@
 
             
 
-            <td class="description last"><p>The day the average was recorded.</p></td>
+            <td class="description last"><p>the day the average was recorded.</p></td>
         </tr>
 
     
@@ -612,6 +543,29 @@
 
         <tr>
             
+                <td class="name"><code>FormaDataAverage</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>data.sessions after formated</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
                 <td class="name"><code>AverageData</code></td>
             
 
@@ -628,7 +582,7 @@
 
             
 
-            <td class="description last"><p>Formated data injected in chart 2</p></td>
+            <td class="description last"><p>formated data injected in chart 2</p></td>
         </tr>
 
     
@@ -987,7 +941,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_User_Activity_Activity.jsx.html">components/User/Activity/Activity.jsx</a>, <a href="components_User_Activity_Activity.jsx.html#line98">line 98</a>
+        <a href="components_User_Activity_Activity.jsx.html">components/User/Activity/Activity.jsx</a>, <a href="components_User_Activity_Activity.jsx.html#line97">line 97</a>
     </li></ul></dd>
     
 
@@ -1142,7 +1096,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_User_Average_Average.jsx.html">components/User/Average/Average.jsx</a>, <a href="components_User_Average_Average.jsx.html#line76">line 76</a>
+        <a href="components_User_Average_Average.jsx.html">components/User/Average/Average.jsx</a>, <a href="components_User_Average_Average.jsx.html#line75">line 75</a>
     </li></ul></dd>
     
 
@@ -1269,7 +1223,7 @@
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type">object.&lt;id></span>
 
 
             
@@ -1279,7 +1233,7 @@
 
             
 
-            <td class="description last"><p>User: keys</p>
+            <td class="description last">
                 <h6>Properties</h6>
                 
 
@@ -1397,7 +1351,7 @@
 
             
 
-            <td class="description last"><p>data processed to be displayed in our component chart 1</p></td>
+            <td class="description last"><p>Data processed to be displayed in our component chart 1</p></td>
         </tr>
 
     
@@ -1420,7 +1374,7 @@
 
             
 
-            <td class="description last"><p>data processed to be displayed in our component chart 2</p></td>
+            <td class="description last"><p>Data processed to be displayed in our component chart 2</p></td>
         </tr>
 
     
@@ -1443,7 +1397,7 @@
 
             
 
-            <td class="description last"><p>data processed to be displayed in our component chart 3</p></td>
+            <td class="description last"><p>Data processed to be displayed in our component chart 3</p></td>
         </tr>
 
     
@@ -1466,7 +1420,7 @@
 
             
 
-            <td class="description last"><p>data processed to be displayed in our component chart 4</p></td>
+            <td class="description last"><p>Data processed to be displayed in our component chart 4</p></td>
         </tr>
 
     
@@ -1489,7 +1443,7 @@
 
             
 
-            <td class="description last"><p>data processed to be displayed in block aside</p></td>
+            <td class="description last"><p>Data processed to be displayed in block aside nutriment</p></td>
         </tr>
 
     
@@ -1793,7 +1747,7 @@
     
 
     
-    <h4 class="name" id="Nutriments"><span class="type-signature"></span>Nutriments<span class="signature">(Data)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    <h4 class="name" id="Nutriments"><span class="type-signature"></span>Nutriments<span class="signature">(data)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
     
 
     
@@ -1837,13 +1791,13 @@
 
         <tr>
             
-                <td class="name"><code>Data</code></td>
+                <td class="name"><code>data</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type">object.&lt;keyData></span>
 
 
             
@@ -1853,7 +1807,7 @@
 
             
 
-            <td class="description last"><p>Come from  getUser(id) with &quot;key: KeyData&quot; in service Api or Mocks</p>
+            <td class="description last"><p>Come from  getUser(id) in service Api or Mocks</p>
                 <h6>Properties</h6>
                 
 
@@ -1895,7 +1849,7 @@
 
             
 
-            <td class="description last"><p>number Calories</p></td>
+            <td class="description last"><p>numbers of Calories</p></td>
         </tr>
 
     
@@ -1918,7 +1872,7 @@
 
             
 
-            <td class="description last"><p>number Proteines</p></td>
+            <td class="description last"><p>numbers of Proteines</p></td>
         </tr>
 
     
@@ -1941,7 +1895,7 @@
 
             
 
-            <td class="description last"><p>number Glucides</p></td>
+            <td class="description last"><p>numbers of Glucides</p></td>
         </tr>
 
     
@@ -1964,7 +1918,7 @@
 
             
 
-            <td class="description last"><p>number Lipid</p></td>
+            <td class="description last"><p>numbers of Lipid</p></td>
         </tr>
 
     
@@ -2070,7 +2024,7 @@
     
 
     
-    <h4 class="name" id="Performance"><span class="type-signature"></span>Performance<span class="signature">(Data, FormaDataPerformance, PerformanceData)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    <h4 class="name" id="Performance"><span class="type-signature"></span>Performance<span class="signature">(data, FormaDataPerformance, PerformanceData)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
     
 
     
@@ -2114,7 +2068,7 @@
 
         <tr>
             
-                <td class="name"><code>Data</code></td>
+                <td class="name"><code>data</code></td>
             
 
             <td class="type">
@@ -2130,7 +2084,7 @@
 
             
 
-            <td class="description last"><p>Data come from  function async &quot;getPerformance&quot; in service Api</p>
+            <td class="description last"><p>data come from getPerformance(id) in service Api or Mocks</p>
                 <h6>Properties</h6>
                 
 
@@ -2172,7 +2126,7 @@
 
             
 
-            <td class="description last"><p>The day the performance was recorded.</p></td>
+            <td class="description last"><p>the day the performance was recorded.</p></td>
         </tr>
 
     
@@ -2195,7 +2149,7 @@
 
             
 
-            <td class="description last"><p>The number of calories burned during the performance.</p></td>
+            <td class="description last"><p>the number of calories burned during the performance.</p></td>
         </tr>
 
     
@@ -2218,7 +2172,7 @@
 
             
 
-            <td class="description last"><p>The weight recorded during the performance.</p></td>
+            <td class="description last"><p>the weight recorded during the performance.</p></td>
         </tr>
 
     
@@ -2271,7 +2225,7 @@
 
             
 
-            <td class="description last"><p>data formated injected in chart 1</p></td>
+            <td class="description last"><p>data formated injected in chart 3</p></td>
         </tr>
 
     
@@ -2370,7 +2324,284 @@
     
 
     
-    <h4 class="name" id="User"><span class="type-signature"></span>User<span class="signature">(Data, Avatar)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    <h4 class="name" id="Score"><span class="type-signature"></span>Score<span class="signature">(data, ExtracScore)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Render Score component</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object.&lt;todayScore></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>come from getUser(id) in service Api or Mocks</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>key id user</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>todayScore</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>score user</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userScore</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the extracted score, multiplied by 100.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ExtracScore</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>value injected in chart 4</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="components_User_Score_Score.jsx.html">components/User/Score/Score.jsx</a>, <a href="components_User_Score_Score.jsx.html#line5">line 5</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>jsx injected in DOM</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Reactnode</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="User"><span class="type-signature"></span>User<span class="signature">(data, avatar)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
     
 
     
@@ -2414,13 +2645,13 @@
 
         <tr>
             
-                <td class="name"><code>Data</code></td>
+                <td class="name"><code>data</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type">object.&lt;userInfos></span>
 
 
             
@@ -2430,7 +2661,7 @@
 
             
 
-            <td class="description last"><p>Come from function async &quot;getUser()&quot; [key: &quot;userInfos&quot;] service Api</p>
+            <td class="description last"><p>come from getUser(id) in service Api or Mocks</p>
                 <h6>Properties</h6>
                 
 
@@ -2472,7 +2703,7 @@
 
             
 
-            <td class="description last"><p>Id user</p></td>
+            <td class="description last"><p>id user</p></td>
         </tr>
 
     
@@ -2495,7 +2726,7 @@
 
             
 
-            <td class="description last"><p>FirstName user</p></td>
+            <td class="description last"><p>firstName user</p></td>
         </tr>
 
     
@@ -2509,7 +2740,7 @@
 
         <tr>
             
-                <td class="name"><code>Avatar</code></td>
+                <td class="name"><code>avatar</code></td>
             
 
             <td class="type">
@@ -2525,7 +2756,7 @@
 
             
 
-            <td class="description last"><p>Image to display in acceuil page</p></td>
+            <td class="description last"><p>image to display in acceuil page</p></td>
         </tr>
 
     
@@ -2624,7 +2855,7 @@
     
 
     
-    <h4 class="name" id="UserName"><span class="type-signature"></span>UserName<span class="signature">(Data)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    <h4 class="name" id="UserName"><span class="type-signature"></span>UserName<span class="signature">(data)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
     
 
     
@@ -2632,7 +2863,7 @@
 
 
 <div class="description">
-    <p>Render UserName component</p>
+    <p>Render UserName component page Home</p>
 </div>
 
 
@@ -2668,13 +2899,13 @@
 
         <tr>
             
-                <td class="name"><code>Data</code></td>
+                <td class="name"><code>data</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type">object.&lt;userInfos></span>
 
 
             
@@ -2684,7 +2915,7 @@
 
             
 
-            <td class="description last"><p>Come from function async &quot;getUser()&quot; [key: &quot;userInfos&quot;] service Api</p>
+            <td class="description last"><p>come from getUser(id) in service Api or Mocks</p>
                 <h6>Properties</h6>
                 
 
@@ -2797,7 +3028,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_User_UserName_UserName.jsx.html">components/User/UserName/UserName.jsx</a>, <a href="components_User_UserName_UserName.jsx.html#line5">line 5</a>
+        <a href="components_User_UserName_UserName.jsx.html">components/User/UserName/UserName.jsx</a>, <a href="components_User_UserName_UserName.jsx.html#line13">line 13</a>
     </li></ul></dd>
     
 
@@ -2850,184 +3081,6 @@
 
 
         
-            
-
-    
-
-    
-    <h4 class="name" id="getUser"><span class="type-signature"></span>getUser<span class="signature">(data)</span><span class="type-signature"> &rarr; {object}</span></h4>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>props.id</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>user id</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>data of user(id)</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="service_Api.jsx.html">service/Api.jsx</a>, <a href="service_Api.jsx.html#line23">line 23</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    <p>data - send to formated before going in composent</p>
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">object</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
     
 
     
@@ -3043,13 +3096,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Activity">Activity</a></li><li><a href="global.html#Average">Average</a></li><li><a href="global.html#Banner">Banner</a></li><li><a href="global.html#CustomTooltip">CustomTooltip</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#Navbar">Navbar</a></li><li><a href="global.html#Nutriments">Nutriments</a></li><li><a href="global.html#Performance">Performance</a></li><li><a href="global.html#User">User</a></li><li><a href="global.html#UserName">UserName</a></li><li><a href="global.html#getUser">getUser</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#Activity">Activity</a></li><li><a href="global.html#Average">Average</a></li><li><a href="global.html#Banner">Banner</a></li><li><a href="global.html#CustomTooltip">CustomTooltip</a></li><li><a href="global.html#Home">Home</a></li><li><a href="global.html#Navbar">Navbar</a></li><li><a href="global.html#Nutriments">Nutriments</a></li><li><a href="global.html#Performance">Performance</a></li><li><a href="global.html#Score">Score</a></li><li><a href="global.html#User">User</a></li><li><a href="global.html#UserName">UserName</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Thu Dec 15 2022 16:40:25 GMT+0100 (Central European Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Thu Dec 15 2022 18:50:25 GMT+0100 (Central European Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

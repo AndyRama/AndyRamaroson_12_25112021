@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: components/UI/User/User.jsx</title>
+    <title>JSDoc: Source: components/User/Score/Score.jsx</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: components/UI/User/User.jsx</h1>
+    <h1 class="page-title">Source: components/User/Score/Score.jsx</h1>
 
     
 
@@ -26,38 +26,54 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import propTypes from 'prop-types'
-import './User.scss'
-import avatar from './../../../user.svg'
+            <pre class="prettyprint source linenums"><code>import React from 'react'
+import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
+import './Score.scss'
 
 /**
- * Render User component page accueil
- * @param {object&lt;userInfos>} data come from getUser(id) in service Api or Mocks
- * @param {number} data.id - id user
- * @param {string} data.firstName - firstName user
- * @param {string} avatar - image to display in acceuil page
+ * Render Score component
+ * @function Score
+ * @param {object&lt;todayScore>} data come from getUser(id) in service Api or Mocks
+ * @param {number} data.id - key id user
+ * @param {number} data.todayScore - score user
+ * @param {number} data.userScore - the extracted score, multiplied by 100.
+ * @param {number} ExtracScore - value injected in chart 4
  * @returns {Reactnode} jsx injected in DOM
  */
 
-function User({ id, name }) {
+function Score({ data }) {
+  const userScore = [{ value: data }, { value: 100 - data }]
+
   return (
-    &lt;header className="user">
-      &lt;img src={avatar} className="avatar" alt="icon-user" />
-      &lt;h3 className="user-name">{name}&lt;/h3>
-    &lt;/header>
+    &lt;div className="score">
+      &lt;h2 className="score-title">Score&lt;/h2>
+      &lt;p className="score-result">{data} %&lt;/p>
+      &lt;p className="score-comment">
+        de votre &lt;br />
+        objectif
+      &lt;/p>
+      &lt;ResponsiveContainer>
+        &lt;PieChart>
+          &lt;Pie
+            data={userScore}
+            dataKey="value"
+            innerRadius={70}
+            outerRadius={80}
+            startAngle={90} // centre haut
+            endAngle={450} // 360° + 90°
+            fill="transparent"
+            stroke="transparent"
+            animationDuration={700}
+          >
+            &lt;Cell fill="red" cornerRadius={50} />
+          &lt;/Pie>
+        &lt;/PieChart>
+      &lt;/ResponsiveContainer>
+    &lt;/div>
   )
 }
 
-/**
- * PropTypes User component
- */
-User.propTypes = {
-  id: propTypes.number,
-  Avatar: propTypes.string,
-  name: propTypes.string.isRequired,
-}
-
-export default User
+export default Score
 </code></pre>
         </article>
     </section>

@@ -16,12 +16,12 @@ import {
 /**
  * Render Activity component
  * @function Activity
- * @param   {object} data Data Come from getActivity(id) in service Api or Mocks
- * @param   {string} data.day - The day the activity was recorded.
- * @param   {number} data.kilogram - The weight recorded during the activity.
- * @param   {number} data.calories - The number of calories burned during the activity.
- * @param   {object} FormaDataPerformance - Data.sessions after formated
- * @param   {object} ActivityData - Data formated injected in chart 1
+ * @param   {object} data data come from getActivity(id) in service Api or Mocks
+ * @param   {string} data.day - the day the activity was recorded.
+ * @param   {number} data.kilogram - the weight recorded during the activity.
+ * @param   {number} data.calories - the number of calories burned during the activity.
+ * @param   {object} FormaDataPerformance - data.sessions after formated
+ * @param   {object} ActivityData - data formated injected in chart 1
  * @returns {Reactnode} jsx injected in DOM
  */
 

@@ -5,10 +5,12 @@ import './Score.scss'
 /**
  * Render Score component
  * @function Score
- * @param {object} data - The data object containing the score.
- * @param {string} user - The user for who to extract the score.
- * @param {number} userScore - The extracted score, multiplied by 100.
- * @return {Reactnode} jsx injected in DOM
+ * @param {object<todayScore>} data come from getUser(id) in service Api or Mocks
+ * @param {number} data.id - key id user
+ * @param {number} data.todayScore - score user
+ * @param {number} data.userScore - the extracted score, multiplied by 100.
+ * @param {number} ExtracScore - value injected in chart 4
+ * @returns {Reactnode} jsx injected in DOM
  */
 
 function Score({ data }) {

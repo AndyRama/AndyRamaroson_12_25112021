@@ -14,12 +14,6 @@ import axios from 'axios'
     3 - In Componant A I'am using the method .load("change state inside") to change the state
 */
 
-/**
- * @param {number} props.id - user id
- * @param {object} data - data of user(id)
- * @returns {object} data - send to formated before going in composent
- */
-
 export async function getUser(id) {
   try {
     const {

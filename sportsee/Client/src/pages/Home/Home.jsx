@@ -34,7 +34,7 @@ import { useParams } from 'react-router-dom'
 /**
  * @function Home
  * @param {number} user id
- * @param {object} Data User: keys
+ * @param {object<id>} Data
  * @param {object} Data.Userinfos - Firstname, LastName, age ...
  * @param {number} Data.todayScore - Current Score user.
  * @param {object} Data.KeyData - Value for all nutriments.
@@ -42,7 +42,7 @@ import { useParams } from 'react-router-dom'
  * @param {object} AverageData  - Data processed to be displayed in our component chart 2
  * @param {object} PerformanceData - Data processed to be displayed in our component chart 3
  * @param {object} extractScore - Data processed to be displayed in our component chart 4
- * @param {object} extractNutriment - Data processed to be displayed in block aside
+ * @param {object} extractNutriment - Data processed to be displayed in block aside nutriment
  * @returns {Reactnode} jsx injected in DOM
  */
 
@@ -121,8 +121,5 @@ function Home() {
     </section>
   )
 }
-/**
- * PropTypes Average component
- */
 
 export default Home

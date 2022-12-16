@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import propTypes from 'prop-types'
 import {
   ResponsiveContainer,
   Radar,
@@ -11,10 +12,11 @@ import { formaDataPerformance } from '../../../formater/Performance'
 /**
  * Render Performance component
  * @function Performance
- * @param   {array<data>} data - data come from getPerformance(id) in service Api or Mocks
- * @param   {object<{index: string}>} data - data come from getPerformance(id) in service Api or Mocks
+ * @param   {object} data - data come from getPerformance(id) in service Api or Mocks
  * @param   {object} FormaDataPerformance - data.sessions after formated
- * @param   {object} PerformanceData - data formated injected in chart 3
+ * @param   {object} data PerformanceData - data formated injected in chart 3
+ * @param   {object<{index: number, kind: string}>} data.{kind} - index with label of chart performance.
+ * @param   {array<{value: number, kind: number}>} data.{data} - score and label save for chart performance..
  * @returns {Reactnode} jsx injected in DOM
  */
 
@@ -57,6 +59,14 @@ function Performance({ data }) {
       </RadarChart>
     </ResponsiveContainer>
   )
+}
+
+/**
+ * PropTypes Performance component
+ */
+
+Performance.propTypes = {
+  data: propTypes.object.isRequired,
 }
 
 export default Performance

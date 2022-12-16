@@ -7,7 +7,7 @@ import avatar from './../../../user.svg'
  * @param {object<userInfos>} data come from getUser(id) in service Api or Mocks
  * @param {number} data.id - id user
  * @param {string} data.firstName - firstName user
- * @param {string} avatar - image to display in acceuil page
+ * @param {string} avatar - image to display in accueil page
  * @returns {Reactnode} jsx injected in DOM
  */
 
@@ -24,8 +24,8 @@ function User({ id, name }) {
  * PropTypes User component
  */
 User.propTypes = {
-  id: propTypes.number,
-  Avatar: propTypes.string,
+  id: propTypes.number.isRequired,
+  Avatar: propTypes.string.isRequired,
   name: propTypes.string.isRequired,
 }
 

@@ -10,7 +10,7 @@ import IconLipides from '../../UI/Icons/IconLipides'
 /**
  * Render Nutriments component
  * @function Nutriments
- * @param   {object<keyData>} data Come from  getUser(id) in service Api or Mocks
+ * @param   {object} data Come from  getUser(id) in service Api or Mocks
  * @param   {number} data.calorieCount - numbers of Calories
  * @param   {number} data.proteinCount - numbers of Proteines
  * @param   {number} data.carbohydrateCount - numbers of Glucides

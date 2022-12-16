@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import logo from './../../logo.svg'
 import './Home.scss'
-import PropTypes from 'prop-types'
 
 import Activity from '../../components/User/Activity/Activity'
 import Average from '../../components/User/Average/Average'
@@ -34,7 +33,7 @@ import { useParams } from 'react-router-dom'
 
 /**
  * @function Home
- * @param {number} user id
+ * @param {number} userId - user id number
  * @param {object<id>} Data
  * @param {object} Data.Userinfos - Firstname, LastName, age ...
  * @param {number} Data.todayScore - Current Score user.
@@ -53,7 +52,6 @@ function Home() {
   const [average, setAverage] = useState([])
   const [activity, setActivity] = useState([])
   const [performance, setPerformance] = useState([])
-
   const [nutriment, setNutriment] = useState({})
   const [score, setScore] = useState(0)
 
@@ -121,19 +119,6 @@ function Home() {
       </div>
     </section>
   )
-}
-
-/**
- * PropTypes Home component
- */
-
-Home.propTypes = {
-  user: PropTypes.object.isRequired,
-  average: PropTypes.array.isRequired,
-  activity: PropTypes.array.isRequired,
-  performance: PropTypes.array.isRequired,
-  nutriment: PropTypes.object.isRequired,
-  score: PropTypes.number.isRequired,
 }
 
 export default Home

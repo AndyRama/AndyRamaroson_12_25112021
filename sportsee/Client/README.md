@@ -1,6 +1,6 @@
 # SportSee 🇬🇧
 
-**personnel Dashboard**
+**Personnel Dashboard**
 
 <kbd>![personal dashboard](./sportSee.png)</kbd>
 
@@ -50,6 +50,7 @@ Display user data as a dynamic graph.
 ```bash
 Web Render View URL: http://localhost:3001/user/id
 SportSee API provides data for id 12 and 18 users
+SportSee MockApi provides data Fake for id 19 users
 ```
 
 --------------------------------------------------
@@ -95,6 +96,7 @@ SportSee API provides data for id 12 and 18 users
 - Le lancer sur le port 3001 : `npm run start`
 
 ```bash
-URL de visualisation du rendu web : http://localhost:3001/user/id
-l'API de SportSee fournit des données pour les utilisateurs d'id 12 et 18
+URL de la vue de rendu Web : http://localhost:3001/user/id
+API de SportSee fournit des données pour les utilisateurs id 12 et 18.
+MockApi SportSee fournit des fausses données pour utilisateur id 19.
 ```

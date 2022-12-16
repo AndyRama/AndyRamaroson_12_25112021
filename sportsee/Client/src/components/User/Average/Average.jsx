@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import propTypes from 'prop-types'
 import { formaDataAverage } from '../../../formater/Average'
 import {
   ResponsiveContainer,
@@ -12,11 +13,11 @@ import {
 /**
  * Render Average component
  * @function Average
- * @param   {object<average-sessions>} data data come from getAverage(id) in service Api or Mocks
+ * @param   {object} data data come from getAverage(id) in service Api or Mocks
+ * @param   {object<sessions>} FormaDataAverage - data.sessions after formated
+ * @param   {object} data AverageData - formated data injected in chart 2
  * @param   {number} data.day - the day the average was recorded.
  * @param   {number} data.sessionLength - the session duration was recorded.
- * @param   {object} FormaDataAverage - data.sessions after formated
- * @param   {object} AverageData - formated data injected in chart 2
  * @returns {Reactnode} jsx injected in DOM
  */
 
@@ -75,8 +76,9 @@ function Average({ data }) {
 /**
  * Render CustomTooltip component
  * @function CustomTooltip
- * @param {array} Payload - data to display in legend
- * @returns {Reactnode} jsx injected in DOM
+ * @param {boolean} active  hover ? y/n
+ * @param {array} payload - data to display
+ * @returns {JSX}
  */
 
 function CustomTooltip({ active, payload }) {
@@ -91,5 +93,10 @@ function CustomTooltip({ active, payload }) {
 /**
  * PropTypes Average component
  */
+
+Average.propTypes = {
+  day: propTypes.number.isRequired,
+  sessionLength: propTypes.number.isRequired,
+}
 
 export default Average

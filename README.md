@@ -1,6 +1,6 @@
 # SportSee 🇬🇧
 
-**personnel Dashboard**
+**Personnel Dashboard**
 
 <kbd>![selected appartment](./sportSee.png)</kbd>
 
@@ -25,7 +25,7 @@
 ### Dependencies
 
 * [Recharts](https://recharts.org/en-US/) (version 2.1.15)
-* [react-router-dom](https://reactrouter.com/web/guides/quick-start) (version 6.4.2)
+* [react-router-dom](https://reactrouter.com/en/6.4.5) (version 6.4.2)
 * [Prop-types](https://www.npmjs.com/package/prop-types) (version 15.8.1)
 
 ### Step 1: Launching the back-end (services)
@@ -44,4 +44,5 @@
 ```bash
 Web Render View URL: http://localhost:3001/user/id
 SportSee API provides data for id 12 and 18 users
+SportSee MockApi provides data Fake for id 19 users
 ```

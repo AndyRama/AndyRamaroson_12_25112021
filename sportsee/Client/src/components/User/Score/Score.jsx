@@ -1,4 +1,5 @@
 import React from 'react'
+import propTypes from 'prop-types'
 import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts'
 import './Score.scss'
 
@@ -6,10 +7,10 @@ import './Score.scss'
  * Render Score component
  * @function Score
  * @param {object<todayScore>} data come from getUser(id) in service Api or Mocks
+ * @param {number} data ExtracScore - value injected in chart 4
  * @param {number} data.id - key id user
  * @param {number} data.todayScore - score user
  * @param {number} data.userScore - the extracted score, multiplied by 100.
- * @param {number} ExtracScore - value injected in chart 4
  * @returns {Reactnode} jsx injected in DOM
  */
 
@@ -43,6 +44,13 @@ function Score({ data }) {
       </ResponsiveContainer>
     </div>
   )
+}
+
+/**
+ * PropTypes Score component
+ */
+Score.propTypes = {
+  userId: propTypes.string.isRequired,
 }
 
 export default Score

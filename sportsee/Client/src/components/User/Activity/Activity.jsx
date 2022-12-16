@@ -16,12 +16,12 @@ import {
 /**
  * Render Activity component
  * @function Activity
- * @param   {object<sessions>} data data come from getActivity(id) in service Api or Mocks
- * @param   {string} data.day - the day the activity was recorded.
- * @param   {number} data.kilogram - the weight recorded during the activity.
- * @param   {number} data.calories - the number of calories burned during the activity.
+ * @param   {object} data data come from getActivity(id) in service Api or Mocks
  * @param   {object} FormaDataPerformance - data.sessions after formated
- * @param   {object} ActivityData - data formated injected in chart 1
+ * @param   {object} data - (ActivityData) - data formated injected in chart 1
+ * @param   {string} data.day - the day the activity was recorded.
+ * @param   {number} data.calories - the number of calories burned during the activity.
+ * @param   {number} data.kilogram - the weight recorded during the activity.
  * @returns {Reactnode} jsx injected in DOM
  */
 
@@ -53,7 +53,7 @@ function Activity({ data }) {
         <YAxis
           yAxisId="poids"
           dataKey="kilogram"
-          domain={['dataMin -2', 'dataMax + 1']}
+          domain={['dataMin - 2', 'dataMax + 1']}
           orientation="right"
           axisLine={false}
           tickLine={false}
@@ -97,7 +97,8 @@ function Activity({ data }) {
   /**
    * Render CustomTooltip component
    * @function CustomTooltip
-   * @param {array} payload - data to display in legend
+   * @param {boolean} active  hover ? y/n
+   * @param {array} payload - data to display
    * @returns {JSX}
    */
 
@@ -112,14 +113,13 @@ function Activity({ data }) {
 }
 
 /**
- * PropTypes Average component
+ * PropTypes Activity component
  */
+
 Activity.propTypes = {
-  data: propTypes.shape({
-    day: propTypes.string.isRequired,
-    calories: propTypes.number.isRequired,
-    kilogram: propTypes.number.isRequired,
-  }).isRequired,
+  day: propTypes.string.isRequired,
+  calories: propTypes.number.isRequired,
+  kilogram: propTypes.number.isRequired,
 }
 
 export default Activity

@@ -104,7 +104,7 @@
     
 
     
-    <h4 class="name" id="Activity"><span class="type-signature"></span>Activity<span class="signature">(data, FormaDataPerformance, ActivityData)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    <h4 class="name" id="Activity"><span class="type-signature"></span>Activity<span class="signature">(data, FormaDataPerformance, data)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
     
 
     
@@ -154,7 +154,7 @@
             <td class="type">
             
                 
-<span class="param-type">object.&lt;sessions></span>
+<span class="param-type">object</span>
 
 
             
@@ -164,7 +164,53 @@
 
             
 
-            <td class="description last"><p>data come from getActivity(id) in service Api or Mocks</p>
+            <td class="description last"><p>data come from getActivity(id) in service Api or Mocks</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>FormaDataPerformance</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>data.sessions after formated</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>(ActivityData) - data formated injected in chart 1</p>
                 <h6>Properties</h6>
                 
 
@@ -213,29 +259,6 @@
 
         <tr>
             
-                <td class="name"><code>kilogram</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>the weight recorded during the activity.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
                 <td class="name"><code>calories</code></td>
             
 
@@ -256,56 +279,33 @@
         </tr>
 
     
+
+        <tr>
+            
+                <td class="name"><code>kilogram</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the weight recorded during the activity.</p></td>
+        </tr>
+
+    
     </tbody>
 </table>
 
             </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>FormaDataPerformance</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>data.sessions after formated</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>ActivityData</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>data formated injected in chart 1</p></td>
         </tr>
 
     
@@ -404,7 +404,7 @@
     
 
     
-    <h4 class="name" id="Average"><span class="type-signature"></span>Average<span class="signature">(data, FormaDataAverage, AverageData)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    <h4 class="name" id="Average"><span class="type-signature"></span>Average<span class="signature">(data, FormaDataAverage, data)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
     
 
     
@@ -454,7 +454,7 @@
             <td class="type">
             
                 
-<span class="param-type">object.&lt;average-sessions></span>
+<span class="param-type">object</span>
 
 
             
@@ -464,7 +464,53 @@
 
             
 
-            <td class="description last"><p>data come from getAverage(id) in service Api or Mocks</p>
+            <td class="description last"><p>data come from getAverage(id) in service Api or Mocks</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>FormaDataAverage</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object.&lt;sessions></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>data.sessions after formated</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>AverageData - formated data injected in chart 2</p>
                 <h6>Properties</h6>
                 
 
@@ -540,52 +586,6 @@
         </tr>
 
     
-
-        <tr>
-            
-                <td class="name"><code>FormaDataAverage</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>data.sessions after formated</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>AverageData</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>formated data injected in chart 2</p></td>
-        </tr>
-
-    
     </tbody>
 </table>
 
@@ -623,7 +623,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_User_Average_Average.jsx.html">components/User/Average/Average.jsx</a>, <a href="components_User_Average_Average.jsx.html#line12">line 12</a>
+        <a href="components_User_Average_Average.jsx.html">components/User/Average/Average.jsx</a>, <a href="components_User_Average_Average.jsx.html#line13">line 13</a>
     </li></ul></dd>
     
 
@@ -741,7 +741,7 @@
 
             
 
-            <td class="description last"><p>message display component Acceuil</p></td>
+            <td class="description last"><p>message display component Accueil</p></td>
         </tr>
 
     
@@ -782,7 +782,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_UI_Banner_Banner.jsx.html">components/UI/Banner/Banner.jsx</a>, <a href="components_UI_Banner_Banner.jsx.html#line3">line 3</a>
+        <a href="components_UI_Banner_Banner.jsx.html">components/UI/Banner/Banner.jsx</a>, <a href="components_UI_Banner_Banner.jsx.html#line4">line 4</a>
     </li></ul></dd>
     
 
@@ -840,7 +840,7 @@
     
 
     
-    <h4 class="name" id="CustomTooltip"><span class="type-signature"></span>CustomTooltip<span class="signature">(payload)</span><span class="type-signature"> &rarr; {JSX}</span></h4>
+    <h4 class="name" id="CustomTooltip"><span class="type-signature"></span>CustomTooltip<span class="signature">(active, payload)</span><span class="type-signature"> &rarr; {JSX}</span></h4>
     
 
     
@@ -884,6 +884,29 @@
 
         <tr>
             
+                <td class="name"><code>active</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>hover ? y/n</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
                 <td class="name"><code>payload</code></td>
             
 
@@ -900,7 +923,7 @@
 
             
 
-            <td class="description last"><p>data to display in legend</p></td>
+            <td class="description last"><p>data to display</p></td>
         </tr>
 
     
@@ -995,7 +1018,7 @@
     
 
     
-    <h4 class="name" id="CustomTooltip"><span class="type-signature"></span>CustomTooltip<span class="signature">(Payload)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    <h4 class="name" id="CustomTooltip"><span class="type-signature"></span>CustomTooltip<span class="signature">(active, payload)</span><span class="type-signature"> &rarr; {JSX}</span></h4>
     
 
     
@@ -1039,7 +1062,30 @@
 
         <tr>
             
-                <td class="name"><code>Payload</code></td>
+                <td class="name"><code>active</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>hover ? y/n</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
             
 
             <td class="type">
@@ -1055,7 +1101,7 @@
 
             
 
-            <td class="description last"><p>data to display in legend</p></td>
+            <td class="description last"><p>data to display</p></td>
         </tr>
 
     
@@ -1096,7 +1142,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_User_Average_Average.jsx.html">components/User/Average/Average.jsx</a>, <a href="components_User_Average_Average.jsx.html#line75">line 75</a>
+        <a href="components_User_Average_Average.jsx.html">components/User/Average/Average.jsx</a>, <a href="components_User_Average_Average.jsx.html#line76">line 76</a>
     </li></ul></dd>
     
 
@@ -1124,10 +1170,6 @@
 <h5>Returns:</h5>
 
         
-<div class="param-desc">
-    <p>jsx injected in DOM</p>
-</div>
-
 
 
 <dl>
@@ -1136,7 +1178,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Reactnode</span>
+<span class="param-type">JSX</span>
 
 
     </dd>
@@ -1154,7 +1196,7 @@
     
 
     
-    <h4 class="name" id="Home"><span class="type-signature"></span>Home<span class="signature">(user, Data, ActivityData, AverageData, PerformanceData, extractScore, extractNutriment)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    <h4 class="name" id="Home"><span class="type-signature"></span>Home<span class="signature">(userId, Data, ActivityData, AverageData, PerformanceData, extractScore, extractNutriment)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
     
 
     
@@ -1194,7 +1236,7 @@
 
         <tr>
             
-                <td class="name"><code>user</code></td>
+                <td class="name"><code>userId</code></td>
             
 
             <td class="type">
@@ -1210,7 +1252,7 @@
 
             
 
-            <td class="description last"><p>id</p></td>
+            <td class="description last"><p>user id number</p></td>
         </tr>
 
     
@@ -1484,7 +1526,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="pages_Home_Home.jsx.html">pages/Home/Home.jsx</a>, <a href="pages_Home_Home.jsx.html#line35">line 35</a>
+        <a href="pages_Home_Home.jsx.html">pages/Home/Home.jsx</a>, <a href="pages_Home_Home.jsx.html#line34">line 34</a>
     </li></ul></dd>
     
 
@@ -1797,7 +1839,7 @@
             <td class="type">
             
                 
-<span class="param-type">object.&lt;keyData></span>
+<span class="param-type">object</span>
 
 
             
@@ -2024,7 +2066,7 @@
     
 
     
-    <h4 class="name" id="Performance"><span class="type-signature"></span>Performance<span class="signature">(data, data, FormaDataPerformance, PerformanceData)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    <h4 class="name" id="Performance"><span class="type-signature"></span>Performance<span class="signature">(data, FormaDataPerformance, data)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
     
 
     
@@ -2074,30 +2116,7 @@
             <td class="type">
             
                 
-<span class="param-type">array.&lt;{value:number, kind: number}></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>data come from getPerformance(id) in service Api or Mocks</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object.&lt;{index: string}></span>
+<span class="param-type">object</span>
 
 
             
@@ -2137,7 +2156,7 @@
 
         <tr>
             
-                <td class="name"><code>PerformanceData</code></td>
+                <td class="name"><code>data</code></td>
             
 
             <td class="type">
@@ -2153,7 +2172,79 @@
 
             
 
-            <td class="description last"><p>data formated injected in chart 3</p></td>
+            <td class="description last"><p>PerformanceData - data formated injected in chart 3</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>{kind}</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object.&lt;{index: number, kind: string}></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>index with label of chart performance.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>{data}</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array.&lt;{value: number, kind: number}></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>score and label save for chart performance..</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
         </tr>
 
     
@@ -2194,7 +2285,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_User_Performance_Performance.jsx.html">components/User/Performance/Performance.jsx</a>, <a href="components_User_Performance_Performance.jsx.html#line11">line 11</a>
+        <a href="components_User_Performance_Performance.jsx.html">components/User/Performance/Performance.jsx</a>, <a href="components_User_Performance_Performance.jsx.html#line12">line 12</a>
     </li></ul></dd>
     
 
@@ -2252,7 +2343,7 @@
     
 
     
-    <h4 class="name" id="Score"><span class="type-signature"></span>Score<span class="signature">(data, ExtracScore)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
+    <h4 class="name" id="Score"><span class="type-signature"></span>Score<span class="signature">(data, data)</span><span class="type-signature"> &rarr; {Reactnode}</span></h4>
     
 
     
@@ -2312,7 +2403,30 @@
 
             
 
-            <td class="description last"><p>come from getUser(id) in service Api or Mocks</p>
+            <td class="description last"><p>come from getUser(id) in service Api or Mocks</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>ExtracScore - value injected in chart 4</p>
                 <h6>Properties</h6>
                 
 
@@ -2411,29 +2525,6 @@
         </tr>
 
     
-
-        <tr>
-            
-                <td class="name"><code>ExtracScore</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>value injected in chart 4</p></td>
-        </tr>
-
-    
     </tbody>
 </table>
 
@@ -2471,7 +2562,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="components_User_Score_Score.jsx.html">components/User/Score/Score.jsx</a>, <a href="components_User_Score_Score.jsx.html#line5">line 5</a>
+        <a href="components_User_Score_Score.jsx.html">components/User/Score/Score.jsx</a>, <a href="components_User_Score_Score.jsx.html#line6">line 6</a>
     </li></ul></dd>
     
 
@@ -2684,7 +2775,7 @@
 
             
 
-            <td class="description last"><p>image to display in acceuil page</p></td>
+            <td class="description last"><p>image to display in accueil page</p></td>
         </tr>
 
     
@@ -3030,7 +3121,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Thu Dec 15 2022 23:30:12 GMT+0100 (Central European Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Fri Dec 16 2022 18:14:23 GMT+0100 (Central European Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

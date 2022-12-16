@@ -14,8 +14,6 @@ export async function getUser(id) {
       lipidCount: 280,
     },
   }
-
-  // console.log(data)
   return data
 }
 

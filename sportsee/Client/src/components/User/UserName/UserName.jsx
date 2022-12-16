@@ -26,7 +26,7 @@ function UserName({ firstname }) {
  */
 
 UserName.propTypes = {
-  firstname: PropTypes.string,
+  firstname: PropTypes.string.isRequired,
 }
 
 export default UserName

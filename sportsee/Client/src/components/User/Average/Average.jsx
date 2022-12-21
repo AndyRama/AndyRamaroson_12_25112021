@@ -33,7 +33,7 @@ function Average({ data }) {
   }, [data])
 
   return (
-    <ResponsiveContainer width={263} height={258}>
+    <ResponsiveContainer>
       <LineChart
         data={averageData}
         margin={{ top: 0, right: 15, left: 15, bottom: 15 }}

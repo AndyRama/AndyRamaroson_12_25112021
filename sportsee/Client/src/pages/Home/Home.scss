@@ -33,6 +33,7 @@
 .inline-charts {
   display: flex;
   height: 258px;
+  width: auto;
   justify-content: space-between;
 
   &--average {

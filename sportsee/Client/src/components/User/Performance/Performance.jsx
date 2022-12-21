@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import propTypes from 'prop-types'
+import propTypes, { object } from 'prop-types'
 import {
   ResponsiveContainer,
   Radar,
@@ -66,7 +66,8 @@ function Performance({ data }) {
  */
 
 Performance.propTypes = {
-  data: propTypes.object.isRequired,
+  value: propTypes.arrayOf(object),
+  kind: propTypes.object,
 }
 
 export default Performance

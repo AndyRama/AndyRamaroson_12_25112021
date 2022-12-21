@@ -53,9 +53,9 @@ function Navbar() {
  */
 
 Navbar.propTypes = {
-  logo: propTypes.string.isRequired,
-  onglet: propTypes.string.isRequired,
-  ongletId: propTypes.arrayOf(propTypes.string).isRequired,
+  logo: propTypes.string,
+  onglet: propTypes.string,
+  ongletId: propTypes.arrayOf(propTypes.string),
 }
 
 export default Navbar

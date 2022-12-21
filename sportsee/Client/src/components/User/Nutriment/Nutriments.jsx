@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import propTypes from 'prop-types'
 import React from 'react'
 import './Nutriments.scss'
 
@@ -52,7 +52,7 @@ function Nutriments({
     <div className="nutriment-container">
       <ul>
         {nutrientTypes.map(({ type, unit, quantity, icon: Icon }) => (
-          <li>
+          <li key={type}>
             <div className="inside-content-wrapper">
               <div className="icon-box">
                 <Icon />
@@ -73,16 +73,16 @@ function Nutriments({
 }
 
 /**
- * PropTypes Nutriments component
+ * propTypes Nutriments component
  */
 
 Nutriments.propTypes = {
-  data: PropTypes.shape({
-    calorieCount: PropTypes.number.isRequired,
-    proteinCount: PropTypes.number.isRequired,
-    carbohydrateCount: PropTypes.number.isRequired,
-    lipidCount: PropTypes.number.isRequired,
-  }).isRequired,
+  data: propTypes.shape({
+    calorieCount: propTypes.number,
+    proteinCount: propTypes.number,
+    carbohydrateCount: propTypes.number,
+    lipidCount: propTypes.number,
+  }),
 }
 
 export default Nutriments

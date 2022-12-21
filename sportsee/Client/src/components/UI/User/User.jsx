@@ -24,9 +24,9 @@ function User({ id, name }) {
  * PropTypes User component
  */
 User.propTypes = {
-  id: propTypes.number.isRequired,
-  Avatar: propTypes.string.isRequired,
-  name: propTypes.string.isRequired,
+  id: propTypes.number,
+  Avatar: propTypes.string,
+  name: propTypes.string,
 }
 
 export default User

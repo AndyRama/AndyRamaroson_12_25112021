@@ -95,8 +95,8 @@ function CustomTooltip({ active, payload }) {
  */
 
 Average.propTypes = {
-  day: propTypes.number.isRequired,
-  sessionLength: propTypes.number.isRequired,
+  day: propTypes.number,
+  sessionLength: propTypes.number,
 }
 
 export default Average

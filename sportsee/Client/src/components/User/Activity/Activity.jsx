@@ -17,7 +17,7 @@ import {
  * Render Activity component
  * @function Activity
  * @param   {object} data data come from getActivity(id) in service Api or Mocks
- * @param   {object} FormaDataPerformance - data.sessions after formated
+ * @param   {object} FormaDataActivity - data.sessions after formated
  * @param   {object} data - (ActivityData) - data formated injected in chart 1
  * @param   {string} data.day - the day the activity was recorded.
  * @param   {number} data.calories - the number of calories burned during the activity.
@@ -117,9 +117,9 @@ function Activity({ data }) {
  */
 
 Activity.propTypes = {
-  day: propTypes.string.isRequired,
-  calories: propTypes.number.isRequired,
-  kilogram: propTypes.number.isRequired,
+  day: propTypes.string,
+  calories: propTypes.number,
+  kilogram: propTypes.number,
 }
 
 export default Activity

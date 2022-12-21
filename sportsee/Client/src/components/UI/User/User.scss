@@ -10,9 +10,11 @@
   position: absolute;
   top: 40%;
   left: 35%;
+  // margin-top: 50px;
 
   @media screen and (max-width: 1370px) {
     left: 30%;
+    margin-top: 10px;
   }
 }
 

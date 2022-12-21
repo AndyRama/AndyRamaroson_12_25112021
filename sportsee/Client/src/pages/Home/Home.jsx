@@ -91,6 +91,7 @@ function Home() {
       <div className="dashboard">
         <div className="charts-wrapper">
           <UserName firstname={user.userInfos.firstName} />
+
           <div className="main-charts">
             <h3 className="activity--title">Activité quotidienne</h3>
             <Activity data={activity} />
@@ -113,6 +114,7 @@ function Home() {
             </div>
           </div>
         </div>
+
         <div className="nutriment-wrapper">
           <Nutriments data={nutriment} />
         </div>

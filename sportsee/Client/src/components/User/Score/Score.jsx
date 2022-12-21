@@ -50,7 +50,7 @@ function Score({ data }) {
  * PropTypes Score component
  */
 Score.propTypes = {
-  userId: propTypes.string.isRequired,
+  userId: propTypes.string,
 }
 
 export default Score

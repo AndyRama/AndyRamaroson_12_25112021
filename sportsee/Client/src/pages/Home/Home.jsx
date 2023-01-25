@@ -10,22 +10,22 @@ import Nutriments from '../../components/User/Nutriment/Nutriments'
 import UserName from '../../components/User/UserName/UserName'
 
 // eslint-disable-next-line no-unused-vars
-// import mock from '../../__mocks__/mock.js'
+import mock from '../../__mocks__/mock.js'
 
-// import {
-//   getActivity,
-//   getAverage,
-//   getPerformance,
-//   getUser,
-// } from '../../__mocks__/mock.js'
-
-// Data Api
 import {
   getActivity,
   getAverage,
   getPerformance,
   getUser,
-} from '../../service/Api'
+} from '../../__mocks__/mock.js'
+
+// Data Api
+// import {
+//   getActivity,
+//   getAverage,
+//   getPerformance,
+//   getUser,
+// } from '../../service/Api'
 
 import { extractNutriment } from '../../formater/Nutriment'
 import { extractScore } from '../../formater/Score'
